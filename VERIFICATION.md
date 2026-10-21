@@ -8,9 +8,10 @@ Pruebas ejecutadas el **21/10/2026** en Windows, con Node **v24.18.0** y Microso
 | --- | --- |
 | `node --check app.js` | Sintaxis válida |
 | `node --check cristian-moos/config.js` | Sintaxis válida |
-| `node --test tests/data.test.cjs` | 8 pruebas aprobadas |
+| `node --test tests/data.test.cjs` | 9 pruebas aprobadas |
 | `tests/browser.cjs` | 126 comprobaciones de navegador aprobadas |
-| `tests/multi-site.cjs` | 225 comprobaciones HTTP multicliente aprobadas |
+| `tests/multi-site.cjs` | 255 comprobaciones HTTP multicliente aprobadas |
+| `tests/clients-browser.cjs` con axe | 1.793 comprobaciones locales aprobadas en las 11 demos |
 | `tests/accessibility.cjs` | 0 infracciones axe en las 16 combinaciones de vista y ancho auditadas |
 
 Las pruebas del navegador recorren inicio, catálogo, detalle, contacto, nosotros, favoritos, resumen del panel, propiedades del panel, mensajes y configuración a **360, 390, 768, 1024, 1440 y 1920 px**. No detectaron desbordamiento horizontal de página. Las tablas y la navegación del panel permiten desplazamiento interno en pantallas pequeñas.
@@ -33,7 +34,7 @@ Estos resultados corresponden a pruebas locales de la nueva estructura; no impli
 
 ## Repetir
 
-No se requieren dependencias para abrir el sitio ni para las ocho pruebas de datos. Las pruebas de navegador necesitan Playwright y Edge; la auditoría adicional necesita axe-core. Las herramientas se instalaron fuera del workspace, en la carpeta temporal aprobada. El servidor HTTP de `multi-site.cjs` se abre únicamente durante la prueba y se cierra al terminar; no forma parte de la aplicación.
+No se requieren dependencias para abrir el sitio ni para las nueve pruebas de datos. Las pruebas de navegador necesitan Playwright y Edge; la auditoría adicional necesita axe-core. Las herramientas se instalaron fuera del workspace, en la carpeta temporal aprobada. El servidor HTTP de `multi-site.cjs` se abre únicamente durante la prueba y se cierra al terminar; no forma parte de la aplicación.
 
 Comandos de navegador ejecutados:
 
@@ -41,6 +42,7 @@ Comandos de navegador ejecutados:
 node tests/browser.cjs "C:\Users\matia\AppData\Local\Temp\opencode\node_modules\playwright" "C:\Users\matia\AppData\Local\Temp\opencode"
 node tests/accessibility.cjs "C:\Users\matia\AppData\Local\Temp\opencode\node_modules\playwright" "C:\Users\matia\AppData\Local\Temp\opencode\node_modules\axe-core\axe.min.js"
 node tests/multi-site.cjs "C:\Users\matia\AppData\Local\Temp\opencode\node_modules\playwright"
+node tests/clients-browser.cjs "C:\Users\matia\AppData\Local\Temp\opencode\node_modules\playwright" local "C:\Users\matia\AppData\Local\Temp\opencode" "C:\Users\matia\AppData\Local\Temp\opencode\node_modules\axe-core\axe.min.js"
 ```
 
 Las rutas a las herramientas pueden sustituirse por las de una instalación existente. El último argumento de `browser.cjs` es opcional y permite generar capturas en una carpeta que ya exista. `BROWSER_CHANNEL` permite cambiar el canal de Chromium instalado.
@@ -54,6 +56,10 @@ Capturas generadas en `C:\Users\matia\AppData\Local\Temp\opencode`:
 - `demo-dashboard-mobile.png`
 
 Se inspeccionaron visualmente las capturas de inicio, detalle y dashboard en escritorio y las de inicio y dashboard en móvil. También se observaron capturas de la referencia pública para comparar la dirección visual. No hay comparación automatizada píxel a píxel ni afirmación de reproducción exacta de la plantilla.
+
+## Once Demos
+
+La integración de las diez inmobiliarias adicionales se verificó con 51 fichas, 130 URLs de imágenes y logos decodificadas, 110 recorridos de ancho sin desbordes y 44 auditorías axe de inicio y contacto a 390 y 1440 px. No se detectaron infracciones automáticas; las comprobaciones de contraste sobre fotografías y degradados que axe no puede resolver requieren revisión manual y no constituyen una certificación. Se revisaron capturas de Nazareth, Pallotta y Puricelli. La prueba de todos los clientes también verificó importación, recarga, canales vacíos ocultos, superficies desconocidas omitidas y tratamiento de precios a consultar en las vistas, filtros y ordenación.
 
 ## Fuera de Alcance
 

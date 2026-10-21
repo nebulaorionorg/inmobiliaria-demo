@@ -37,6 +37,42 @@ test('config.js contains a JSON object, without executable configuration logic',
   assert.equal(config.properties.length, 10);
 });
 
+test('all clients have complete independent catalogs, valid contacts and existing local assets', () => {
+  const context = { window: {} };
+  vm.runInNewContext(fs.readFileSync(path.join(root, 'sites.js'), 'utf8'), context);
+  for (const site of context.window.DEMO_SITES) {
+    const source = fs.readFileSync(path.join(root, site.slug, 'config.js'), 'utf8');
+    const client = JSON.parse(source.replace(/^window\.SITE_CONFIG\s*=\s*/, '').replace(/;\s*$/, ''));
+    assert.equal(client.brand.name, site.name, `${site.slug}: registry identity`);
+    for (const section of Object.keys(config)) assert(Object.hasOwn(client, section), `${site.slug}: missing ${section}`);
+    for (const key of Object.keys(config.labels)) assert(Object.hasOwn(client.labels, key), `${site.slug}: missing label ${key}`);
+    assert.match(client.brand.whatsapp, /^\d*$/);
+    assert.match(client.brand.email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+    assert.deepEqual(client.operations, ['Venta', 'Alquiler']);
+    const ids = new Set(client.properties.map(p => p.id));
+    assert.equal(ids.size, client.properties.length);
+    for (const id of client.home.heroIds) assert(ids.has(id), `${site.slug}: hero ${id}`);
+    for (const zone of client.zones) assert(ids.has(zone.propertyId), `${site.slug}: zone ${zone.name}`);
+    for (const p of client.properties) {
+      assert.match(p.id, /^[\w-]+$/);
+      assert(client.types.includes(p.type));
+      assert(client.operations.includes(p.operation));
+      assert(['USD', 'ARS'].includes(p.currency));
+      for (const key of ['price', 'bedrooms', 'bathrooms', 'area', 'landArea']) assert(p[key] === null || Number.isFinite(p[key]) && p[key] >= 0, `${site.slug}/${p.id}: ${key}`);
+      assert.equal(new URL(p.source).hostname.replace(/^www\./, ''), new URL(client.brand.website).hostname.replace(/^www\./, ''), `${site.slug}: property source belongs to the client`);
+      assert(p.images.length > 0);
+      for (const image of p.images) {
+        assert.match(image, /^(https:\/\/|assets\/)/);
+        if (image.startsWith('assets/')) assert(fs.existsSync(path.join(root, image)), `${site.slug}: missing ${image}`);
+      }
+    }
+    if (site.slug !== 'cristian-moos') {
+      assert(fs.existsSync(path.join(root, site.slug, 'SOURCES.md')));
+      assert.doesNotMatch(source, /cristianmoos\.com|Mooswalder|5543991/);
+    }
+  }
+});
+
 test('properties have unique identifiers, public sources and genuine published prices', () => {
   const prices = { '5543991': ['USD', 1200000], '7955907': ['USD', 180000], '6593128': ['USD', 135000], '7859215': ['USD', 180000], '7289188': ['USD', 349000], '4242852': ['USD', 195000], '5454731': ['USD', 57000], '4709623': ['USD', 850], '7977727': ['USD', 2100], '3836739': ['ARS', 950000] };
   assert.equal(new Set(config.properties.map(p => p.id)).size, 10);

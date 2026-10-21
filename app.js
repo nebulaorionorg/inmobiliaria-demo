@@ -38,7 +38,7 @@
   const normalize = value => String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const number = value => new Intl.NumberFormat('es-AR', { maximumFractionDigits: 2 }).format(value);
   const property = id => config.properties.find(item => item.id === id);
-  const price = p => `${p.currency === 'ARS' ? 'ARS $' : 'USD'} ${number(p.price)}`;
+  const price = p => p.price === null ? (config.labels.consultPrice || 'Consultar precio') : `${p.currency === 'ARS' ? 'ARS $' : 'USD'} ${number(p.price)}`;
   const url = value => /^assets\//i.test(String(value)) ? esc(new URL(value, assetBase).href) : /^(https?:\/\/|mailto:|tel:|#\/)/i.test(String(value)) ? esc(value) : '#/';
   const external = 'target="_blank" rel="noopener noreferrer"';
   const paths = {
@@ -82,13 +82,13 @@
     }
     // Previously exported JSON only required the primary brand color.
     const brandSchema = Object.fromEntries(Object.entries(original.brand).filter(([key]) => !['secondary', 'ink'].includes(key)));
-    const schema = { ...original, brand: brandSchema, properties: [{ ...original.properties[0], bedrooms: null, bathrooms: null, area: null, landArea: null }] };
+    const schema = { ...original, brand: brandSchema, properties: [{ ...original.properties[0], price: null, bedrooms: null, bathrooms: null, area: null, landArea: null }] };
     if (!candidate || !matches(schema, candidate) || candidate.version !== 1 || !candidate.properties.length) return false;
-    if (!/^#[\da-f]{6}$/i.test(candidate.brand.primary) || !/^\d+$/.test(candidate.brand.whatsapp)) return false;
+    if (!/^#[\da-f]{6}$/i.test(candidate.brand.primary) || !/^\d*$/.test(candidate.brand.whatsapp)) return false;
     if (['secondary', 'ink'].some(key => candidate.brand[key] !== undefined && !/^#[\da-f]{6}$/i.test(candidate.brand[key]))) return false;
     const ids = new Set();
     for (const p of candidate.properties) {
-      if (!/^[\w-]+$/.test(p.id) || ids.has(p.id) || !p.images.length || p.price < 0 || !Number.isFinite(p.price)) return false;
+      if (!/^[\w-]+$/.test(p.id) || ids.has(p.id) || !p.images.length || (p.price !== null && (p.price < 0 || !Number.isFinite(p.price)))) return false;
       if (!['USD', 'ARS'].includes(p.currency) || !candidate.operations.includes(p.operation) || !candidate.types.includes(p.type)) return false;
       if (!p.images.every(image => /^(https?:\/\/|assets\/)/.test(image)) || !/^https?:\/\//.test(p.source)) return false;
       if (![p.bedrooms, p.bathrooms, p.area, p.landArea].every(value => value === null || Number.isFinite(value) && value >= 0)) return false;
@@ -129,7 +129,8 @@
     return `<button class="icon-btn favorite-btn ${saved ? 'saved' : ''} ${extra}" data-action="favorite" data-id="${esc(p.id)}" aria-pressed="${saved}" aria-label="${text(saved ? 'unsave' : 'save')}">${icon('heart')}</button>`;
   }
   function card(p) {
-    return `<article class="property-card"><div class="card-image"><a href="#/propiedad/${esc(p.id)}">${photo(p)}<span class="image-shade"></span><span class="card-location">${icon('pin')}${esc(p.location)}</span></a><div class="badges">${p.featured ? `<span class="badge badge-primary">${text('featured')}</span>` : ''}<span class="badge badge-dark">${esc(p.operation)}</span></div>${favoriteButton(p)}</div><div class="card-content"><span class="property-kind">${esc(p.type)} <span>· ${text('reference')} ${esc(p.reference)}</span></span><h3><a href="#/propiedad/${esc(p.id)}">${esc(p.title)}</a></h3><div class="card-specs">${p.bedrooms !== null ? `<span>${icon('bed')}<b>${p.bedrooms}</b> ${text('beds')}</span>` : ''}${p.bathrooms !== null ? `<span>${icon('bath')}<b>${p.bathrooms}</b> ${text('baths')}</span>` : ''}<span title="${text(p.area ? 'built' : 'land')}">${icon('area')}<b>${number(p.area || p.landArea || 0)}</b> m²</span></div><div class="card-bottom"><span class="card-agent"><span class="mini-avatar">${esc(config.brand.initials)}</span>${text('team')}</span><strong class="card-price">${esc(price(p))}${p.operation === config.operations[1] ? `<small>${text('month')}</small>` : ''}</strong></div></div></article>`;
+    const area = p.area ?? p.landArea;
+    return `<article class="property-card"><div class="card-image"><a href="#/propiedad/${esc(p.id)}">${photo(p)}<span class="image-shade"></span><span class="card-location">${icon('pin')}${esc(p.location)}</span></a><div class="badges">${p.featured ? `<span class="badge badge-primary">${text('featured')}</span>` : ''}<span class="badge badge-dark">${esc(p.operation)}</span></div>${favoriteButton(p)}</div><div class="card-content"><span class="property-kind">${esc(p.type)} <span>· ${text('reference')} ${esc(p.reference)}</span></span><h3><a href="#/propiedad/${esc(p.id)}">${esc(p.title)}</a></h3><div class="card-specs">${p.bedrooms !== null ? `<span>${icon('bed')}<b>${p.bedrooms}</b> ${text('beds')}</span>` : ''}${p.bathrooms !== null ? `<span>${icon('bath')}<b>${p.bathrooms}</b> ${text('baths')}</span>` : ''}${area !== null ? `<span title="${text(p.area !== null ? 'built' : 'land')}">${icon('area')}<b>${number(area)}</b> m²</span>` : ''}</div><div class="card-bottom"><span class="card-agent"><span class="mini-avatar">${esc(config.brand.initials)}</span>${text('team')}</span><strong class="card-price">${esc(price(p))}${p.operation === config.operations[1] ? `<small>${text('month')}</small>` : ''}</strong></div></div></article>`;
   }
   function options(items, selected, emptyLabel) {
     return `<option value="">${esc(emptyLabel)}</option>${items.map(item => `<option value="${esc(item)}" ${item === selected ? 'selected' : ''}>${esc(item)}</option>`).join('')}`;
@@ -173,12 +174,17 @@
       if (params.get('credit') && !p.credit) return false;
       // USD and ARS are never compared or converted implicitly.
       if (params.get('currency')) {
+        if (p.price === null && (params.get('min') || params.get('max'))) return false;
         if (params.get('min') && p.price < Number(params.get('min'))) return false;
         if (params.get('max') && p.price > Number(params.get('max'))) return false;
       }
       return true;
     });
-    if (params.get('currency') && ['priceAsc', 'priceDesc'].includes(params.get('sort'))) items.sort((a, b) => params.get('sort') === 'priceAsc' ? a.price - b.price : b.price - a.price);
+    if (params.get('currency') && ['priceAsc', 'priceDesc'].includes(params.get('sort'))) items.sort((a, b) => {
+      if (a.price === null) return b.price === null ? 0 : 1;
+      if (b.price === null) return -1;
+      return params.get('sort') === 'priceAsc' ? a.price - b.price : b.price - a.price;
+    });
     return items;
   }
   function empty(title, body) {
@@ -257,6 +263,9 @@
     else if (path === '/nosotros') renderAbout();
     else if (path === '/panel' || path.startsWith('/panel/')) renderDashboard(path.slice(6), params);
     else renderNotFound();
+    document.querySelectorAll('a[href="tel:"], a[href="mailto:"], .socials a[href="#/"]').forEach(link => (link.closest('.contact-method') || link).remove());
+    if (!config.brand.whatsapp) document.querySelectorAll('a[href^="https://wa.me/"]').forEach(link => (link.closest('.contact-method') || link).remove());
+    if (!config.zones.length) document.querySelector('.zones-section')?.remove();
     $('#main').dataset.route = path;
     $('#main').dataset.hash = location.hash || '#/';
     document.title = `${$('#main h1')?.textContent || config.labels.properties} | ${config.brand.name}`;
