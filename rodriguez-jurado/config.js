@@ -24,7 +24,7 @@ window.SITE_CONFIG = {
   "meta": {
     "verifiedAt": "2026-10-21",
     "verifiedLabel": "Datos consultados el 21/10/2026",
-    "description": "Selección de casas y lotes publicados por Rodriguez Jurado Propiedades en Benavídez y Escobar.",
+    "description": "Selección de 12 casas, lotes y un departamento publicados por Rodriguez Jurado Propiedades en Tigre, Escobar y Pilar.",
     "disclaimer": "Demo independiente basada en fichas públicas. Precios, disponibilidad, superficies y condiciones sujetos a confirmación. Las imágenes no constituyen documentación contractual. No es el catálogo completo ni una conexión real a Xintel o al CRM; el panel y sus mensajes son simulados.",
     "demo": "Demo comercial independiente · Sin conexión real al CRM ni autenticación"
   },
@@ -38,21 +38,21 @@ window.SITE_CONFIG = {
     "eyebrow": "RODRIGUEZ JURADO PROPIEDADES",
     "title": "Empezá tu nueva vida.",
     "titleAccent": "Tu lugar te espera.",
-    "subtitle": "Casas y lotes en Benavídez y Escobar. Explorá una selección del catálogo público y conocé al equipo que acompaña tu próxima decisión.",
+    "subtitle": "12 publicaciones de Rodriguez Jurado en Tigre, Escobar y Pilar: casas, lotes y un departamento. Explorá el catálogo seleccionado y conocé al equipo.",
     "heroIds": ["rj-roj565", "rj-roj1133", "rj-roj909"],
     "heroLocation": "Benavídez · Ingeniero Maschwitz · El Cantón",
     "featuredEyebrow": "SELECCIÓN DE PUBLICACIONES",
     "featuredTitle": "Un espacio para lo que viene",
-    "featuredSubtitle": "Opciones de venta y alquiler tomadas de fichas reales de la inmobiliaria.",
+    "featuredSubtitle": "12 opciones de venta y alquiler tomadas de fichas reales de la inmobiliaria, sin duplicar el mismo inmueble por operación.",
     "zonesEyebrow": "EXPLORÁ ZONA NORTE",
     "zonesTitle": "Encontrá tu entorno",
-    "zonesSubtitle": "Conocé las zonas presentes en esta selección de casas y terrenos.",
+    "zonesSubtitle": "Conocé algunas de las zonas presentes en esta selección de casas, lotes y un departamento.",
     "zonesPhotoNote": "Imágenes de las propiedades publicadas en cada zona, no fotografías generales de los barrios.",
     "servicesEyebrow": "COMPRA, VENTA Y ASESORAMIENTO",
     "servicesTitle": "Tu proyecto, acompañado",
     "services": [
       { "icon": "home", "title": "Quiero comprar", "text": "Explorá casas y terrenos publicados. Consultá por documentación, visitas y condiciones de cada operación.", "action": "Ver propiedades en venta", "href": "#/propiedades?operation=Venta" },
-      { "icon": "key", "title": "Quiero alquilar", "text": "Conocé la opción de alquiler de esta selección y confirmá sus condiciones actuales.", "action": "Ver alquileres", "href": "#/propiedades?operation=Alquiler" },
+      { "icon": "key", "title": "Quiero alquilar", "text": "Conocé las casas y el departamento en alquiler de esta selección y confirmá sus condiciones actuales.", "action": "Ver alquileres", "href": "#/propiedades?operation=Alquiler" },
       { "icon": "chart", "title": "Desarrollos y proyectos", "text": "El sitio oficial presenta emprendimientos como Green Palmers, Aldara y HQ Benavidez. Sus unidades y condiciones se consultan allí.", "action": "Conocer desarrollos oficiales", "href": "https://rodriguezjurado.com.ar/emprendimientos" }
     ],
     "aboutEyebrow": "RODRIGUEZ JURADO PROPIEDADES",
@@ -68,7 +68,7 @@ window.SITE_CONFIG = {
     { "name": "Ingeniero Maschwitz", "search": "Ingeniero Maschwitz", "propertyId": "rj-roj565" },
     { "name": "El Cantón", "search": "El Cantón", "propertyId": "rj-roj1133" }
   ],
-  "types": ["Casa", "Lote"],
+  "types": ["Casa", "Lote", "Departamento"],
   "operations": ["Venta", "Alquiler"],
   "labels": {
     "noMatches": "No hay publicaciones que coincidan con esta búsqueda.",
@@ -120,6 +120,62 @@ window.SITE_CONFIG = {
       "features": ["Frente a la laguna", "Galería con parrilla", "Terraza", "Piso radiante", "Aberturas DVH", "Gas natural conectado"],
       "images": ["https://cdn-images.xintelweb.com/upload/e42f9023d9ed86079325f97218b85d78.jpg?216633", "https://cdn-images.xintelweb.com/upload/06d3cfde991738923db7fe8f48c66f82.jpg?283567", "https://cdn-images.xintelweb.com/upload/f0c2275982a4dc21aea8a30ba14b075c.jpg?167668"],
       "source": "https://rodriguezjurado.com.ar/casa-en-alquiler-en-el-canton-ficha-roj1133"
+    },
+    {
+      "id": "rj-roj1024", "reference": "ROJ1024", "title": "Casa a la laguna en San Matías", "address": "San Matías, Área 5", "location": "San Matías, Escobar", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 580000, "bedrooms": 3, "bathrooms": 4, "area": 237, "landArea": 1028, "credit": false, "featured": true,
+      "description": "Casa de dos plantas frente a la laguna, en una de las islas del Área 5 de San Matías. Living comedor, cocina con isla, family, escritorio, dos dormitorios en planta baja y master suite con estudio en planta alta. Dependencia de servicio, galería con parrilla y horno a leña, pileta con borde infinito y muelle con rampa. La ficha informa 237 m² cubiertos, 66 m² semicubiertos y lote de 1.028 m², con orientación noreste.",
+      "features": ["Frente a la laguna", "Pileta con borde infinito", "Muelle con rampa", "Galería con parrilla", "Losa radiante", "Aberturas DVH"],
+      "images": ["https://cdn-images.xintelweb.com/upload/472dba23b0bab2a4d4079c0437a2c1df.jpg?1783962613", "https://cdn-images.xintelweb.com/upload/558ff9501dc8eaea7ca5d14fea54c43d.jpg?1783962613"],
+      "source": "https://rodriguezjurado.com.ar/casa-en-venta-en-san-matas-ficha-roj1024"
+    },
+    {
+      "id": "rj-roj814", "reference": "ROJ814", "title": "Casa a la laguna en Santa Clara, Villanueva", "address": "Barrio Santa Clara, Villanueva", "location": "Santa Clara, Villanueva, Tigre", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 430000, "bedrooms": 3, "bathrooms": 4, "area": 180, "landArea": 823, "credit": true, "featured": true,
+      "description": "Casa de dos plantas sobre lote de 823 m² frente a la laguna, con orientación noreste. Living comedor con hogar, cocina con comedor diario, toilette, lavadero y dependencia de servicio. En planta alta, tres dormitorios y dos baños, uno en suite con hidromasaje y vestidor. Galería con parrilla, pileta, muelle y riego por aspersión. La ficha publica 180 m² cubiertos y 65 m² semicubiertos y muestra apto crédito, sujeto a confirmación bancaria.",
+      "features": ["Frente a la laguna", "Pileta", "Muelle", "Galería con parrilla", "Piso radiante", "Publicado apto crédito"],
+      "images": ["https://cdn-images.xintelweb.com/upload/13065b58fc2042851126af53dbf3a284.jpg?1787168790", "https://cdn-images.xintelweb.com/upload/7465ac0550ef4a6589ec2d02ae82182b.jpg?1787168790"],
+      "source": "https://rodriguezjurado.com.ar/casa-en-venta-en-santa-clara-tigre-ficha-roj814"
+    },
+    {
+      "id": "rj-roj1079", "reference": "ROJ1079", "title": "Casa de cuatro dormitorios en San Pablo", "address": "Barrio San Pablo", "location": "San Pablo, Pilar", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 240000, "bedrooms": 4, "bathrooms": 3, "area": 150, "landArea": 500, "credit": false, "featured": true,
+      "description": "Casa de dos plantas en lote central del barrio San Pablo. Living comedor, cocina semi integrada con barra, lavadero independiente y dormitorio de huéspedes en planta baja; suite y dormitorios adicionales en planta alta. Galería, pileta y riego. La ficha informa cuatro dormitorios, tres baños, 150 m² cubiertos, 30 m² semicubiertos y lote de 500 m². La descripción repite una distribución distinta de la planta alta y la orientación difiere de la ficha técnica; esos detalles deben confirmarse.",
+      "features": ["Lote central", "Galería", "Pileta", "Riego", "Lavadero independiente", "Barrio cerrado"],
+      "images": ["https://cdn-images.xintelweb.com/upload/231f875faf3155f3b83536418180979a.jpg?1789737255", "https://cdn-images.xintelweb.com/upload/0f76526464ccfe22d99cc3b1942f3b52.jpg?1789737255"],
+      "source": "https://rodriguezjurado.com.ar/casa-en-venta-en-san-pablo-ficha-roj1079"
+    },
+    {
+      "id": "rj-roj732", "reference": "ROJ732", "title": "Departamento en alquiler en Saravi Village", "address": "Complejo Saravi Village", "location": "Saravi Village, Pilar", "type": "Departamento", "operation": "Alquiler", "currency": "USD", "price": 450, "bedrooms": null, "bathrooms": 1, "area": 32, "landArea": null, "credit": false, "featured": true,
+      "description": "Departamento de 32 m² cubiertos en Saravi Village, publicado en alquiler por USD 450 mensuales. La descripción informa cocina integrada y baño completo, en un complejo con pileta, house para eventos y seguridad 24 horas, próximo a Panamericana. El título y la ficha lo presentan como monoambiente, pero parte del texto menciona dos ambientes y un dormitorio; la cantidad de dormitorios queda sin confirmar. Se reproduce una sola vez y solo bajo la operación de alquiler.",
+      "features": ["Cocina integrada", "Baño completo", "Pileta del complejo", "House para eventos", "Seguridad 24 horas"],
+      "images": ["https://cdn-images.xintelweb.com/upload/0ae4976d61ff5f1e13a4220879d9b868.jpg?1758124361", "https://cdn-images.xintelweb.com/upload/39def803da306f6cc98506999d4217c4.jpg?1758124361"],
+      "source": "https://rodriguezjurado.com.ar/departamento-en-alquiler-en-saravi-village-ficha-roj732"
+    },
+    {
+      "id": "rj-roj1141", "reference": "ROJ1141", "title": "Casa en alquiler permanente sobre doble lote en El Cantón", "address": "Barrio Islas, El Cantón", "location": "El Cantón, Escobar", "type": "Casa", "operation": "Alquiler", "currency": "USD", "price": 5700, "bedrooms": 5, "bathrooms": 6, "area": 518, "landArea": 1910, "credit": false, "featured": true,
+      "description": "Casa frente a la laguna en Barrio Islas, sobre doble lote publicado de 1.910 m². Ofrece cinco dormitorios, seis baños, 518 m² cubiertos, cocina integrada al estar comedor, sala de cine o playroom, escritorio y quincho cerrado con parrilla. Piscina climatizada con borde infinito, gimnasio y cochera semicubierta para cuatro autos. Publicada en alquiler permanente por USD 5.700 mensuales. El aviso presenta redondeos diferentes en la superficie semicubierta y construida total; no se trasladan al campo de superficie cubierta. No se duplica su eventual ficha de venta.",
+      "features": ["Frente a la laguna", "Doble lote", "Piscina climatizada", "Quincho cerrado", "Gimnasio", "Losa radiante"],
+      "images": ["https://cdn-images.xintelweb.com/upload/157176d2e3b1ef8b8dc2992f927ea2e3.jpg?1791916748", "https://cdn-images.xintelweb.com/upload/dc65193217f584ac1cc8322a6952a81c.jpg?1791916748"],
+      "source": "https://rodriguezjurado.com.ar/casa-en-alquiler-en-el-canton-ficha-roj1141"
+    },
+    {
+      "id": "rj-roj579", "reference": "ROJ579", "title": "Residencia con casa de huéspedes en La Bota", "address": "Barrio La Bota", "location": "La Bota, Benavidez, Tigre", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 1150000, "bedrooms": 4, "bathrooms": null, "area": 400, "landArea": 5000, "credit": true, "featured": true,
+      "description": "Residencia de estilo toscano sobre dos lotes que suman 5.000 m², con salida a dos calles. La casa principal cuenta con tres dormitorios en planta baja y master suite en planta alta, living comedor con hogar, cocina integrada y galerías. Incluye casa de huéspedes independiente, quincho con asador, pileta y riego. Publica 400 m² cubiertos y apto crédito. Los cuatro dormitorios corresponden a la casa principal; la ficha indica cuatro baños pero la descripción menciona baños adicionales en construcciones auxiliares, por lo que el total queda sin confirmar.",
+      "features": ["Casa de huéspedes", "Quincho con asador", "Pileta", "Riego por aspersión", "Piso radiante", "Publicado apto crédito"],
+      "images": ["https://cdn-images.xintelweb.com/upload/cbb68c24ff3391082b8b333baf7316ff.jpg?362418", "https://cdn-images.xintelweb.com/upload/775a145f46347257685a52d7c1d40944.jpg?390084"],
+      "source": "https://rodriguezjurado.com.ar/casa-en-venta-en-benavidez-ficha-roj579"
+    },
+    {
+      "id": "rj-roj1017", "reference": "ROJ1017", "title": "Fracción de 10.229 m² en Ingeniero Maschwitz", "address": "Ingeniero Maschwitz, junto a River Oaks", "location": "Ingeniero Maschwitz, Escobar", "type": "Lote", "operation": "Venta", "currency": "USD", "price": 800000, "bedrooms": null, "bathrooms": null, "area": null, "landArea": 10229, "credit": false, "featured": true,
+      "description": "Fracción arbolada de 10.229 m², lindera al barrio River Oaks en dos perímetros, con paredón perimetral. El aviso la ubica a 350 metros de Ruta 26 y menciona una casa principal para reciclar, quincho con dependencias y garajes con oficinas, sin publicar sus superficies ni cantidades de dormitorios o baños. Publica zonificación Re1 y servicios de electricidad y gas en el entorno. La factibilidad de un desarrollo requiere verificación profesional y municipal.",
+      "features": ["Arboleda", "Paredón perimetral", "Construcciones para reciclar", "Zonificación publicada Re1", "Próximo a Ruta 26"],
+      "images": ["https://cdn-images.xintelweb.com/upload/b237d9a3e2427bfd11aeddc32d67efac.jpg?1782848328", "https://cdn-images.xintelweb.com/upload/bfb46f79e8ffa732ad4be8d023db93d1.jpg?1782848328"],
+      "source": "https://rodriguezjurado.com.ar/lote-en-venta-en-ingeniero-maschwitz-ficha-roj1017"
+    },
+    {
+      "id": "rj-roj1003", "reference": "ROJ1003", "title": "Residencia sobre tres lotes en Los Ñanduces", "address": "Barrio Los Ñanduces", "location": "Los Ñanduces, Ingeniero Maschwitz, Escobar", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 850000, "bedrooms": null, "bathrooms": 4, "area": 590, "landArea": 9542, "credit": false, "featured": true,
+      "description": "Residencia en Los Ñanduces sobre tres lotes que suman 9.542 m². La casa está construida en uno de ellos; los otros dos no tienen mejoras. Living con hogar, cocina refaccionada, comedor, lavadero, galerías, pileta, playroom, escritorio, cocheras cubiertas y casa de caseros. La ficha publica 590 m² cubiertos y cuatro baños. Indica cuatro dormitorios, pero la descripción detalla tres en la casa y una vivienda de caseros sin distribución; el total se deja sin confirmar. El precio corresponde a esta publicación del conjunto, sin inferir valores por lote.",
+      "features": ["Tres lotes", "Parque arbolado", "Pileta", "Casa de caseros", "Playroom", "Portón automatizado"],
+      "images": ["https://cdn-images.xintelweb.com/upload/49114b45622c451535c00700dd2ba6e4.jpg?1781103294", "https://cdn-images.xintelweb.com/upload/2b45f50db45235cea9d0a9fe2407ab23.jpg?1781103294"],
+      "source": "https://rodriguezjurado.com.ar/casa-en-venta-en-ingeniero-maschwitz-ficha-roj1003"
     }
   ]
 };

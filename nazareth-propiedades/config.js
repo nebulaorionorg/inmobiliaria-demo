@@ -58,7 +58,7 @@ window.SITE_CONFIG = {
     "heroLocation": "Gar\u00edn - Partido de Escobar",
     "featuredEyebrow": "PUBLICACIONES DEL SITIO HIST\u00d3RICO",
     "featuredTitle": "Opciones para conversar",
-    "featuredSubtitle": "Selecci\u00f3n documental, no disponibilidad confirmada. Las publicaciones originales no indican fecha de actualizacion.",
+    "featuredSubtitle": "Doce publicaciones identificadas del sitio hist\u00f3rico: casas, un lote y locales. Sin disponibilidad actual confirmada ni fecha de actualizaci\u00f3n en origen.",
     "zonesEyebrow": "CONOC\u00c9 EL ENTORNO",
     "zonesTitle": "Gar\u00edn, cerca de tu proyecto",
     "zonesSubtitle": "Consult\u00e1 la ubicaci\u00f3n y las condiciones de cada publicaci\u00f3n con la inmobiliaria.",
@@ -69,7 +69,7 @@ window.SITE_CONFIG = {
       {
         "icon": "home",
         "title": "Compra y venta",
-        "text": "Conoc\u00e9 una selecci\u00f3n de casas y lotes publicados en el sitio hist\u00f3rico. Confirm\u00e1 su vigencia antes de avanzar.",
+        "text": "Conoc\u00e9 una selecci\u00f3n de casas, un lote y locales publicados en el sitio hist\u00f3rico. Confirm\u00e1 su vigencia antes de avanzar.",
         "action": "Explorar publicaciones",
         "href": "#/propiedades?operation=Venta"
       },
@@ -103,7 +103,8 @@ window.SITE_CONFIG = {
   "zones": [],
   "types": [
     "Casa",
-    "Terreno"
+    "Terreno",
+    "Local"
   ],
   "operations": [
     "Venta",
@@ -424,6 +425,262 @@ window.SITE_CONFIG = {
         "assets/placeholder.svg"
       ],
       "source": "https://www.nazarethpropiedades.com.ar/Casas/"
+    },
+    {
+      "id": "naz-194",
+      "reference": "Opcion 194",
+      "title": "Casa y dos monoambientes en Lavagnino 811",
+      "address": "Lavagnino 811",
+      "location": "Gar\u00edn, Escobar",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 55000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Una sola oferta que incluye una casa de tres dormitorios, cocina, ba\u00f1o y anteba\u00f1o, living comedor y entrada para auto, m\u00e1s dos monoambientes con ba\u00f1o. No se desdoblan las unidades ni se atribuye un total de dormitorios o ba\u00f1os que el aviso no informa. Publicaci\u00f3n hist\u00f3rica sin fecha de actualizaci\u00f3n: confirm\u00e1 precio y disponibilidad. Marcador gr\u00e1fico: no se identific\u00f3 una foto individual de esta opci\u00f3n.",
+      "features": [
+        "Casa y dos monoambientes en conjunto",
+        "Living comedor",
+        "Entrada para auto",
+        "Sin foto individual identificada"
+      ],
+      "images": [
+        "assets/placeholder.svg"
+      ],
+      "source": "https://www.nazarethpropiedades.com.ar/Casas/"
+    },
+    {
+      "id": "naz-34",
+      "reference": "Opcion 34",
+      "title": "Casa con quincho en Los Tilos",
+      "address": "Piedrabuena 730",
+      "location": "Barrio Los Tilos, Gar\u00edn",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 100000,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Casa anunciada en la entrada al barrio Los Tilos, con tres dormitorios, cocina, comedor, hogar y ba\u00f1o. El aviso menciona techo de tejas, galp\u00f3n, quincho, parrilla y horno de barro. No publica superficies. Publicaci\u00f3n hist\u00f3rica sin fecha de actualizaci\u00f3n: confirm\u00e1 precio y disponibilidad. Marcador gr\u00e1fico: no se identific\u00f3 una foto individual de esta opci\u00f3n.",
+      "features": [
+        "Quincho",
+        "Parrilla",
+        "Horno de barro",
+        "Hogar",
+        "Galp\u00f3n",
+        "Techo de tejas"
+      ],
+      "images": [
+        "assets/placeholder.svg"
+      ],
+      "source": "https://www.nazarethpropiedades.com.ar/Casas/"
+    },
+    {
+      "id": "naz-85",
+      "reference": "Opcion 85",
+      "title": "Casa en Cigliutti 424",
+      "address": "Cigliutti 424",
+      "location": "Gar\u00edn, Escobar",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 68000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Casa publicada con dos dormitorios, cocina, living comedor, ba\u00f1o y lavadero. El aviso identifica la direcci\u00f3n y el precio, pero no informa superficies ni otras condiciones de la operaci\u00f3n. Publicaci\u00f3n hist\u00f3rica sin fecha de actualizaci\u00f3n: confirm\u00e1 precio y disponibilidad. Marcador gr\u00e1fico: no se identific\u00f3 una foto individual de esta opci\u00f3n.",
+      "features": [
+        "Cocina",
+        "Living comedor",
+        "Lavadero",
+        "Sin superficies publicadas"
+      ],
+      "images": [
+        "assets/placeholder.svg"
+      ],
+      "source": "https://www.nazarethpropiedades.com.ar/Casas/"
+    },
+    {
+      "id": "naz-99",
+      "reference": "Opcion 99",
+      "title": "Casa en C\u00f3rdoba 219",
+      "address": "C\u00f3rdoba 219",
+      "location": "Gar\u00edn, Escobar",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 70000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "La opci\u00f3n 99 anuncia una casa de dos dormitorios, ba\u00f1o y cocina comedor en C\u00f3rdoba 219. El texto indica que escucha ofertas; no se infiere un descuento ni una superficie. Publicaci\u00f3n hist\u00f3rica sin fecha de actualizaci\u00f3n: confirm\u00e1 precio y disponibilidad. Marcador gr\u00e1fico: no se identific\u00f3 una foto individual de esta opci\u00f3n.",
+      "features": [
+        "Cocina comedor",
+        "El aviso menciona escuchar ofertas",
+        "Sin superficies publicadas"
+      ],
+      "images": [
+        "assets/placeholder.svg"
+      ],
+      "source": "https://www.nazarethpropiedades.com.ar/Casas/"
+    },
+    {
+      "id": "naz-165",
+      "reference": "Opcion 165",
+      "title": "Casa con local en barrio El Arco",
+      "address": "Tom\u00e1s Godoy 931",
+      "location": "Barrio El Arco, Gar\u00edn",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 65000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Una publicaci\u00f3n conjunta de casa y local en Tom\u00e1s Godoy 931. Informa dos dormitorios, cocina, comedor, living, ba\u00f1o, galer\u00eda y terraza. El precio corresponde al aviso completo, no a unidades separadas. Publicaci\u00f3n hist\u00f3rica sin fecha de actualizaci\u00f3n: confirm\u00e1 precio y disponibilidad. Marcador gr\u00e1fico: no se identific\u00f3 una foto individual de esta opci\u00f3n.",
+      "features": [
+        "Casa y local en conjunto",
+        "Galer\u00eda",
+        "Terraza",
+        "Living",
+        "Comedor"
+      ],
+      "images": [
+        "assets/placeholder.svg"
+      ],
+      "source": "https://www.nazarethpropiedades.com.ar/Casas/"
+    },
+    {
+      "id": "naz-134",
+      "reference": "Opcion 134",
+      "title": "Casa con monoambiente en Paso 401",
+      "address": "Paso 401",
+      "location": "Gar\u00edn, Escobar",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 95000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Oferta conjunta de casa con dos dormitorios, ba\u00f1o, cocina comedor y galp\u00f3n, cochera para dos autos y un monoambiente con ba\u00f1o al fondo. El aviso no da un cuadro de totales del conjunto; se conserva como un solo registro. Publicaci\u00f3n hist\u00f3rica sin fecha de actualizaci\u00f3n: confirm\u00e1 precio y disponibilidad. Marcador gr\u00e1fico: no se identific\u00f3 una foto individual de esta opci\u00f3n.",
+      "features": [
+        "Casa y monoambiente en conjunto",
+        "Cochera para dos autos",
+        "Galp\u00f3n",
+        "Cocina comedor"
+      ],
+      "images": [
+        "assets/placeholder.svg"
+      ],
+      "source": "https://www.nazarethpropiedades.com.ar/Casas/"
+    },
+    {
+      "id": "naz-35",
+      "reference": "Opcion 35",
+      "title": "Casa en 18 de Julio 885",
+      "address": "18 de Julio 885",
+      "location": "Gar\u00edn, Escobar",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 68000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Casa de dos dormitorios, ba\u00f1o, cocina comedor y living. La publicaci\u00f3n menciona gas natural, entrada para auto, techo de losa y bomba centr\u00edfuga. La foto procede de la galer\u00eda junto a la opci\u00f3n 35. Publicaci\u00f3n hist\u00f3rica sin fecha de actualizaci\u00f3n: confirm\u00e1 precio y disponibilidad. Foto original preservada localmente, sin modificar.",
+      "features": [
+        "Gas natural",
+        "Entrada para auto",
+        "Techo de losa",
+        "Bomba centr\u00edfuga",
+        "Living"
+      ],
+      "images": [
+        "assets/nazareth-propiedades/casa-35.jpg"
+      ],
+      "source": "https://www.nazarethpropiedades.com.ar/Casas/"
+    },
+    {
+      "id": "naz-38",
+      "reference": "Opcion 38",
+      "title": "Edificio comercial frente a Jumbo Escobar",
+      "address": "Colectora Este 240",
+      "location": "Escobar",
+      "type": "Local",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 700000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Aviso comercial de tres plantas frente a Jumbo Escobar. Declara 1.200 m2 cubiertos; en planta baja, diez oficinas, dos estudios y una sala de 10 por 10. Menciona gas natural y aire acondicionado, con primer y segundo piso a terminar. La superficie cubierta no se equipara a un total construido no explicitado. Publicaci\u00f3n hist\u00f3rica sin fecha de actualizaci\u00f3n: confirm\u00e1 precio y disponibilidad. Marcador gr\u00e1fico: no se identific\u00f3 una foto individual de esta opci\u00f3n.",
+      "features": [
+        "1.200 m2 cubiertos publicados",
+        "Tres plantas",
+        "Oficinas y estudios",
+        "Gas natural",
+        "Aire acondicionado",
+        "Pisos superiores a terminar"
+      ],
+      "images": [
+        "assets/placeholder.svg"
+      ],
+      "source": "https://www.nazarethpropiedades.com.ar/Locales/"
+    },
+    {
+      "id": "naz-39",
+      "reference": "Opcion 39",
+      "title": "Local sobre boulevard Per\u00f3n",
+      "address": "Boulevard Per\u00f3n, entre Cigliutti y Libertad",
+      "location": "Quinteros (seg\u00fan publicaci\u00f3n)",
+      "type": "Local",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 200000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Local identificado como opci\u00f3n 39, sobre boulevard Per\u00f3n entre Cigliutti y Libertad, con referencia a Quinteros. El aviso menciona 200 m2 sin desglosar si son cubiertos, totales o de terreno; se mantienen las superficies num\u00e9ricas sin informar. Publicaci\u00f3n hist\u00f3rica sin fecha de actualizaci\u00f3n: confirm\u00e1 precio y disponibilidad. Marcador gr\u00e1fico: no se identific\u00f3 una foto individual de esta opci\u00f3n.",
+      "features": [
+        "Sobre boulevard Per\u00f3n",
+        "200 m2 sin desglose publicado",
+        "Sin foto individual identificada"
+      ],
+      "images": [
+        "assets/placeholder.svg"
+      ],
+      "source": "https://www.nazarethpropiedades.com.ar/Locales/"
     }
   ]
 };

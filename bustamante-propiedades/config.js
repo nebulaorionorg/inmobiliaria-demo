@@ -24,8 +24,8 @@ window.SITE_CONFIG = {
   "meta": {
     "verifiedAt": "2026-10-21",
     "verifiedLabel": "Datos consultados el 21/10/2026",
-    "description": "Casas y lotes en countries y barrios cerrados de Zona Norte. Demo independiente de Bustamante Propiedades, con oficina en Garin.",
-    "disclaimer": "Demo comercial independiente: seleccion de publicaciones oficiales, sin conexion automatica al CRM. Precios, disponibilidad y medidas sujetos a confirmacion. Fotografias de las fichas originales, no contractuales. El alquiler seleccionado corresponde a enero de 2027, no a un contrato anual.",
+    "description": "Casas, lotes y departamentos en Zona Norte. Demo independiente de Bustamante Propiedades con doce publicaciones oficiales y oficina en Garin.",
+    "disclaimer": "Demo comercial independiente: seleccion de publicaciones oficiales, sin conexion automatica al CRM. Precios, disponibilidad y medidas sujetos a confirmacion. Fotografias de las fichas originales, no contractuales. Incluye alquileres anuales y un temporario para enero de 2027; consultar la modalidad y los gastos de cada ficha.",
     "demo": "Demo comercial independiente - Sin conexion automatica al CRM, backend ni autenticacion"
   },
   "navigation": [
@@ -51,35 +51,35 @@ window.SITE_CONFIG = {
     "eyebrow": "COUNTRIES Y BARRIOS CERRADOS DE ZONA NORTE",
     "title": "Mas espacio para vivir.",
     "titleAccent": "Otro ritmo, tu lugar.",
-    "subtitle": "Una seleccion de casas y lotes de Bustamante Propiedades. Explora Villanueva y Pilar, con el verde y el agua como parte de cada proyecto.",
+    "subtitle": "Casas, lotes y departamentos de Bustamante Propiedades. Explora Villanueva, Nordelta y Pilar, con el verde y el agua como parte de cada proyecto.",
     "heroIds": [
       "bp-12007",
       "bp-10986",
       "bp-12495"
     ],
-    "heroLocation": "Villanueva - Pilar - Zona Norte",
+    "heroLocation": "Villanueva - Nordelta - Pilar",
     "featuredEyebrow": "SELECCION BUSTAMANTE",
-    "featuredTitle": "Casas y lotes para tu proximo proyecto",
-    "featuredSubtitle": "Cuatro publicaciones del sitio oficial. Consulta cada ficha para confirmar precio y disponibilidad.",
+    "featuredTitle": "Doce propiedades para tu proximo proyecto",
+    "featuredSubtitle": "Doce publicaciones distintas del sitio oficial: casas, lotes y un departamento en venta, alquiler anual y temporario. Consulta cada ficha para confirmar condiciones.",
     "zonesEyebrow": "ENTORNOS PARA ELEGIR",
     "zonesTitle": "La vida empieza por el entorno",
-    "zonesSubtitle": "Descubri las propiedades de esta demo en Villanueva y Estancias del Pilar.",
+    "zonesSubtitle": "Descubri las propiedades de esta demo en Villanueva, Nordelta y Estancias del Pilar.",
     "zonesPhotoNote": "Fotos de las publicaciones seleccionadas; no son fotografias institucionales de los barrios.",
     "servicesEyebrow": "TU OPERACION, PASO A PASO",
     "servicesTitle": "Proyectos con una mirada de Zona Norte",
     "services": [
       {
         "icon": "home",
-        "title": "Comprar casa o lote",
-        "text": "Compara casas y lotes publicados en countries y barrios cerrados.",
+        "title": "Comprar en Zona Norte",
+        "text": "Compara casas, lotes y un departamento publicados en countries y barrios cerrados.",
         "action": "Explorar ventas",
         "href": "#/propiedades?operation=Venta"
       },
       {
         "icon": "key",
-        "title": "Alquilar para el verano",
-        "text": "Esta seleccion incluye una casa para enero de 2027. Consulta fechas, gastos y condiciones.",
-        "action": "Ver alquiler seleccionado",
+        "title": "Elegir tu alquiler",
+        "text": "Explora dos casas en alquiler anual y una para enero de 2027. Cada ficha identifica su modalidad; consulta fechas, gastos y condiciones.",
+        "action": "Ver alquileres seleccionados",
         "href": "#/propiedades?operation=Alquiler"
       },
       {
@@ -112,11 +112,17 @@ window.SITE_CONFIG = {
       "name": "Estancias del Pilar",
       "search": "Estancias del Pilar",
       "propertyId": "bp-10986"
+    },
+    {
+      "name": "Nordelta",
+      "search": "Nordelta",
+      "propertyId": "bp-12530"
     }
   ],
   "types": [
     "Casa",
-    "Lote"
+    "Lote",
+    "Departamento"
   ],
   "operations": [
     "Venta",
@@ -172,7 +178,7 @@ window.SITE_CONFIG = {
     "storageWarning": "El navegador no permite guardar cambios. Se conservar\u00e1n solo durante esta visita.",
     "team": "Bustamante",
     "consult": "Consultar",
-    "month": "enero 2027 - temporario",
+    "month": "en alquiler - ver modalidad",
     "photo": "Foto",
     "photoUnavailable": "La fotograf\u00eda remota no est\u00e1 disponible",
     "previous": "Anterior",
@@ -187,8 +193,8 @@ window.SITE_CONFIG = {
     "call": "Llamar",
     "officialSite": "Sitio oficial",
     "backSite": "Volver al sitio",
-    "catalogTitle": "Casas y lotes en entornos elegidos",
-    "catalogSubtitle": "Seleccion oficial de Bustamante en Villanueva y Pilar.",
+    "catalogTitle": "Propiedades en entornos elegidos",
+    "catalogSubtitle": "Doce publicaciones de Bustamante en Villanueva, Nordelta y Pilar.",
     "results": "propiedades encontradas",
     "result": "propiedad encontrada",
     "sort": "Ordenar por",
@@ -254,7 +260,7 @@ window.SITE_CONFIG = {
     "aboutSubtitle": "Bustamante Propiedades, con oficina en Garin y foco en Zona Norte.",
     "license": "Corredor responsable",
     "footerText": "Countries, barrios cerrados y nuevos proyectos en Zona Norte.",
-    "footerExplore": "Explorar casas y lotes",
+    "footerExplore": "Explorar propiedades",
     "footerCompany": "La inmobiliaria",
     "footerContact": "Conectemos",
     "copyright": "Todos los derechos reservados.",
@@ -475,6 +481,70 @@ window.SITE_CONFIG = {
         "https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/alquiler-enero-casa-san-francisco-villanueva-tigre-189684-thumbnail.jpg"
       ],
       "source": "https://www.bustamantepropiedades.com/12089-alquiler-enero-casa-san-francisco-villanueva-tigre"
+    },
+    {
+      "id": "bp-11705", "reference": "11705", "title": "Casa con muebles en Castores", "address": "Barrio Castores", "location": "Castores, Nordelta, Tigre",
+      "type": "Casa", "operation": "Venta", "currency": "USD", "price": 1090000, "bedrooms": 4, "bathrooms": 3, "area": 400, "landArea": 960, "credit": false, "featured": true,
+      "description": "Casa de estilo frances publicada en venta con muebles, sobre lote interno en Castores. Cuatro dormitorios, suite para huespedes en planta baja, escritorio y terrazas. Galeria con cerramiento de vidrio, jardin y pileta de 9 por 4 metros. La ficha informa 400 m2 cubiertos y 30 m2 semicubiertos.",
+      "features": ["Venta con muebles", "Lote interno", "Suite de huespedes", "Galeria cerrada", "Pileta", "Losa radiante"],
+      "images": ["https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-casa-castores-nordelta-tigre-171231-thumbnail.JPG", "https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-casa-castores-nordelta-tigre-171275-thumbnail.JPG"],
+      "source": "https://www.bustamantepropiedades.com/11705-venta-casa-castores-nordelta-tigre"
+    },
+    {
+      "id": "bp-12459", "reference": "12459", "title": "Casa al golf en San Isidro Labrador", "address": "Barrio San Isidro Labrador", "location": "San Isidro Labrador, Villanueva, Tigre",
+      "type": "Casa", "operation": "Venta", "currency": "USD", "price": 779000, "bedrooms": 4, "bathrooms": 5, "area": 320, "landArea": 800, "credit": false, "featured": true,
+      "description": "Casa de dos plantas con vistas al golf en San Isidro Labrador. La publicacion informa cuatro dormitorios, cinco banos y ascensor hidraulico. Cuenta con cocina con isla, galeria cerrada con calefaccion, parrilla y piscina. La habitacion de planta baja tambien se describe como escritorio.",
+      "features": ["Vista al golf", "Ascensor hidraulico", "Galeria calefaccionada", "Parrilla", "Pileta", "Tres suites en planta alta"],
+      "images": ["https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-casa-san-isidro-labrador-villanueva-tigre-216996-thumbnail.jpg", "https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-casa-san-isidro-labrador-villanueva-tigre-216998-thumbnail.jpg"],
+      "source": "https://www.bustamantepropiedades.com/12459-venta-casa-san-isidro-labrador-villanueva-tigre"
+    },
+    {
+      "id": "bp-12351", "reference": "12351", "title": "Casa al rio en El Yacht", "address": "Barrio El Yacht", "location": "El Yacht, Nordelta, Tigre",
+      "type": "Casa", "operation": "Venta", "currency": "USD", "price": 1490000, "bedrooms": 5, "bathrooms": 8, "area": 384, "landArea": 800, "credit": false, "featured": true,
+      "description": "Casa al rio en El Yacht, desarrollada en dos plantas con suite de huespedes, dependencia y cocina integrada. El cuadro informa cinco dormitorios, incluyendo el family o quinto dormitorio, y ocho banos. Galeria con parrilla, piscina climatizada con jacuzzi y muelle privado. La ficha menciona permuta o financiacion a consultar, sin implicar aptitud crediticia.",
+      "features": ["Frente al rio", "Muelle privado", "Pileta climatizada", "Jacuzzi", "Dependencia", "Losa radiante"],
+      "images": ["https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-casa-el-yacht-nordelta-tigre-214189-thumbnail.jpg", "https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-casa-el-yacht-nordelta-tigre-214161-thumbnail.jpg"],
+      "source": "https://www.bustamantepropiedades.com/12351-venta-casa-el-yacht-nordelta-tigre"
+    },
+    {
+      "id": "bp-12530", "reference": "12530", "title": "Departamento con jardin en Castanos", "address": "Barrio Castanos", "location": "Castanos, Nordelta, Tigre",
+      "type": "Departamento", "operation": "Venta", "currency": "USD", "price": 275000, "bedrooms": 2, "bathrooms": 2, "area": 71, "landArea": 144, "credit": false, "featured": true,
+      "description": "Departamento de tres ambientes en planta baja en Castanos, Nordelta. Living comedor con salida al jardin propio, cocina integrada y dos dormitorios, uno en suite. Galeria con parrilla y cochera. El cuadro oficial informa 71 m2 cubiertos, 14 m2 semicubiertos y 144 m2 de terreno.",
+      "features": ["Planta baja", "Jardin propio", "Suite", "Parrilla", "Cochera", "Losa radiante"],
+      "images": ["https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-departamento-castanos-nordelta-tigre-221650-thumbnail.jpg", "https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-departamento-castanos-nordelta-tigre-221652-thumbnail.jpg"],
+      "source": "https://www.bustamantepropiedades.com/12530-venta-departamento-castanos-nordelta-tigre"
+    },
+    {
+      "id": "bp-12196", "reference": "12196", "title": "Lote interno en Santa Catalina", "address": "Barrio Santa Catalina", "location": "Santa Catalina, Villanueva, Tigre",
+      "type": "Lote", "operation": "Venta", "currency": "USD", "price": 170000, "bedrooms": null, "bathrooms": null, "area": null, "landArea": 864, "credit": true, "featured": true,
+      "description": "Lote interno de 864 m2 con orientacion norte en Santa Catalina. La ficha indica lotes vecinos ya construidos y lo publica como escriturado y apto credito. Esa condicion debe ser confirmada por la entidad bancaria y la documentacion vigente; no es una aprobacion de financiamiento.",
+      "features": ["Lote interno", "Orientacion norte", "Publicado como escriturado", "Publicado apto credito"],
+      "images": ["https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-lote-santa-catalina-villanueva-tigre-195362-thumbnail.jpg", "https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-lote-santa-catalina-villanueva-tigre-195364-thumbnail.jpg"],
+      "source": "https://www.bustamantepropiedades.com/12196-venta-lote-santa-catalina-villanueva-tigre"
+    },
+    {
+      "id": "bp-10445", "reference": "10445", "title": "Lote a la laguna central en San Francisco", "address": "Barrio San Francisco", "location": "San Francisco, Villanueva, Tigre",
+      "type": "Lote", "operation": "Venta", "currency": "USD", "price": 270000, "bedrooms": null, "bathrooms": null, "area": null, "landArea": 824, "credit": false, "featured": true,
+      "description": "Lote de 824 m2 frente a la laguna central de San Francisco, con orientacion oeste. La publicacion informa 20,75 metros de costa y lo describe como escriturable. Es un lote a la laguna, distinto del lote interno de referencia 12495 incluido en esta seleccion.",
+      "features": ["Frente a la laguna central", "Orientacion oeste", "20,75 metros de costa segun ficha"],
+      "images": ["https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-lote-san-francisco-villanueva-tigre-197422-thumbnail.jpg", "https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/venta-lote-san-francisco-villanueva-tigre-197424-thumbnail.jpg"],
+      "source": "https://www.bustamantepropiedades.com/10445-venta-lote-san-francisco-villanueva-tigre"
+    },
+    {
+      "id": "bp-12606", "reference": "12606", "title": "Casa al rio en San Marco - alquiler anual", "address": "Barrio San Marco", "location": "San Marco, Villanueva, Tigre",
+      "type": "Casa", "operation": "Alquiler", "currency": "USD", "price": 3000, "bedrooms": 4, "bathrooms": 3, "area": 195, "landArea": 900, "credit": false, "featured": true,
+      "description": "Casa al rio publicada en alquiler anual por USD 3.000. Dos plantas, dormitorio principal en suite, otros dos dormitorios y cuarta habitacion o playroom. Escritorio, dependencia, galeria con parrilla, pileta y muelle con amarra. La ficha informa 195 m2 cubiertos y 60 m2 semicubiertos. Confirmar periodicidad de pago, expensas y condiciones del contrato.",
+      "features": ["Alquiler anual", "Frente al rio", "Muelle y amarra", "Pileta", "Dependencia", "Escritorio"],
+      "images": ["https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/alquiler-anual-casa-san-marco-villanueva-tigre-215923-thumbnail.jpg", "https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/alquiler-anual-casa-san-marco-villanueva-tigre-215925-thumbnail.jpg"],
+      "source": "https://www.bustamantepropiedades.com/12606-alquiler-anual-casa-san-marco-villanueva-tigre"
+    },
+    {
+      "id": "bp-11676", "reference": "11676", "title": "Casa a la laguna en Santa Catalina - alquiler anual", "address": "Barrio Santa Catalina", "location": "Santa Catalina, Villanueva, Tigre",
+      "type": "Casa", "operation": "Alquiler", "currency": "USD", "price": 2900, "bedrooms": 3, "bathrooms": 3, "area": 218, "landArea": 990.41, "credit": false, "featured": true,
+      "description": "Casa a la laguna publicada en alquiler anual por USD 2.900. Tres dormitorios en planta alta, playroom, area de servicio, galeria, pileta y muelle. El vestidor principal permanece cerrado segun la ficha, que indica un placard disponible. La descripcion informa terreno aproximado de 990,41 m2, redondeado a 990 en el cuadro. Consultar gastos y condiciones.",
+      "features": ["Alquiler anual", "Frente a la laguna", "Muelle", "Pileta", "Playroom", "Area de servicio"],
+      "images": ["https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/alquiler-anual-casa-santa-catalina-villanueva-tigre-170122-thumbnail.jpg", "https://www.bustamantepropiedades.com/storage/bustamantepropiedades/public/alquiler-anual-casa-santa-catalina-villanueva-tigre-170124-thumbnail.jpg"],
+      "source": "https://www.bustamantepropiedades.com/11676-alquiler-anual-casa-santa-catalina-villanueva-tigre"
     }
   ]
 };

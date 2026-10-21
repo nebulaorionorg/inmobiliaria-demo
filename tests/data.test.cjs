@@ -44,6 +44,8 @@ test('all clients have complete independent catalogs, valid contacts and existin
     const source = fs.readFileSync(path.join(root, site.slug, 'config.js'), 'utf8');
     const client = JSON.parse(source.replace(/^window\.SITE_CONFIG\s*=\s*/, '').replace(/;\s*$/, ''));
     assert.equal(client.brand.name, site.name, `${site.slug}: registry identity`);
+    assert(client.properties.length > 5, `${site.slug}: catalog must contain more than five properties`);
+    if (site.slug !== 'cristian-moos') assert(client.properties.filter(p => p.featured).length >= 12, `${site.slug}: twelve featured properties`);
     for (const section of Object.keys(config)) assert(Object.hasOwn(client, section), `${site.slug}: missing ${section}`);
     for (const key of Object.keys(config.labels)) assert(Object.hasOwn(client.labels, key), `${site.slug}: missing label ${key}`);
     assert.match(client.brand.whatsapp, /^\d*$/);

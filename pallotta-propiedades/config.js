@@ -24,7 +24,7 @@ window.SITE_CONFIG = {
   "meta": {
     "verifiedAt": "2026-10-21",
     "verifiedLabel": "Datos consultados el 21/10/2026",
-    "description": "Selección de casas y terrenos publicados por Pallotta Propiedades en Benavídez y La Bota.",
+    "description": "Selección de 12 casas y terrenos publicados por Pallotta Propiedades en Benavídez, Maschwitz, Dique Luján y Villa Ballester.",
     "disclaimer": "Demo independiente con una selección de publicaciones públicas. Precios, disponibilidad y medidas sujetos a confirmación con la inmobiliaria. Fotografías no contractuales; algunas fueron editadas con IA según el sitio original. Sin conexión real al CRM, sin envíos automáticos ni actualización de inventario en vivo.",
     "demo": "Demo comercial independiente · Sin conexión real al CRM ni autenticación"
   },
@@ -38,12 +38,12 @@ window.SITE_CONFIG = {
     "eyebrow": "EXPERIENCIA. CONFIANZA. RESULTADOS.",
     "title": "Tu próximo lugar",
     "titleAccent": "en Zona Norte.",
-    "subtitle": "Casas y terrenos en Benavídez y La Bota. Una selección de publicaciones de Pallotta para empezar tu búsqueda con información clara.",
+    "subtitle": "12 casas y terrenos de Pallotta en Benavídez, Maschwitz, Dique Luján y Villa Ballester. Empezá tu búsqueda con información de sus publicaciones oficiales.",
     "heroIds": ["pp-2bbb55", "pp-e9de65", "pp-59776e"],
     "heroLocation": "Benavídez · La Bota · Tigre",
     "featuredEyebrow": "SELECCIÓN DEL CATÁLOGO PÚBLICO",
     "featuredTitle": "Espacios para tu próximo proyecto",
-    "featuredSubtitle": "Casas en venta, terrenos y una opción de alquiler. Confirmá siempre las condiciones en la publicación original.",
+    "featuredSubtitle": "12 publicaciones reales: casas en venta, terrenos y una opción de alquiler. Confirmá siempre las condiciones en la publicación original.",
     "zonesEyebrow": "CONOCÉ EL ENTORNO",
     "zonesTitle": "Tu búsqueda, cerca de casa",
     "zonesSubtitle": "Explorá las ubicaciones de esta selección de propiedades.",
@@ -126,6 +126,55 @@ window.SITE_CONFIG = {
       "features": ["Entrada compartida", "Entrada para auto", "Jardín al frente", "Cocina integrada", "No admite mascotas según aviso"],
       "images": ["https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/d1c311f0-26f2-4b45-8669-935a4126dca7/copy-0-1792486878291.jpg", "https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/d1c311f0-26f2-4b45-8669-935a4126dca7/copy-1-1792486879460_t.jpg", "https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/d1c311f0-26f2-4b45-8669-935a4126dca7/copy-2-1792486880197_t.jpg"],
       "source": "https://pallottapropiedades.com.ar/p/casa-3-ambientes-benavidez-d1c311"
+    },
+    {
+      "id": "pp-3ced65", "reference": "3ced65", "title": "Terreno de 300 m² en Las Glorias", "address": "Las Glorias 300", "location": "Las Glorias, Ingeniero Maschwitz, Escobar", "type": "Terreno", "operation": "Venta", "currency": "USD", "price": 50000, "bedrooms": null, "bathrooms": null, "area": null, "landArea": 300, "credit": false, "featured": true,
+      "description": "Lote de 10 metros de frente por 30 de fondo, con portón para auto, puerta peatonal y cercos de material. Cuenta con una pérgola con piso para ingreso vehicular. Se ubica sobre una calle semi cerrada, a dos cuadras del asfalto. La publicación informa luz, gas, agua y cloacas en puerta; no se presume que estén conectados.",
+      "features": ["Portón vehicular", "Acceso peatonal", "Cerco de material", "Pérgola", "Servicios en puerta"],
+      "images": ["https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/3ced6528-c7c6-466d-9dfc-afbcac08c1ea/copy-0-1791795667253.jpg", "https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/3ced6528-c7c6-466d-9dfc-afbcac08c1ea/copy-1-1791795667963_t.jpg"],
+      "source": "https://pallottapropiedades.com.ar/p/terreno-ingeniero-maschwitz-escobar-3ced65"
+    },
+    {
+      "id": "pp-8f47b1", "reference": "1065", "title": "Cabaña de madera en Las Glorias", "address": "Saavedra 1200", "location": "Las Glorias, Ingeniero Maschwitz, Escobar", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 100000, "bedrooms": 2, "bathrooms": 1, "area": 77, "landArea": 300, "credit": false, "featured": true,
+      "description": "Cabaña de madera con galería, living comedor con estufa y aire acondicionado, cocina integrada, dos dormitorios y baño completo. El dormitorio principal tiene salida al jardín. La ficha informa 77 m² cubiertos y la descripción un parque de 300 m², con entrada para dos autos, uno bajo techo. Agua corriente conectada y cloacas en puerta. Algunas imágenes fueron optimizadas con IA con fines ilustrativos, según el aviso.",
+      "features": ["Galería", "Jardín", "Cocina integrada", "Aire acondicionado", "Entrada para dos autos"],
+      "images": ["https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/8f47b102-f46a-48d1-a0a8-13325af0a130/copy-0-1790924532610.jpg", "https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/8f47b102-f46a-48d1-a0a8-13325af0a130/copy-1-1790924533229_t.jpg"],
+      "source": "https://pallottapropiedades.com.ar/p/casa-3-ambientes-ingeniero-maschwitz-escobar-8f47b1"
+    },
+    {
+      "id": "pp-f0f5bf", "reference": "1247", "title": "Casa con pileta en La Bota", "address": "Entre Ríos 197", "location": "La Bota, Benavidez, Tigre", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 145000, "bedrooms": 3, "bathrooms": 2, "area": 132, "landArea": 450, "credit": false, "featured": true,
+      "description": "Casa de dos plantas con living comedor, cocina integrada, dormitorio principal en suite y dos dormitorios en planta alta. Galería al contrafrente, piscina con filtro, entrada de auto y cuarto de herramientas. La publicación informa 132 m² cubiertos sobre lote de 450 m². Condición jurídica expresamente publicada: condominio, venta bajo transmisión de derechos de posesión y dominio. Consultá documentación y alcance antes de avanzar.",
+      "features": ["Pileta", "Galería", "Dormitorio en suite", "Entrada de auto", "Cuarto de herramientas", "Transmisión de derechos según aviso"],
+      "images": ["https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/f0f5bfb1-ef3f-4379-b29a-6e6a0f476d48/copy-0-1789808449035.jpg", "https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/f0f5bfb1-ef3f-4379-b29a-6e6a0f476d48/copy-1-1789808449574_t.jpg"],
+      "source": "https://pallottapropiedades.com.ar/p/casa-4-ambientes-benavidez-tigre-f0f5bf"
+    },
+    {
+      "id": "pp-58dec0", "reference": "1216", "title": "Chalet con jardín en Villa Ballester", "address": "Arenales 3940", "location": "Villa Ballester, General San Martín", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 165000, "bedrooms": 2, "bathrooms": 2, "area": 165, "landArea": null, "credit": false, "featured": true,
+      "description": "Chalet con living, cocina equipada, comedor, despensa o espacio de lavado, dos dormitorios y dos baños completos. Jardín al frente, lateral y fondo con parrilla; cochera para un vehículo grande. La ficha informa 165 m² cubiertos y 480 m² totales, sin identificar estos últimos expresamente como superficie de terreno. Cuenta con agua corriente, cloacas, gas natural y dos equipos de aire acondicionado.",
+      "features": ["Jardín", "Parrilla", "Cochera", "Gas natural", "Aire acondicionado"],
+      "images": ["https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/58dec0f1-7bc6-4e58-b40f-1e5faa934b7d/copy-0-1788363536886.jpg", "https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/58dec0f1-7bc6-4e58-b40f-1e5faa934b7d/copy-1-1788363538069_t.jpg"],
+      "source": "https://pallottapropiedades.com.ar/p/casa-3-ambientes-villa-ballester-general-san-martin-58dec0"
+    },
+    {
+      "id": "pp-474605", "reference": "474605", "title": "Terreno sobre el río Luján en Dique Luján", "address": "Belgrano 880", "location": "Dique Luján, Tigre", "type": "Terreno", "operation": "Venta", "currency": "USD", "price": 195000, "bedrooms": null, "bathrooms": null, "area": null, "landArea": 936, "credit": false, "featured": true,
+      "description": "Terreno de 936 m², de 10 por 93,60 metros, con 10 metros de costa sobre el río Luján. El aviso indica que está nivelado y rellenado, con servicios de luz y agua corriente. Aclara expresamente que actualmente no cuenta con el muelle que aparece en la fotografía. Las imágenes deben interpretarse con esa salvedad.",
+      "features": ["Frente al río", "10 metros de costa", "Terreno nivelado y rellenado", "Sin muelle según aviso"],
+      "images": ["https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/4746056d-a548-4898-a850-ce146beb985e/copy-0-1791363697042.jpg", "https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/4746056d-a548-4898-a850-ce146beb985e/copy-1-1791363698609_t.jpg"],
+      "source": "https://pallottapropiedades.com.ar/p/terreno-dique-lujan-tigre-474605"
+    },
+    {
+      "id": "pp-e109d6", "reference": "e109d6", "title": "Casa de containers con parque en La Bota", "address": "La Pampa 781", "location": "La Bota, Benavidez, Tigre", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 99000, "bedrooms": 2, "bathrooms": 1, "area": 71, "landArea": 833, "credit": false, "featured": true,
+      "description": "Casa de containers sobre pilotes, con galería al frente, living luminoso, cocina comedor integrada con horno de barro, dos dormitorios, baño completo y lavadero. Publica 71 m² cubiertos y lote de 833 m² con bosque de pinos al fondo. Cochera semicubierta para un auto, luz y agua corriente; gas envasado y cloacas en vereda para conectar.",
+      "features": ["Galería", "Horno de barro", "Parque con pinos", "Lavadero", "Cochera semicubierta", "Gas envasado"],
+      "images": ["https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/e109d6a3-d12d-46af-9538-04966a887421/copy-0-1791104457314.jpg", "https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/e109d6a3-d12d-46af-9538-04966a887421/copy-1-1791104457732_t.jpg"],
+      "source": "https://pallottapropiedades.com.ar/p/casa-3-ambientes-benavidez-tigre-e109d6"
+    },
+    {
+      "id": "pp-7a1fff", "reference": "1254", "title": "Casa sobre doble lote en Dique Luján", "address": "Belgrano 1000", "location": "Dique Luján, Tigre", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 140000, "bedrooms": 3, "bathrooms": null, "area": null, "landArea": null, "credit": false, "featured": true,
+      "description": "Casa de dos plantas con living comedor y salamandra, cocina semi integrada, tres dormitorios, escritorio o playroom, galería con parrilla, jardín, pileta y cochera. Se ofrece el doble lote en conjunto, sin salida al río ni arroyo. Las superficies requieren confirmación: el encabezado publica 148 m² cubiertos y 932 m² totales, mientras la descripción detalla 56 m² cubiertos, 92 m² semicubiertos y 936 m² de lote. También menciona un baño con lavadero adicional al baño principal; no se fija un conteo total de baños.",
+      "features": ["Doble lote en venta conjunta", "Pileta", "Galería con parrilla", "Salamandra", "Cochera", "Sin salida al río"],
+      "images": ["https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/7a1fffc1-9fb2-4f80-9b52-04ff1b7f4ad0/copy-0-1790499684236.jpg", "https://vrnquikjmuxazzelbczq.supabase.co/storage/v1/object/public/captaciones/12d61ccb-7585-413d-8998-c295926b8754/7a1fffc1-9fb2-4f80-9b52-04ff1b7f4ad0/copy-1-1790499684996_t.jpg"],
+      "source": "https://pallottapropiedades.com.ar/p/casa-4-ambientes-dique-lujan-7a1fff"
     }
   ]
 };

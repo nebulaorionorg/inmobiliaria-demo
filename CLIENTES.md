@@ -1,6 +1,6 @@
 # Demos publicadas por inmobiliaria
 
-El repositorio contiene **11 demos y 51 publicaciones seleccionadas**: Cristian Moos y las diez inmobiliarias del relevamiento de Garín, Benavídez y Tortuguitas. Se consultaron los sitios públicos de cada negocio el **21/10/2026**, sin enviar mensajes, consultas ni formularios.
+El repositorio contiene **11 demos y 130 publicaciones seleccionadas**: Cristian Moos con 10 inmuebles y las diez inmobiliarias del relevamiento de Garín, Benavídez y Tortuguitas con **12 publicaciones cada una**. Las portadas muestran hasta 12 destacadas para dar más contenido desde el inicio. Se consultaron los sitios públicos de cada negocio el **21/10/2026**, sin enviar mensajes, consultas ni formularios.
 
 Directorio: <https://nebulaorionorg.github.io/inmobiliaria-demo/>.
 
@@ -9,16 +9,16 @@ Directorio: <https://nebulaorionorg.github.io/inmobiliaria-demo/>.
 | Inmobiliaria | Demo directa | Publicaciones | Fuentes de esta selección |
 | --- | --- | ---: | --- |
 | Cristian Mooswalder | [cristian-moos](https://nebulaorionorg.github.io/inmobiliaria-demo/cristian-moos/) | 10 | [Fuentes](SOURCES.md) |
-| Nazareth Propiedades | [nazareth-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/nazareth-propiedades/) | 3 | [Fuentes](nazareth-propiedades/SOURCES.md) |
-| Natalia Alvarez Propiedades | [natalia-alvarez](https://nebulaorionorg.github.io/inmobiliaria-demo/natalia-alvarez/) | 3 | [Fuentes](natalia-alvarez/SOURCES.md) |
-| Bustamante Propiedades | [bustamante-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/bustamante-propiedades/) | 4 | [Fuentes](bustamante-propiedades/SOURCES.md) |
-| Puricelli Inmobiliaria | [puricelli-inmobiliaria](https://nebulaorionorg.github.io/inmobiliaria-demo/puricelli-inmobiliaria/) | 4 | [Fuentes](puricelli-inmobiliaria/SOURCES.md) |
-| Pallotta Propiedades | [pallotta-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/pallotta-propiedades/) | 5 | [Fuentes](pallotta-propiedades/SOURCES.md) |
-| Rodriguez Jurado Propiedades | [rodriguez-jurado](https://nebulaorionorg.github.io/inmobiliaria-demo/rodriguez-jurado/) | 4 | [Fuentes](rodriguez-jurado/SOURCES.md) |
-| Oliva Propiedades | [oliva-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/oliva-propiedades/) | 4 | [Fuentes](oliva-propiedades/SOURCES.md) |
-| Cerezo Propiedades | [cerezo-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/cerezo-propiedades/) | 4 | [Fuentes](cerezo-propiedades/SOURCES.md) |
-| Rivas Propiedades | [rivas-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/rivas-propiedades/) | 5 | [Fuentes](rivas-propiedades/SOURCES.md) |
-| Balbas Oviedo Propiedades | [balbas-oviedo](https://nebulaorionorg.github.io/inmobiliaria-demo/balbas-oviedo/) | 5 | [Fuentes](balbas-oviedo/SOURCES.md) |
+| Nazareth Propiedades | [nazareth-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/nazareth-propiedades/) | 12 | [Fuentes](nazareth-propiedades/SOURCES.md) |
+| Natalia Alvarez Propiedades | [natalia-alvarez](https://nebulaorionorg.github.io/inmobiliaria-demo/natalia-alvarez/) | 12 | [Fuentes](natalia-alvarez/SOURCES.md) |
+| Bustamante Propiedades | [bustamante-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/bustamante-propiedades/) | 12 | [Fuentes](bustamante-propiedades/SOURCES.md) |
+| Puricelli Inmobiliaria | [puricelli-inmobiliaria](https://nebulaorionorg.github.io/inmobiliaria-demo/puricelli-inmobiliaria/) | 12 | [Fuentes](puricelli-inmobiliaria/SOURCES.md) |
+| Pallotta Propiedades | [pallotta-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/pallotta-propiedades/) | 12 | [Fuentes](pallotta-propiedades/SOURCES.md) |
+| Rodriguez Jurado Propiedades | [rodriguez-jurado](https://nebulaorionorg.github.io/inmobiliaria-demo/rodriguez-jurado/) | 12 | [Fuentes](rodriguez-jurado/SOURCES.md) |
+| Oliva Propiedades | [oliva-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/oliva-propiedades/) | 12 | [Fuentes](oliva-propiedades/SOURCES.md) |
+| Cerezo Propiedades | [cerezo-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/cerezo-propiedades/) | 12 | [Fuentes](cerezo-propiedades/SOURCES.md) |
+| Rivas Propiedades | [rivas-propiedades](https://nebulaorionorg.github.io/inmobiliaria-demo/rivas-propiedades/) | 12 | [Fuentes](rivas-propiedades/SOURCES.md) |
+| Balbas Oviedo Propiedades | [balbas-oviedo](https://nebulaorionorg.github.io/inmobiliaria-demo/balbas-oviedo/) | 12 | [Fuentes](balbas-oviedo/SOURCES.md) |
 
 En cada demo, `#/propiedades` abre su catálogo, `#/contacto` sus canales de contacto y `#/panel` el dashboard simulado. La identidad, configuración y almacenamiento local permanecen separados por ruta.
 
@@ -36,7 +36,7 @@ En cada demo, `#/propiedades` abre su catálogo, `#/contacto` sus canales de con
 
 | Cliente | Límite que debe tenerse en cuenta |
 | --- | --- |
-| Nazareth | Catálogo público sin fecha de actualización y con certificado HTTPS inválido en el origen. La foto identificada de Casa 180 se conserva localmente para servirla de forma segura desde Pages. Casa 93 y el lote usan un gráfico no fotográfico: no se asignaron imágenes de otros inmuebles. Confirmar vigencia y condiciones antes del contacto comercial. |
+| Nazareth | Catálogo público sin fecha de actualización y con certificado HTTPS inválido en el origen. Las fotos identificadas de las opciones 180 y 35 se conservan localmente para servirlas de forma segura desde Pages. Los otros diez registros usan un gráfico no fotográfico: no se asignaron imágenes genéricas o de otros inmuebles. Confirmar vigencia y condiciones antes del contacto comercial. |
 | Natalia Alvarez | Se mantiene la advertencia de su sitio sobre edición estética digital con IA y fotografías ilustrativas. |
 | Bustamante | Una ficha corresponde al alquiler temporario de enero de 2027; no es un alquiler anual. El lote incluye imágenes de un proyecto, no una construcción existente. |
 | Puricelli | Casa San Francisco publica precio a consultar. Otras superficies presentan discrepancias que se explican sin elegir cifras arbitrarias. |

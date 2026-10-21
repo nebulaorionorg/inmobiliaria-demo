@@ -24,7 +24,7 @@ window.SITE_CONFIG = {
   "meta": {
     "verifiedAt": "2026-10-21",
     "verifiedLabel": "Datos consultados el 21/10/2026",
-    "description": "Puricelli Inmobiliaria: empresa familiar en Benavidez desde 1991. Demo independiente con casas, un terreno y un departamento del sitio oficial.",
+    "description": "Puricelli Inmobiliaria: empresa familiar en Benavidez desde 1991. Demo independiente con doce publicaciones oficiales de casas, terrenos, departamentos y un local.",
     "disclaimer": "Demo comercial independiente: seleccion de publicaciones oficiales, sin conexion automatica al CRM. Precios, disponibilidad y medidas sujetos a confirmacion. Fotos de las fichas originales, ilustrativas y no contractuales. Precio no publicado: consultar a Puricelli.",
     "demo": "Demo comercial independiente - Sin conexion automatica al CRM, backend ni autenticacion"
   },
@@ -60,10 +60,10 @@ window.SITE_CONFIG = {
     "heroLocation": "Benavidez - Villanueva - Zona Norte",
     "featuredEyebrow": "SELECCION PURICELLI",
     "featuredTitle": "Un nuevo lugar, cerca de lo que importa",
-    "featuredSubtitle": "Cuatro publicaciones del sitio oficial: opciones de venta y alquiler para explorar con calma.",
+    "featuredSubtitle": "Doce publicaciones distintas del sitio oficial: casas, terrenos, departamentos y un local, con opciones de venta y alquiler.",
     "zonesEyebrow": "EL BARRIO Y SUS ALREDEDORES",
     "zonesTitle": "Conoce tu proximo entorno",
-    "zonesSubtitle": "Esta seleccion recorre Benavidez, San Francisco en Villanueva y Riberas en Puertos del Lago.",
+    "zonesSubtitle": "Esta seleccion recorre Benavidez, Villanueva, Riberas en Puertos del Lago e Ingeniero Maschwitz.",
     "zonesPhotoNote": "Imagenes de las propiedades seleccionadas, no fotografias de la oficina ni del equipo.",
     "servicesEyebrow": "COMPRA, VENTA Y ALQUILER",
     "servicesTitle": "Cada paso empieza con una charla",
@@ -71,14 +71,14 @@ window.SITE_CONFIG = {
       {
         "icon": "home",
         "title": "Encontrar tu propiedad",
-        "text": "Recorre las casas y el terreno de esta seleccion publicada por Puricelli.",
+        "text": "Recorre casas, terrenos y departamentos de esta seleccion publicada por Puricelli.",
         "action": "Ver propiedades en venta",
         "href": "#/propiedades?operation=Venta"
       },
       {
         "icon": "key",
         "title": "Buscar un alquiler",
-        "text": "Consulta el departamento seleccionado en Benavidez y confirma sus condiciones.",
+        "text": "Explora departamentos, una casa y un local en Benavidez. Confirma condiciones y disponibilidad de cada ficha.",
         "action": "Explorar alquileres",
         "href": "#/propiedades?operation=Alquiler"
       },
@@ -117,12 +117,18 @@ window.SITE_CONFIG = {
       "name": "Riberas, Puertos del Lago",
       "search": "Riberas",
       "propertyId": "pi-riberas"
+    },
+    {
+      "name": "Ingeniero Maschwitz",
+      "search": "Maschwitz",
+      "propertyId": "pi-la-pista"
     }
   ],
   "types": [
     "Casa",
     "Terreno",
-    "Departamento"
+    "Departamento",
+    "Local"
   ],
   "operations": [
     "Venta",
@@ -194,7 +200,7 @@ window.SITE_CONFIG = {
     "officialSite": "Sitio oficial",
     "backSite": "Volver al sitio",
     "catalogTitle": "Tu proxima propiedad en Zona Norte",
-    "catalogSubtitle": "Casas, terreno y alquiler: una seleccion del catalogo oficial de Puricelli.",
+    "catalogSubtitle": "Doce publicaciones de Puricelli: casas, terrenos, departamentos y un local en Zona Norte.",
     "results": "propiedades encontradas",
     "result": "propiedad encontrada",
     "sort": "Ordenar por",
@@ -476,6 +482,70 @@ window.SITE_CONFIG = {
         "https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmun5ea8000011319owpzratj/IMG_1103_la8uGXLSG.jpeg?tr=w-240,c-at_max"
       ],
       "source": "https://www.puricelliprop.com.ar/propiedades/cmun5ea8000011319owpzratj"
+    },
+    {
+      "id": "pi-mitre", "reference": "cmvay9qxa0001btmxd5j7ikjn", "title": "Casa con monoambiente al fondo en Mitre", "address": "Mitre 2933", "location": "Benavidez, Tigre",
+      "type": "Casa", "operation": "Venta", "currency": "USD", "price": 85000, "bedrooms": 3, "bathrooms": 2, "area": 80, "landArea": 350, "credit": false, "featured": true,
+      "description": "Casa en Mitre con tres dormitorios, cocina, living comedor, patio y entrada para auto. La descripcion informa 80 m2 cubiertos para la casa y un monoambiente al fondo con bano, ademas de un galpon de herramientas. El lote mide 350 m2. Casa y monoambiente integran una sola publicacion, no dos propiedades de esta demo.",
+      "features": ["Monoambiente al fondo", "Patio", "Entrada para auto", "Galpon de herramientas"],
+      "images": ["https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmvay9qxa0001btmxd5j7ikjn/47a6b8d4-d349-4007-986e-59e0a8ce2588_4OWJRwMy1.jpg?tr=w-1600,c-at_max", "https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmvay9qxa0001btmxd5j7ikjn/5a9d0281-aa3b-4c52-b4c2-11e1d6a829dc_2Z4Ef1dDy.jpg?tr=w-240,c-at_max"],
+      "source": "https://www.puricelliprop.com.ar/propiedades/cmvay9qxa0001btmxd5j7ikjn"
+    },
+    {
+      "id": "pi-chile", "reference": "cmtrngwkt0001mn0kk329kvgg", "title": "Casa con pileta en Chile", "address": "Chile 3114", "location": "Benavidez, Tigre",
+      "type": "Casa", "operation": "Venta", "currency": "USD", "price": 155000, "bedrooms": 4, "bathrooms": 4, "area": 180, "landArea": 688, "credit": false, "featured": true,
+      "description": "Casa de dos plantas en Chile, Benavidez, con cuatro dormitorios y cuatro banos. Cuenta con living comedor, cocina comedor, pileta y parrilla. La ficha informa 180 m2 cubiertos sobre lote de 688 m2. Consultar condiciones de la venta y disponibilidad.",
+      "features": ["Dos plantas", "Pileta", "Parrilla", "Cocina comedor"],
+      "images": ["https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmtrngwkt0001mn0kk329kvgg/WhatsApp_Image_2026-09-07_at_4.22.43_PM_gkP914QQc.jpeg?tr=w-1600,c-at_max", "https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmtrngwkt0001mn0kk329kvgg/WhatsApp_Image_2026-09-07_at_4.23.44_PM__1__NVJOWzEUD.jpeg?tr=w-240,c-at_max"],
+      "source": "https://www.puricelliprop.com.ar/propiedades/cmtrngwkt0001mn0kk329kvgg"
+    },
+    {
+      "id": "pi-belgrano", "reference": "cmqtw1t8d003y55edxbwora6u", "title": "Terreno con tinglado en Belgrano", "address": "Belgrano 2200", "location": "Benavidez, Tigre",
+      "type": "Terreno", "operation": "Venta", "currency": "USD", "price": 70000, "bedrooms": null, "bathrooms": null, "area": null, "landArea": 300, "credit": false, "featured": true,
+      "description": "Terreno de 300 m2 en Belgrano, Benavidez, con frente de 10 metros y fondo de 30 metros segun la ficha. La descripcion informa gas, agua, cloacas y un tinglado de 36 m2. No se presenta esa estructura como vivienda ni como superficie cubierta habitable.",
+      "features": ["Tinglado de 36 m2 segun ficha", "Gas", "Agua", "Cloacas"],
+      "images": ["https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmqtw1t8d003y55edxbwora6u/1_082vBMWVC.jpg?tr=w-1600,c-at_max", "https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmqtw1t8d003y55edxbwora6u/2_TNllCxncJ.jpg?tr=w-240,c-at_max"],
+      "source": "https://www.puricelliprop.com.ar/propiedades/cmqtw1t8d003y55edxbwora6u"
+    },
+    {
+      "id": "pi-la-pista", "reference": "cmqtw1thf004355edz503ioe0", "title": "Terreno en La Pista, Ingeniero Maschwitz", "address": "La Pista 2100", "location": "Ingeniero Maschwitz, Escobar",
+      "type": "Terreno", "operation": "Venta", "currency": "USD", "price": 62000, "bedrooms": null, "bathrooms": null, "area": null, "landArea": 412, "credit": false, "featured": true,
+      "description": "Terreno de 412 m2 publicado en venta en La Pista al 2100, Ingeniero Maschwitz, partido de Escobar. La ficha no detalla servicios ni edificaciones; consultar documentacion y posibilidades de uso con Puricelli.",
+      "features": [],
+      "images": ["https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmqtw1thf004355edz503ioe0/1_lgubDCsW7.jpg?tr=w-1600,c-at_max", "https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmqtw1thf004355edz503ioe0/2_76XE8yo53x.jpg?tr=w-240,c-at_max"],
+      "source": "https://www.puricelliprop.com.ar/propiedades/cmqtw1thf004355edz503ioe0"
+    },
+    {
+      "id": "pi-calzadilla-monoambientes", "reference": "cmqtw1yh6007455edpk05x2t6", "title": "Conjunto de cinco monoambientes en Calzadilla", "address": "Calzadilla 700", "location": "Benavidez, Tigre",
+      "type": "Departamento", "operation": "Venta", "currency": "USD", "price": 120000, "bedrooms": null, "bathrooms": 5, "area": 200, "landArea": null, "credit": false, "featured": true,
+      "description": "Una sola publicacion para un conjunto de cinco monoambientes en Calzadilla: tres en planta alta y dos en planta baja, cada uno con bano. El precio anunciado es USD 120.000 para esta oferta, no por unidad. El sitio informa 200 m2 cubiertos y 425 m2 totales sin precisar superficie de terreno. No se reproduce ninguna promesa de rentabilidad.",
+      "features": ["Cinco monoambientes en una oferta", "Tres unidades en planta alta", "Dos unidades en planta baja"],
+      "images": ["https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmqtw1yh6007455edpk05x2t6/1_iKTAvf2z6.jpg?tr=w-1600,c-at_max", "https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmqtw1yh6007455edpk05x2t6/2_DEuco1zd8.jpg?tr=w-240,c-at_max"],
+      "source": "https://www.puricelliprop.com.ar/propiedades/cmqtw1yh6007455edpk05x2t6"
+    },
+    {
+      "id": "pi-ituzaingo-alquiler", "reference": "cmtli81kb00019c9x6zqacogj", "title": "Departamento con balcon en Ituzaingo", "address": "Ituzaingo 2829", "location": "Benavidez, Tigre",
+      "type": "Departamento", "operation": "Alquiler", "currency": "ARS", "price": 650000, "bedrooms": 1, "bathrooms": 1, "area": null, "landArea": null, "credit": false, "featured": true,
+      "description": "Departamento en planta alta en Ituzaingo, Benavidez. Un dormitorio, cocina comedor, bano y balcon. La publicacion indica 40 m2 totales, sin desglosar superficie cubierta, y un precio de alquiler de ARS 650.000. Consultar plazo, actualizaciones y requisitos; no se asume un periodo no publicado.",
+      "features": ["Planta alta", "Balcon", "Cocina comedor"],
+      "images": ["https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmtli81kb00019c9x6zqacogj/546c37f5-5bed-409a-82fe-e8a0f52fff34_YSlOso44L.jpg?tr=w-1600,c-at_max", "https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmtli81kb00019c9x6zqacogj/0b6575e5-8abc-4c7b-baf9-f8dff822f491_nDjI6CdNqz.jpg?tr=w-240,c-at_max"],
+      "source": "https://www.puricelliprop.com.ar/propiedades/cmtli81kb00019c9x6zqacogj"
+    },
+    {
+      "id": "pi-cordoba-alquiler", "reference": "cmta9aaa2000bifzcm9124a8x", "title": "Casa en alquiler en Cordoba", "address": "Cordoba 2858, fondo", "location": "Benavidez, Tigre",
+      "type": "Casa", "operation": "Alquiler", "currency": "ARS", "price": 1500000, "bedrooms": 2, "bathrooms": 2, "area": null, "landArea": null, "credit": false, "featured": true,
+      "description": "Casa al fondo en Cordoba, Benavidez, publicada en alquiler por ARS 1.500.000. Dos dormitorios, cocina, comedor, dos banos, balcon y patio. El cuadro indica dos plantas. No se publican superficies ni plazo contractual; confirmar condiciones y disponibilidad con la inmobiliaria.",
+      "features": ["Dos plantas", "Balcon", "Patio"],
+      "images": ["https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmta9aaa2000bifzcm9124a8x/7_Lh6ow-i5Y.jpg?tr=w-1600,c-at_max", "https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmta9aaa2000bifzcm9124a8x/9_2JafEaeJy.jpg?tr=w-240,c-at_max"],
+      "source": "https://www.puricelliprop.com.ar/propiedades/cmta9aaa2000bifzcm9124a8x"
+    },
+    {
+      "id": "pi-alvear-local", "reference": "cmv1esysn00017q6o1eustmig", "title": "Local con entrepiso en Av. Alvear", "address": "Av. Alvear 2174", "location": "Benavidez, Tigre",
+      "type": "Local", "operation": "Alquiler", "currency": "ARS", "price": 900000, "bedrooms": null, "bathrooms": 1, "area": null, "landArea": null, "credit": false, "featured": true,
+      "description": "Local en Av. Alvear, Benavidez, publicado en alquiler por ARS 900.000. La descripcion informa un espacio de 4 por 10 metros con bano y un entrepiso de 4 por 5 metros. El cuadro publica 60 m2 totales, sin discriminar cubierta. Consultar destino habilitable, plazo y condiciones de la locacion.",
+      "features": ["Entrepiso", "Frente sobre Av. Alvear"],
+      "images": ["https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmv1esysn00017q6o1eustmig/IMG_1280_GoBXH8sdB.jpeg?tr=w-1600,c-at_max", "https://ik.imagekit.io/pbnr63qbu/puricelli/propiedades/cmv1esysn00017q6o1eustmig/IMG_1275_4TNH-BAd_.jpeg?tr=w-240,c-at_max"],
+      "source": "https://www.puricelliprop.com.ar/propiedades/cmv1esysn00017q6o1eustmig"
     }
   ]
 };

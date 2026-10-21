@@ -51,7 +51,7 @@ window.SITE_CONFIG = {
     "eyebrow": "INMOBILIARIA FAMILIAR DESDE 1957",
     "title": "Tortuguitas, tu lugar.",
     "titleAccent": "Cerezo, cerca tuyo.",
-    "subtitle": "Ventas y alquileres con una inmobiliaria familiar de Tortuguitas. Conoce casas, departamentos y terrenos de nuestra seleccion de publicaciones.",
+    "subtitle": "12 inmuebles de Cerezo: casas, quintas, departamentos, terrenos y un local. Ventas y alquileres en Tortuguitas, Manuel Alberti y Grand Bourg.",
     "heroIds": [
       "cerezo-528",
       "cerezo-474",
@@ -60,7 +60,7 @@ window.SITE_CONFIG = {
     "heroLocation": "Tortuguitas | Parque Alvear I | Malvinas Argentinas",
     "featuredEyebrow": "SELECCION CEREZO PROPIEDADES",
     "featuredTitle": "Una busqueda, nuevas posibilidades",
-    "featuredSubtitle": "Cuatro publicaciones verificadas en el sitio oficial de Cerezo.",
+    "featuredSubtitle": "12 publicaciones distintas verificadas en el sitio oficial de Cerezo: 7 ventas y 5 alquileres, con sus monedas originales.",
     "zonesEyebrow": "CONOCE TORTUGUITAS",
     "zonesTitle": "El entorno de tu proximo proyecto",
     "zonesSubtitle": "Propiedades en Parque Alvear I y cerca de la estacion de Tortuguitas.",
@@ -71,14 +71,14 @@ window.SITE_CONFIG = {
       {
         "icon": "home",
         "title": "Quiero comprar",
-        "text": "Explora una casa y terrenos publicados en Tortuguitas, con enlace a sus fichas originales.",
+        "text": "Explora las 7 ventas de casas, quintas y terrenos, con enlace a sus fichas originales.",
         "action": "Ver ventas",
         "href": "#/propiedades?operation=Venta"
       },
       {
         "icon": "key",
         "title": "Quiero alquilar",
-        "text": "Conoce el departamento publicado en alquiler y consulta requisitos y disponibilidad actual.",
+        "text": "Conoce los 5 alquileres de esta seleccion: una casa, tres departamentos y un local. Confirma requisitos y disponibilidad actual.",
         "action": "Ver alquileres",
         "href": "#/propiedades?operation=Alquiler"
       },
@@ -122,7 +122,9 @@ window.SITE_CONFIG = {
   "types": [
     "Casa",
     "Departamento",
-    "Terreno"
+    "Terreno",
+    "Quinta",
+    "Local"
   ],
   "operations": [
     "Venta",
@@ -194,7 +196,7 @@ window.SITE_CONFIG = {
     "officialSite": "Sitio oficial",
     "backSite": "Volver al sitio",
     "catalogTitle": "Encontr\u00e1 ese lugar que busc\u00e1s",
-    "catalogSubtitle": "Propiedades reales. Nuevas posibilidades.",
+    "catalogSubtitle": "12 publicaciones distintas de Cerezo: 7 ventas y 5 alquileres de casas, quintas, departamentos, terrenos y un local.",
     "results": "propiedades encontradas",
     "result": "propiedad encontrada",
     "sort": "Ordenar por",
@@ -474,6 +476,70 @@ window.SITE_CONFIG = {
         "https://static1.adinco.net/8271036_c/extra_large_u_6766d7857e871.jpg"
       ],
       "source": "https://www.cerezopropiedades.com.ar/cerezo-447"
+    },
+    {
+      "id": "cerezo-533", "reference": "533", "title": "Quinta con pileta y quincho en Tortuguitas", "address": "San Lorenzo al 3700", "location": "Tortuguitas, Malvinas Argentinas", "type": "Quinta", "operation": "Venta", "currency": "USD", "price": 170000,
+      "bedrooms": null, "bathrooms": 4, "area": null, "landArea": 611, "credit": false, "featured": true,
+      "description": "Casa quinta en San Lorenzo al 3700, Tortuguitas, con cocina comedor con isla, living, lavadero y calefaccion por radiadores. La publicacion menciona pileta, quincho cerrado con parrilla, galeria y espacio techado para autos. Informa cuatro banos y terreno de 611 m2 en sus datos publicos. El titulo y el contador indican cuatro dormitorios, mientras el texto enumera tres; la cantidad queda sin informar hasta confirmacion. No publica metros cubiertos diferenciados.",
+      "features": ["Pileta", "Quincho cerrado", "Parrilla", "Calefaccion por radiadores", "Galeria"],
+      "images": ["https://static1.adinco.net/8532456_p/extra_large_u_6ad77acb6a4e0.jpg", "https://static1.adinco.net/8532456_p/extra_large_u_6ad77f21a533f.jpg"],
+      "source": "https://www.cerezopropiedades.com.ar/cerezo-533"
+    },
+    {
+      "id": "cerezo-532", "reference": "532", "title": "Quinta sobre 2400 m2 en Tortuguitas centro", "address": "Venezuela al 100", "location": "Tortuguitas, Malvinas Argentinas", "type": "Quinta", "operation": "Venta", "currency": "USD", "price": 180000,
+      "bedrooms": 4, "bathrooms": 2, "area": null, "landArea": 2400, "credit": false, "featured": true,
+      "description": "Chalet sobre un terreno de 2.400 m2 en Tortuguitas centro, publicado a 400 metros de la estacion del Ferrocarril Belgrano. Cuenta con cuatro dormitorios, living comedor, cocina comedor, escritorio, toilette y bano completo. Incluye pileta, quincho techado con parrilla, patio, parque arbolado y espacio techado para auto. El sitio informa gas natural. La superficie construida no se publica por separado del terreno.",
+      "features": ["Pileta", "Quincho con parrilla", "Parque arbolado", "Espacio techado para auto", "Gas natural"],
+      "images": ["https://static1.adinco.net/3712456_p/extra_large_u_6ad6aa4991053.jpg", "https://static1.adinco.net/3712456_p/extra_large_u_6ad6aa234aa8c.jpg"],
+      "source": "https://www.cerezopropiedades.com.ar/cerezo-532"
+    },
+    {
+      "id": "cerezo-531", "reference": "531", "title": "Casa en alquiler con parque en Yei Pora", "address": "Brughetti al 3800", "location": "Yei Pora, Tortuguitas, Jose C. Paz", "type": "Casa", "operation": "Alquiler", "currency": "ARS", "price": 900000,
+      "bedrooms": 2, "bathrooms": 2, "area": null, "landArea": 1500, "credit": false, "featured": true,
+      "description": "Casa en alquiler en Yei Pora, Tortuguitas, con cocina, living, comedor y parque de 1.500 m2 con arboleda. La descripcion y el contador de la ficha coinciden en dos dormitorios y dos banos, uno en suite, aunque el titulo original menciona tres dormitorios. Se conservan los dos informados en la distribucion y se recomienda confirmar. Publicada a 200 metros de Luis M. Drago. No se informan metros cubiertos diferenciados; el precio es en pesos argentinos.",
+      "features": ["Parque arbolado", "Un bano en suite", "Zona de casaquintas", "Cerca de Luis M. Drago"],
+      "images": ["https://static1.adinco.net/6500456_p/extra_large_u_6ad4de325afd2.jpg", "https://static1.adinco.net/6500456_p/extra_large_u_6ad4dda364589.jpg"],
+      "source": "https://www.cerezopropiedades.com.ar/cerezo-531"
+    },
+    {
+      "id": "cerezo-526", "reference": "526", "title": "Departamento en alquiler en Manuel Alberti", "address": "Gral San Martin al 1400", "location": "Manuel Alberti, Pilar", "type": "Departamento", "operation": "Alquiler", "currency": "ARS", "price": 650000,
+      "bedrooms": 1, "bathrooms": 1, "area": null, "landArea": null, "credit": false, "featured": true,
+      "description": "Departamento en alquiler en Manuel Alberti con un dormitorio, cocina comedor y un bano. La publicacion lo ubica a cinco minutos de Panamericana Ramal Pilar. Publica un alquiler de ARS 650.000 y expensas de ARS 70.000 por separado; estas no estan incluidas en el precio mostrado. No se informan superficies. Confirmar requisitos, gastos y disponibilidad con Cerezo.",
+      "features": ["Un dormitorio", "Cocina comedor", "Expensas publicadas por separado"],
+      "images": ["https://static1.adinco.net/5527156_p/extra_large_u_6a7267dd871ed.jpg", "https://static1.adinco.net/5527156_p/extra_large_u_6a7267dd5ce6c.jpg"],
+      "source": "https://www.cerezopropiedades.com.ar/cerezo-526"
+    },
+    {
+      "id": "cerezo-525", "reference": "525", "title": "Casa de tres dormitorios en Parque Alvear I", "address": "Einstein al 3500", "location": "Parque Alvear I, Tortuguitas, Malvinas Argentinas", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 109000,
+      "bedrooms": 3, "bathrooms": 2, "area": 140, "landArea": 630, "credit": false, "featured": true,
+      "description": "Casa en Parque Alvear I con tres dormitorios con placard, living comedor, cocina abierta con barra y lavadero con salida independiente al jardin. La ficha informa 140 m2 cubiertos sobre 630 m2 de terreno, bano con antebano y toilette. Incluye escritorio o cuarto de servicio adicional, parrilla y salamandra. Publica gas natural, luz trifasica y agua de perforacion propia. Confirmar cualquier posibilidad de ampliacion con la documentacion correspondiente.",
+      "features": ["Tres dormitorios", "Lavadero", "Parrilla", "Salamandra", "Gas natural", "Luz trifasica"],
+      "images": ["https://static1.adinco.net/9271156_p/extra_large_u_6abd6ef22617f.jpg", "https://static1.adinco.net/9271156_p/extra_large_u_6abd76385a8c3.jpg"],
+      "source": "https://www.cerezopropiedades.com.ar/cerezo-525"
+    },
+    {
+      "id": "cerezo-521", "reference": "521", "title": "Casa con galeria en Parque Alvear II", "address": "Houssay al 3100", "location": "Parque Alvear II, Tortuguitas, Malvinas Argentinas", "type": "Casa", "operation": "Venta", "currency": "USD", "price": 79000,
+      "bedrooms": 2, "bathrooms": 2, "area": null, "landArea": 300, "credit": false, "featured": true,
+      "description": "Casa en Parque Alvear II con dos dormitorios, dos banos, uno en suite, cocina independiente, living comedor y hall de distribucion. Cuenta con galeria techada con parrilla y mesada, parque al fondo y jardin al frente con entrada para auto. La ficha informa 300 m2 de terreno y aclara que faltan terminaciones. Se publica a 300 metros de Ruta 8. No se informa superficie construida diferenciada.",
+      "features": ["Faltan terminaciones", "Galeria techada", "Parrilla", "Jardin", "Entrada para auto"],
+      "images": ["https://static1.adinco.net/1714056_p/extra_large_u_6a34264a3342d.jpg", "https://static1.adinco.net/1714056_p/extra_large_u_6a34247ca38b3.jpg"],
+      "source": "https://www.cerezopropiedades.com.ar/cerezo-521"
+    },
+    {
+      "id": "cerezo-518", "reference": "518", "title": "Local en alquiler en Grand Bourg", "address": "Av. Eva Duarte de Peron al 800", "location": "Grand Bourg, Malvinas Argentinas", "type": "Local", "operation": "Alquiler", "currency": "ARS", "price": 800000,
+      "bedrooms": null, "bathrooms": 2, "area": null, "landArea": null, "credit": false, "featured": true,
+      "description": "Local comercial en alquiler sobre avenida Eva Duarte de Peron, a metros de la calle Pasco, Grand Bourg. La publicacion menciona doble persiana al frente y dos banos. No informa superficie cubierta ni de terreno. El alquiler se publica en pesos argentinos; consultar requisitos, destino permitido, gastos y disponibilidad directamente con Cerezo.",
+      "features": ["Doble persiana al frente", "Sobre avenida", "Dos banos"],
+      "images": ["https://static1.adinco.net/4828846_p/extra_large_u_69f90dba921e5.jpg"],
+      "source": "https://www.cerezopropiedades.com.ar/cerezo-518"
+    },
+    {
+      "id": "cerezo-515", "reference": "515", "title": "Departamento de dos dormitorios sobre Brasil", "address": "Brasil al 1600", "location": "Tortuguitas, Malvinas Argentinas", "type": "Departamento", "operation": "Alquiler", "currency": "ARS", "price": 700000,
+      "bedrooms": 2, "bathrooms": 1, "area": null, "landArea": null, "credit": false, "featured": true,
+      "description": "Departamento en alquiler con dos dormitorios, un bano completo, altillo, living, cocina y amplio balcon. Se accede al primer piso por escalera y la ficha lo presenta al frente, cercano a Panamericana. Informa gas natural y pavimento, y aclara que no permite mascotas. No se publican superficies. El precio de alquiler es en pesos argentinos, sin conversion de moneda.",
+      "features": ["Primer piso por escalera", "Balcon", "Altillo", "Gas natural", "No permite mascotas"],
+      "images": ["https://static1.adinco.net/8496846_p/extra_large_u_69f2a58cd2877.jpg", "https://static1.adinco.net/8496846_p/extra_large_u_6a1b089d56b34.jpg"],
+      "source": "https://www.cerezopropiedades.com.ar/cerezo-515"
     }
   ]
 };

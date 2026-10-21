@@ -24,7 +24,7 @@ window.SITE_CONFIG = {
   "meta": {
     "verifiedAt": "2026-10-21",
     "verifiedLabel": "Fuentes públicas consultadas el 21/10/2026",
-    "description": "Demo independiente de Rivas Propiedades, Tortuguitas. Casas, quintas, lote y alquiler con fuentes del sitio oficial.",
+    "description": "Demo independiente de Rivas Propiedades, Tortuguitas. Doce casas, quintas, terrenos, departamentos y un galpón con fuentes del sitio oficial.",
     "disclaimer": "Demo independiente con una selección de publicaciones públicas consultadas el 21/10/2026. Precios, disponibilidad, medidas, servicios y aptitud crediticia sujetos a confirmación. Sin backend ni CRM conectado; no representa el catálogo completo ni actualizado en vivo. Fotografías de las fichas originales, no contractuales.",
     "demo": "Demo independiente · Sin backend ni CRM conectado · Panel y mensajes simulados"
   },
@@ -51,7 +51,7 @@ window.SITE_CONFIG = {
     "eyebrow": "EN TORTUGUITAS DESDE 1989",
     "title": "Cerca de tu lugar.",
     "titleAccent": "Cerca de tu próximo paso.",
-    "subtitle": "Casas, quintas, terrenos y departamentos publicados por Rivas Propiedades. Una selección para conocer Tortuguitas y consultar cada oportunidad.",
+    "subtitle": "Casas, quintas, terrenos, departamentos y un galpón publicados por Rivas Propiedades. Una selección de Tortuguitas y alrededores para consultar cada oportunidad.",
     "heroIds": [
       "rivas-chalet-chile-43",
       "rivas-quinta-chile-1335",
@@ -60,7 +60,7 @@ window.SITE_CONFIG = {
     "heroLocation": "Tortuguitas · Buenos Aires",
     "featuredEyebrow": "SELECCIÓN DEL CATÁLOGO PÚBLICO",
     "featuredTitle": "Distintas formas de vivir Tortuguitas",
-    "featuredSubtitle": "Cinco publicaciones del sitio oficial, con sus precios y enlaces de origen. Disponibilidad a confirmar.",
+    "featuredSubtitle": "Doce publicaciones del sitio oficial, con sus precios y enlaces de origen. Disponibilidad a confirmar.",
     "zonesEyebrow": "RECORRÉ TORTUGUITAS",
     "zonesTitle": "Buscá por entorno",
     "zonesSubtitle": "Centro, Astorga y sectores residenciales presentes en esta selección.",
@@ -71,15 +71,15 @@ window.SITE_CONFIG = {
       {
         "icon": "home",
         "title": "Buscar una propiedad",
-        "text": "Compará las casas, quintas y el lote de esta selección de ventas en Tortuguitas.",
+        "text": "Compará las casas, quintas, terrenos, el departamento y el galpón de esta selección de ventas.",
         "action": "Explorar ventas",
         "href": "#/propiedades?operation=Venta"
       },
       {
         "icon": "key",
         "title": "Consultar alquileres",
-        "text": "Conocé el monoambiente publicado en Tortuguitas centro y confirmá las condiciones con la inmobiliaria.",
-        "action": "Ver alquiler publicado",
+        "text": "Conocé los monoambientes publicados en Tortuguitas centro y José C. Paz, y confirmá las condiciones con la inmobiliaria.",
+        "action": "Ver alquileres publicados",
         "href": "#/propiedades?operation=Alquiler"
       },
       {
@@ -123,7 +123,8 @@ window.SITE_CONFIG = {
     "Casa",
     "Quinta",
     "Terreno",
-    "Departamento"
+    "Departamento",
+    "Galpón"
   ],
   "operations": [
     "Venta",
@@ -498,6 +499,207 @@ window.SITE_CONFIG = {
         "https://rivaspropiedades.net/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-23-at-11.47.28-AM-576x1024.jpeg"
       ],
       "source": "https://rivaspropiedades.net/propiedad/alquiler-monoambiente-en-zona-centrica-de-tortuguitas/"
+    },
+    {
+      "id": "rivas-depto-fonavi-torre-2",
+      "reference": "Ex Fonavi, Torre 2, piso 5",
+      "title": "Departamento de cuatro ambientes en Ex Fonavi",
+      "address": "Barrio 24 de Febrero, Torre 2, piso 5",
+      "location": "Barrio 24 de Febrero, Garín / Tortuguitas",
+      "type": "Departamento",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 60000,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Departamento de cuatro ambientes en la Torre 2, quinto piso, del barrio 24 de Febrero, Ex Fonavi. Tres dormitorios, living comedor, cocina independiente, baño completo y balcón. La ficha menciona ascensor, aire acondicionado y gas natural. Publica 68,31 m² totales, sin identificar superficie cubierta por separado. Se anuncia listo para escriturar; no se interpreta como aptitud crediticia.",
+      "features": [
+        "Tres dormitorios",
+        "Balcón",
+        "Ascensor",
+        "Cocina independiente",
+        "Aire acondicionado",
+        "Gas natural"
+      ],
+      "images": [
+        "https://rivaspropiedades.net/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-30-at-12.15.19-PM-768x1024.jpeg",
+        "https://rivaspropiedades.net/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-22-at-1.22.24-PM-1-225x300.jpeg"
+      ],
+      "source": "https://rivaspropiedades.net/propiedad/excelente-depto-en-barrio-24-de-febrero-ex-fonavi/"
+    },
+    {
+      "id": "rivas-tinglado-lavallol-4041",
+      "reference": "Felipe Lavallol 4041",
+      "title": "Tinglado con oficina en Tortuguitas",
+      "address": "Felipe Lavallol 4041, entre Luis María Drago y Guayanas",
+      "location": "Tortuguitas",
+      "type": "Galpón",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 130000,
+      "bedrooms": null,
+      "bathrooms": 2,
+      "area": 170,
+      "landArea": null,
+      "credit": true,
+      "featured": true,
+      "description": "Tinglado industrial de usos múltiples con oficina, sobre Felipe Lavallol 4041. La ficha informa tres ambientes, dos baños, 170 m² cubiertos y 350 m² de superficie total, sin desglose de terreno. Se publica sin expensas y como apto crédito; la documentación y la aprobación bancaria deben confirmarse. No se infieren habilitaciones comerciales o industriales.",
+      "features": [
+        "Oficina",
+        "Tres ambientes",
+        "Sin expensas según ficha",
+        "Publicado apto crédito"
+      ],
+      "images": [
+        "https://rivaspropiedades.net/wp-content/uploads/2026/04/WhatsApp-Image-2026-03-16-at-2.50.13-PM-1024x683.jpeg",
+        "https://rivaspropiedades.net/wp-content/uploads/2026/04/WhatsApp-Image-2026-03-16-at-2.59.37-PM-300x200.jpeg"
+      ],
+      "source": "https://rivaspropiedades.net/propiedad/tinglado-industrial-de-usos-multiples-con-oficina-en-el-corazon-de-tortuguitas-apta-para-credito/"
+    },
+    {
+      "id": "rivas-chalet-santa-maria-1139",
+      "reference": "Santa María 1139",
+      "title": "Chalet con departamento al fondo en Manuel Alberti",
+      "address": "Santa María 1139, entre Los Cipreses e Hipólito Yrigoyen",
+      "location": "Manuel Alberti",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 120000,
+      "bedrooms": null,
+      "bathrooms": 1,
+      "area": 143.68,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Propiedad con vivienda principal y departamento de dos ambientes al fondo, ofrecida como una sola publicación en Manuel Alberti. El cuadro informa cuatro ambientes, un baño, 143,68 m² cubiertos y 300 m² totales; no desglosa dormitorios ni los baños del anexo. La ficha destaca la cercanía a Hipólito Yrigoyen y a la estación. Confirmá el alcance de las superficies y la documentación de ambas construcciones.",
+      "features": [
+        "Vivienda con anexo",
+        "Gas natural",
+        "Sin expensas según ficha",
+        "Cercanía a la estación"
+      ],
+      "images": [
+        "https://rivaspropiedades.net/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-06-at-11.23.20-AM-1024x576.jpeg",
+        "https://rivaspropiedades.net/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-06-at-11.23.21-AM-1-169x300.jpeg"
+      ],
+      "source": "https://rivaspropiedades.net/propiedad/hermoso-chalet-en-manuel-alberti-a-metros-de-av-hipolito-yrigoyen-y-a-300-mt-de-estacion-de-m-alb/"
+    },
+    {
+      "id": "rivas-casa-nobel-4605",
+      "reference": "Alfredo Nobel 4605",
+      "title": "Casa en barrio El Chelito",
+      "address": "Alfredo Nobel 4605",
+      "location": "El Chelito, Tortuguitas",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 138000,
+      "bedrooms": null,
+      "bathrooms": 2,
+      "area": 144,
+      "landArea": null,
+      "credit": true,
+      "featured": true,
+      "description": "Propiedad de seis ambientes en la zona residencial de El Chelito, cercana a Ruta 8 según el aviso. Informa dos baños, aproximadamente 144 m² cubiertos y 351 m² de superficie total. No publica dormitorios ni terreno por separado. Se anuncia sin expensas y apta crédito; condiciones y documentación sujetas a confirmación.",
+      "features": [
+        "Seis ambientes",
+        "Gas natural",
+        "Pavimento",
+        "Publicado apto crédito"
+      ],
+      "images": [
+        "https://rivaspropiedades.net/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-04-at-6.32.32-PM-5-576x1024.jpeg",
+        "https://rivaspropiedades.net/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-04-at-6.32.32-PM-4-169x300.jpeg"
+      ],
+      "source": "https://rivaspropiedades.net/propiedad/importante-propiedad-en-b-el-chelito-tortuguitas-apta-credito/"
+    },
+    {
+      "id": "rivas-lote-laprida-7278",
+      "reference": "Narciso Laprida 7278",
+      "title": "Lote en zona residencial de Del Viso",
+      "address": "Narciso Laprida 7278, entre C. Calvo y García",
+      "location": "Del Viso",
+      "type": "Terreno",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 36000,
+      "bedrooms": null,
+      "bathrooms": 0,
+      "area": null,
+      "landArea": 330,
+      "credit": false,
+      "featured": true,
+      "description": "Lote publicado en venta en la zona residencial de Del Viso, sobre Narciso Laprida 7278. La ficha informa 330 m², cero ambientes y cero baños, con precio de USD 36.000 a conversar. Enumera gas natural y electricidad; su conexión efectiva, restricciones urbanísticas y documentación deben verificarse antes de operar.",
+      "features": [
+        "Lote de 330 m²",
+        "Zona residencial"
+      ],
+      "images": [
+        "https://rivaspropiedades.net/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-02-at-1.37.39-PM-1-1024x576.jpeg",
+        "https://rivaspropiedades.net/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-02-at-1.37.39-PM-300x169.jpeg"
+      ],
+      "source": "https://rivaspropiedades.net/propiedad/hermoso-lote-en-zona-residencial-de-del-viso-oportunidad/"
+    },
+    {
+      "id": "rivas-quinta-moreno-1492",
+      "reference": "Moreno 1492",
+      "title": "Casa quinta con dos chalets en Tortuguitas",
+      "address": "Moreno 1492",
+      "location": "Tortuguitas",
+      "type": "Quinta",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 200000,
+      "bedrooms": null,
+      "bathrooms": 2,
+      "area": 190,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Una única oferta de casa quinta con dos chalets sobre Moreno 1492, a 300 metros de la estación según el aviso. La ficha informa ocho ambientes y dos baños. Detalla 120 m² cubiertos en el chalet principal y 70 m² en el secundario: 190 m² sumados, no una medición nueva. La superficie total publicada es de aproximadamente 1.693 m², sin campo de terreno separado. No se cuentan los chalets como dos inmuebles de la demo.",
+      "features": [
+        "Dos chalets en una oferta",
+        "Gas natural",
+        "Pavimento",
+        "Sin expensas según ficha"
+      ],
+      "images": [
+        "https://rivaspropiedades.net/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-27-at-5.17.27-PM-768x1024.jpeg",
+        "https://rivaspropiedades.net/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-27-at-5.17.28-PM-2-225x300.jpeg"
+      ],
+      "source": "https://rivaspropiedades.net/propiedad/casa-quinta-en-tortuguitas-2-chalets-zona-exclusiva-a-300-mtrs-de-estacion/"
+    },
+    {
+      "id": "rivas-monoambiente-washington",
+      "reference": "Monoambiente Washington",
+      "title": "Monoambiente en alquiler sobre Washington",
+      "address": "Washington; altura no publicada",
+      "location": "José C. Paz",
+      "type": "Departamento",
+      "operation": "Alquiler",
+      "currency": "ARS",
+      "price": 450000,
+      "bedrooms": null,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Monoambiente publicado en alquiler sobre la calle Washington, en José C. Paz, por ARS 450.000 mensuales. Informa un ambiente, un baño y expensas de cero. No publica altura, superficies ni dormitorio independiente. Consultá requisitos, ajustes y disponibilidad vigente; no se presenta como alquiler temporal.",
+      "features": [
+        "Un ambiente",
+        "Sin expensas según ficha",
+        "Pavimento"
+      ],
+      "images": [
+        "https://rivaspropiedades.net/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-21-at-3.38.36-PM-768x1024.jpeg"
+      ],
+      "source": "https://rivaspropiedades.net/propiedad/alquiler-monoambiente-sobre-la-calle-washington/"
     }
   ]
 };

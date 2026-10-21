@@ -24,7 +24,7 @@ window.SITE_CONFIG = {
   "meta": {
     "verifiedAt": "2026-10-21",
     "verifiedLabel": "Fuentes públicas consultadas el 21/10/2026",
-    "description": "Demo independiente de Balbas Oviedo Propiedades, Tortuguitas. Quintas y lotes publicados por la inmobiliaria.",
+    "description": "Demo independiente de Balbas Oviedo Propiedades. Doce quintas, lotes, casas y departamentos publicados por la inmobiliaria en Zona Norte y CABA.",
     "disclaimer": "Demo independiente con una selección de publicaciones públicas consultadas el 21/10/2026. Precios, disponibilidad, medidas, servicios y aptitud crediticia sujetos a confirmación. Sin backend ni CRM conectado; no representa el catálogo completo ni actualizado en vivo. Fotografías de las fichas originales, no contractuales.",
     "demo": "Demo independiente · Sin backend ni CRM conectado · Panel y mensajes simulados"
   },
@@ -51,16 +51,16 @@ window.SITE_CONFIG = {
     "eyebrow": "BALBAS OVIEDO · TORTUGUITAS",
     "title": "Más espacio para vivir.",
     "titleAccent": "Un proyecto para vos.",
-    "subtitle": "Casas quintas y lotes de Tortuguitas y Yei Porá, seleccionados del catálogo público de Balbas Oviedo Propiedades.",
+    "subtitle": "Quintas, lotes, casas y departamentos seleccionados del catálogo público de Balbas Oviedo: Tortuguitas, alrededores y Ciudad de Buenos Aires.",
     "heroIds": [
       "bo-216932",
       "bo-213596",
       "bo-213653"
     ],
     "heroLocation": "Tortuguitas · Parque Alvear I · Yei Porá",
-    "featuredEyebrow": "QUINTAS Y LOTES PUBLICADOS",
+    "featuredEyebrow": "PROPIEDADES DEL CATÁLOGO PÚBLICO",
     "featuredTitle": "Verde, espacio y posibilidades",
-    "featuredSubtitle": "Cinco publicaciones de venta con fotografías del sitio oficial. Precios y disponibilidad sujetos a confirmación.",
+    "featuredSubtitle": "Doce publicaciones de venta con fotografías del sitio oficial. Precios y disponibilidad sujetos a confirmación.",
     "zonesEyebrow": "ENTORNOS DE ESTA SELECCIÓN",
     "zonesTitle": "Descubrí dónde proyectar tu próximo paso",
     "zonesSubtitle": "Parque Alvear I, Yei Porá y el centro de Tortuguitas, a través de sus propiedades publicadas.",
@@ -70,7 +70,7 @@ window.SITE_CONFIG = {
     "services": [
       {
         "icon": "home",
-        "title": "Comprar una quinta o un lote",
+        "title": "Comprar una propiedad",
         "text": "Explorá esta selección y revisá la ficha original antes de consultar disponibilidad o coordinar una visita.",
         "action": "Conocer las ventas",
         "href": "#/propiedades?operation=Venta"
@@ -92,7 +92,7 @@ window.SITE_CONFIG = {
     ],
     "aboutEyebrow": "BALBAS OVIEDO PROPIEDADES",
     "aboutTitle": "Propiedades con lugar para tus proyectos.",
-    "aboutText": "Balbas Oviedo publica casas quintas, lotes y otros inmuebles, con atención en Tortuguitas. Su sitio identifica al profesional Sebastian Balbas Oviedo y las matrículas CMCPSM 2868 y CUCICBA 9012. Esta demo independiente presenta una selección de quintas y lotes, sin conexión con el catálogo en vivo.",
+    "aboutText": "Balbas Oviedo publica casas quintas, lotes, casas y departamentos, con atención en Tortuguitas. Su sitio identifica al profesional Sebastian Balbas Oviedo y las matrículas CMCPSM 2868 y CUCICBA 9012. Esta demo independiente presenta doce publicaciones de Zona Norte y CABA, sin conexión con el catálogo en vivo.",
     "aboutPoints": [
       "Atención en Tortuguitas, según el sitio oficial",
       "Quintas y lotes de Parque Alvear I y Yei Porá",
@@ -121,7 +121,9 @@ window.SITE_CONFIG = {
   ],
   "types": [
     "Casa Quinta",
-    "Lote"
+    "Lote",
+    "Casa",
+    "Departamento"
   ],
   "operations": [
     "Venta",
@@ -192,7 +194,7 @@ window.SITE_CONFIG = {
     "call": "Llamar",
     "officialSite": "Sitio oficial",
     "backSite": "Volver al sitio",
-    "catalogTitle": "Quintas y lotes de Balbas Oviedo",
+    "catalogTitle": "Propiedades de Balbas Oviedo",
     "catalogSubtitle": "Selección de publicaciones del sitio oficial. Confirmá disponibilidad y condiciones en la fuente.",
     "results": "propiedades encontradas",
     "result": "propiedad encontrada",
@@ -504,6 +506,217 @@ window.SITE_CONFIG = {
         "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269491547-17773185040airm-0a6ad1b3-6659-4aa0-a0ae-781c5cc584b6.jpeg"
       ],
       "source": "https://www.balbasoviedoprop.com.ar/ad/lote-venta-en-yei-pora"
+    },
+    {
+      "id": "bo-213662",
+      "reference": "213662",
+      "title": "Quinta con quincho en Yei Porá",
+      "address": "Crámer 4500",
+      "location": "Yei Porá, Tortuguitas / José C. Paz",
+      "type": "Casa Quinta",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 85000,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area": 230,
+      "landArea": 729,
+      "credit": false,
+      "featured": true,
+      "description": "Casa quinta sobre dos lotes con 729 m², tres dormitorios y tres baños. La ficha informa 230 m² cubiertos, living en L con hogar, cocina comedor integrada, lavadero y quincho con parrilla. Tiene entrepiso y gas envasado. Advertencia de la publicación: requiere una nueva perforación de agua y no es apta crédito. Se ofrece como una sola propiedad, no como dos lotes independientes.",
+      "features": [
+        "Quincho con parrilla",
+        "Hogar a leña",
+        "Entrepiso",
+        "Gas envasado",
+        "Requiere nueva perforación de agua",
+        "No apto crédito según ficha"
+      ],
+      "images": [
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269262163-1777312503w19yj-6a7aefae-62e0-4bb3-b50f-7ba1fd66ca7e.jpeg",
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269265775-1777312502hce9a-735d64be-8e3a-4e20-95aa-aa6e255bd3e3.jpeg"
+      ],
+      "source": "https://www.balbasoviedoprop.com.ar/ad/casa-quinta-4-ambientes-en-yei-pora"
+    },
+    {
+      "id": "bo-217088",
+      "reference": "217088",
+      "title": "Lote en esquina frente a plaza en Parque Alvear I",
+      "address": "Asamblea 3500",
+      "location": "Parque Alvear I, Tortuguitas",
+      "type": "Lote",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 45000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area": null,
+      "landArea": 319,
+      "credit": false,
+      "featured": true,
+      "description": "Lote en esquina de 319 m² frente a la Plaza La Convivencia, en Parque Alvear I. La publicación aclara que posee una casa de dos plantas a reciclar completamente. No informa superficie cubierta ni cantidad de dormitorios o baños. Se incluye una sola vez, aunque el mismo inmueble también aparece con otro código en el catálogo del cliente.",
+      "features": [
+        "Esquina",
+        "Frente a plaza",
+        "Casa existente a reciclar completamente"
+      ],
+      "images": [
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-4701-1777321466yxblm-bos0058-007jpg.jpeg",
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-4602-1777321465t4hoj-bos0058-001jpg.jpeg"
+      ],
+      "source": "https://www.balbasoviedoprop.com.ar/ad/lote-venta-tortuguitas-parque-alvear-1-1"
+    },
+    {
+      "id": "bo-213673",
+      "reference": "213673",
+      "title": "Casa quinta con pileta en barrio Carumbé",
+      "address": "Santa Elena 470",
+      "location": "Carumbé, Tortuguitas",
+      "type": "Casa Quinta",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 189000,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area": 133,
+      "landArea": 2411,
+      "credit": false,
+      "featured": true,
+      "description": "Casa quinta en una planta sobre lote de 2.411 m² en barrio Carumbé. Tres dormitorios, uno en suite con vestidor, dos baños completos, living comedor y cocina independiente. La ficha informa 133 m² cubiertos y 46 m² semicubiertos. Cuenta con quincho semidescubierto, parrilla, pileta de 10 por 5 metros y riego automático. La eventual subdivisión mencionada en el aviso no se da por aprobada.",
+      "features": [
+        "Una planta",
+        "Suite con vestidor",
+        "Pileta",
+        "Quincho",
+        "Parrilla",
+        "Riego automático"
+      ],
+      "images": [
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269403699-1777315412aiehj-img-20230319-111932503jpg.jpeg",
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269399079-1777315404oikxs-img-20230319-110136750jpg.jpeg"
+      ],
+      "source": "https://www.balbasoviedoprop.com.ar/ad/casa-quinta-en-tortuguitas"
+    },
+    {
+      "id": "bo-213940",
+      "reference": "213940",
+      "title": "Casa con pileta en Altos del Barranco",
+      "address": "Golf Club Junín; altura no publicada",
+      "location": "Altos del Barranco, Manuel Alberti, Pilar",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 140000,
+      "bedrooms": 1,
+      "bathrooms": 2,
+      "area": 70,
+      "landArea": 444,
+      "credit": false,
+      "featured": true,
+      "description": "Casa en Altos del Barranco, Manuel Alberti, con 70 m² cubiertos y terreno de 444 m². Un dormitorio amplio, living comedor, cocina con patio interior, baño completo y baño de servicio independiente. Incluye quincho techado con parrilla y horno de barro, pérgola para estacionamiento y pileta de 7 por 4 metros. La ficha publica gas natural, aire acondicionado y seguridad del barrio; confirmá las condiciones de esos servicios.",
+      "features": [
+        "Pileta",
+        "Quincho",
+        "Parrilla",
+        "Horno de barro",
+        "Gas natural",
+        "Aire acondicionado"
+      ],
+      "images": [
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-5412-1777420331whd1x-d-nq-np-659383-mla85157018300-052025-oojpg.png",
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269867069-1777420328smzte-d-nq-np-889572-mla85460221097-052025-oojpg.png"
+      ],
+      "source": "https://www.balbasoviedoprop.com.ar/ad/casa-venta-en-altos-del-barranco-manuel-alberti"
+    },
+    {
+      "id": "bo-213686",
+      "reference": "213686",
+      "title": "Departamento de tres ambientes en Villa Luro",
+      "address": "Rafaela 4900, piso 10",
+      "location": "Villa Luro, Ciudad Autónoma de Buenos Aires",
+      "type": "Departamento",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 73000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": 56,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Departamento de tres ambientes en un décimo piso de Villa Luro. Dos dormitorios con placares, baño completo, cocina separada con ventilación propia y living comedor con salida al balcón y vista abierta. La ficha informa 56 m² cubiertos y totales, sin superficie de terreno propia. Medidas y condiciones deben corroborarse con la documentación correspondiente.",
+      "features": [
+        "Balcón",
+        "Vista abierta",
+        "Cocina separada",
+        "Placares"
+      ],
+      "images": [
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269441737-1777317542b2uiq-d-nq-np-780241-mla97385911054-112025-oojpg.png",
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269418936-1777317536kbjcw-d-nq-np-862948-mla97385911076-112025-oojpg.png"
+      ],
+      "source": "https://www.balbasoviedoprop.com.ar/ad/departamento-3-ambientes-en-villa-luro"
+    },
+    {
+      "id": "bo-213720",
+      "reference": "213720",
+      "title": "Departamento apto profesional en Almagro Norte",
+      "address": "Avenida Díaz Vélez 3500, piso 1",
+      "location": "Almagro Norte, Ciudad Autónoma de Buenos Aires",
+      "type": "Departamento",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 145000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": 71,
+      "landArea": null,
+      "credit": true,
+      "featured": true,
+      "description": "Departamento de tres ambientes en primer piso sobre Avenida Díaz Vélez, cerca de Billinghurst. Dos dormitorios con placard, living comedor con balcón, cocina reciclada y lavadero independiente. La ficha informa 71 m² cubiertos y 73 m² totales, lo anuncia apto profesional y apto crédito. También lo declara no accesible para personas con discapacidad física según Ley 5115; la aptitud crediticia requiere confirmación bancaria.",
+      "features": [
+        "Balcón",
+        "Lavadero independiente",
+        "Cocina reciclada",
+        "Publicado apto profesional",
+        "Publicado apto crédito",
+        "No accesible según ficha"
+      ],
+      "images": [
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269593032-1777321943gxuid-624d0434-c589-4bbb-9a57-3284d2940b49jpg.jpeg",
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269599902-1777321943xmcpi-whatsapp-image-2023-07-10-at-180653-1.jpeg"
+      ],
+      "source": "https://www.balbasoviedoprop.com.ar/ad/departamento-3-ambientes-en-almagro-norte"
+    },
+    {
+      "id": "bo-213698",
+      "reference": "213698",
+      "title": "PH de tres ambientes con patio en Los Polvorines",
+      "address": "Arquímedes 4050",
+      "location": "Los Polvorines",
+      "type": "Departamento",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 49000,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "area": 87,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "PH publicado como departamento de tres ambientes, con acceso privado al frente, patio interno y dos dormitorios, uno con baño en suite. Informa dos baños y 87 m² cubiertos y totales. Cuenta con living, comedor diario y cocina. El precio se anuncia libre de gastos. El aviso indica que todavía no abona expensas y que hay trámites de consorcio iniciados; no se garantiza ausencia de expensas futuras. No se incorpora el otro aviso de 47 m² en la misma dirección.",
+      "features": [
+        "Acceso privado",
+        "Patio interno",
+        "Dormitorio en suite",
+        "Gas natural",
+        "Valor publicado libre de gastos"
+      ],
+      "images": [
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269491390-17773190659bv8w-bos0040-004jpg.jpeg",
+        "https://www.balbasoviedoprop.com.ar/uploads/balbasoviedoprop/images/WM-17912269494138-1777319065gybqn-bos0040-010jpg.jpeg"
+      ],
+      "source": "https://www.balbasoviedoprop.com.ar/ad/departamento-en-los-polvorines-1"
     }
   ]
 };

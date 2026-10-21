@@ -24,7 +24,7 @@ Los contactos se verificaron como publicaciones del cliente, no mediante llamada
 
 ## Catálogo y precios
 
-Las cinco publicaciones se observaron en el sitio actual y en sus fichas propias. Los códigos de referencia son los códigos públicos de esas fichas; los IDs `bo-...` son identificadores locales ASCII. Se preservan los tipos publicados **Casa Quinta** y **Lote**.
+Las doce publicaciones se observaron en el sitio actual y en sus fichas propias. La ampliación del 21/10/2026 suma siete inmuebles a los cinco originales, cuyos registros e IDs se conservan sin cambios. Los códigos de referencia son los códigos públicos de esas fichas; los IDs `bo-...` son identificadores locales ASCII. Se preservan los tipos publicados **Casa Quinta** y **Lote** y se agregan **Casa** y **Departamento**.
 
 | ID / código y ficha original | Tipo / operación | Precio | Datos incorporados y discrepancias |
 | --- | --- | --- | --- |
@@ -34,13 +34,35 @@ Las cinco publicaciones se observaron en el sitio actual y en sus fichas propias
 | `bo-213707` / 213707 / [Almirante Brown 3500, Tortuguitas](https://www.balbasoviedoprop.com.ar/ad/lote-venta-en-tortuguitas) | Lote / Venta | USD 90.000 | Pileta, vestuario y construcción de 25 m² a terminar, sin especificación de cubierta: `area: null`. `landArea: null`: el cuadro y comienzo del texto dicen 800 m²; otro párrafo dice 802 m². La descripción conserva ambas cifras sin elegir una. No publica conteos de dormitorios y baños: `null`. |
 | `bo-213692` / 213692 / [Lartigau Lespada 1700, Yei Porá](https://www.balbasoviedoprop.com.ar/ad/lote-venta-en-yei-pora) | Lote / Venta | USD 29.000 | Terreno de 373 m². No informa cubierta, dormitorios ni baños: `null`. Se anuncia listo para escriturar; no se interpreta como apto crédito. |
 
-Los importes son USD nominales publicados, sin conversiones. `credit: false` en todas las fichas: no existe confirmación positiva de aptitud crediticia y La Habana la niega expresamente. `featured: true` indica la selección de esta demo, no una nueva clasificación atribuida al cliente.
+### Siete incorporaciones
 
-Se mantienen `operations: ['Venta', 'Alquiler']` como exige el esquema, pero **las cinco fichas de esta selección son ventas**. El sitio sí enlaza alquileres; no se inventaron unidades ni precios para poblar esa categoría. El servicio de alquiler dirige a contacto y aclara el límite.
+| ID / código y ficha original | Tipo / operación | Precio publicado | Datos incorporados y excepciones |
+| --- | --- | --- | --- |
+| `bo-213662` / 213662 / [Crámer 4500, Yei Porá](https://www.balbasoviedoprop.com.ar/ad/casa-quinta-4-ambientes-en-yei-pora) | Casa Quinta / Venta | USD 85.000 | Tres dormitorios, tres baños, 230 m² cubiertos y 729 m² sobre dos lotes, ofrecidos como una única propiedad. Quincho, entrepiso y gas envasado. Advertencias preservadas: requiere nueva perforación de agua y NO es apta crédito. No se agregó pileta. |
+| `bo-217088` / 217088 / [Asamblea 3500, Parque Alvear I](https://www.balbasoviedoprop.com.ar/ad/lote-venta-tortuguitas-parque-alvear-1-1) | Lote / Venta | USD 45.000 | Lote en esquina de 319 m² frente a Plaza La Convivencia, con casa de dos plantas a reciclar completamente. Cubierta, dormitorios y baños no publicados: `null`. Se cuenta una sola vez aunque existe otro aviso con código 213718. |
+| `bo-213673` / 213673 / [Santa Elena 470, Carumbé](https://www.balbasoviedoprop.com.ar/ad/casa-quinta-en-tortuguitas) | Casa Quinta / Venta | USD 189.000 | Tres dormitorios, dos baños, 133 m² cubiertos y lote de 2.411 m². Los 46 m² semicubiertos no se suman a `area`. Pileta, quincho, parrilla y riego automático. La posibilidad de subdividir no se presenta como autorización. No se incluye además el aviso de lote con 2.411 m² en Santa Elena. |
+| `bo-213940` / 213940 / [Golf Club Junín, Altos del Barranco](https://www.balbasoviedoprop.com.ar/ad/casa-venta-en-altos-del-barranco-manuel-alberti) | Casa / Venta | USD 140.000 | Un dormitorio, dos baños, 70 m² cubiertos y terreno de 444 m². Quincho, parrilla, horno de barro y pileta. La calle se publica sin altura: no se inventa un número. Localidad Manuel Alberti, Pilar. |
+| `bo-213686` / 213686 / [Rafaela 4900, Villa Luro](https://www.balbasoviedoprop.com.ar/ad/departamento-3-ambientes-en-villa-luro) | Departamento / Venta | USD 73.000 | Piso 10, dos dormitorios, un baño, 56 m² cubiertos y totales según el cuadro. Balcón, vista abierta, cocina separada y placares. Superficie de terreno no publicada: `null`. |
+| `bo-213720` / 213720 / [Av. Díaz Vélez 3500, Almagro Norte](https://www.balbasoviedoprop.com.ar/ad/departamento-3-ambientes-en-almagro-norte) | Departamento / Venta | USD 145.000 | Piso 1, dos dormitorios, un baño, 71 m² cubiertos y 73 m² totales. Publica apto profesional y "APTO CREDITO": `credit: true`, sujeto a confirmación bancaria. También declara no accesibilidad física según Ley 5115; advertencia conservada. Terreno `null`. |
+| `bo-213698` / 213698 / [Arquímedes 4050, Los Polvorines](https://www.balbasoviedoprop.com.ar/ad/departamento-en-los-polvorines-1) | Departamento / Venta | USD 49.000 | PH de tres ambientes con patio, dos dormitorios y dos baños; 87 m² cubiertos y totales. Valor publicado libre de gastos. Expensas todavía no cobradas con consorcio en trámite: no se garantiza que continúe sin expensas. No se agrega el otro aviso de 47 m² de la misma dirección. |
+
+Los importes son USD nominales publicados, sin conversiones. Solo Almagro Norte, código 213720, se marca `credit: true` por afirmación expresa de la ficha. Las restantes quedan en `false`, como falta de confirmación positiva; La Habana y Crámer niegan expresamente la aptitud. `featured: true` en los doce indica la selección de esta demo, no una clasificación nueva atribuida al cliente.
+
+Se mantienen `operations: ['Venta', 'Alquiler']`, pero **las doce fichas de esta selección son ventas**. El [listado actual de alquileres](https://www.balbasoviedoprop.com.ar/listing?user_id=2140&purpose=rent) devuelve "Propiedad no encontrada por sus criterios de búsqueda". No se inventaron alquileres para poblar la categoría ni se transformaron ventas en temporarios. El servicio de alquiler dirige a contacto y aclara el límite.
+
+### Control de inmuebles distintos
+
+Se revisaron las tres páginas actuales de [ventas, página 1](https://www.balbasoviedoprop.com.ar/listing?user_id=2140&purpose=sale), [página 2](https://www.balbasoviedoprop.com.ar/listing?user_id=2140&purpose=sale&page=2) y [página 3](https://www.balbasoviedoprop.com.ar/listing?user_id=2140&purpose=sale&page=3). No se contaron doce avisos sin revisar su identidad:
+
+- La Habana 300 aparece con códigos 213638 y 216932, mismo precio, dimensiones y dormitorios: se conserva únicamente el registro original 216932.
+- Asamblea 3500 aparece con códigos 217088 y 213718, 319 m² y USD 45.000: solo se incorpora 217088.
+- Santa Elena aparece como quinta y como lote con 2.411 m² y USD 189.000: solo se selecciona la quinta 213673, sin afirmar que sean dos inmuebles distintos.
+- Arquímedes 4050 tiene dos departamentos publicados con distintas dimensiones y precios, sin unidad precisa: solo se selecciona el de 87 m², código 213698. No es necesario suponer si el otro es independiente para alcanzar doce.
+- Chacarita, código 222104, figura **Suspendida** en el listado y se excluye. En las doce fichas seleccionadas no se observaron marcas de vendida, reservada o suspendida; esto no acredita disponibilidad en tiempo real.
 
 ## Imágenes y textos
 
-- Doce URL remotas de fotografías del dominio oficial: tres de La Habana, dos de Brughetti, tres de Álvarez Jonte, dos de Almirante Brown y dos de Lartigau Lespada. Todas las URL exactas se conservan en `config.js` y aparecen en las galerías de las fichas enlazadas.
+- Veintiséis URL remotas de fotografías del dominio oficial: se conservan las doce originales y se incorporan catorce, dos por ficha nueva. Todas las URL exactas se conservan en `config.js` y aparecen en las galerías de las fichas enlazadas.
 - Se utilizan archivos originales publicados, no miniaturas inferidas, stock, reemplazos de otras inmobiliarias ni imágenes inventadas. Las fotos pueden contener marcas de agua del propio cliente.
 - Las imágenes de zonas y del bloque institucional son fotos de esos inmuebles. Sus textos lo aclaran para no atribuirles una vista general del barrio o de la oficina.
 - Descripciones propias resumidas, fieles a la información accesible y con las contradicciones expresas. La etiqueta `totalArea` indica "Superficie cubierta informada"; `area` no mezcla cubierta con terreno.
@@ -52,8 +74,8 @@ Investigación con webfetch y navegación Playwright en Microsoft Edge. El cambi
 
 Se verifican datos publicados, no documentación dominial, mensuras, servicios efectivos, estado edilicio, disponibilidad ni validez registral de matrículas. Las contradicciones permanecen visibles y sus campos numéricos inciertos son `null`. Las superficies del título y planos deben prevalecer en una operación real.
 
-Solo se entregan `index.html`, `config.js` y este documento. El esquema completo incluye 175 etiquetas y las secciones de la demo base. La verificación final comprende `node --check`, referencias internas de catálogo, imágenes remotas y rutas en escritorio y móvil. El formulario solo prepara correo en la aplicación del visitante; no se ejecutó ningún envío. La publicación e integración general quedan a cargo del agente principal.
+En esta ampliación solo se modifican `config.js` y este documento. No se modifican el index ni el motor compartido. El esquema conserva 175 etiquetas, marca, contactos, mensajes simulados, hero y zonas existentes, con fecha 2026-10-21. El formulario solo prepara correo en la aplicación del visitante; no se ejecutó ningún envío. La publicación e integración general quedan a cargo del agente principal.
 
-Resultado: sintaxis y esquema correctos; cinco fichas originales accesibles; doce fotos y el logo con respuesta de imagen y decodificación correcta en Edge; 13 rutas recorridas, favoritos locales probados y comprobaciones de ancho a 1440 y 390 píxeles sin desbordes ni errores de JavaScript. Contraste del primario sobre blanco: 8,59:1. Las imágenes diferidas también se verificaron de forma independiente.
+Resultado de la ampliación: `node --check` y esquema correctos; doce IDs y fuentes únicos, referencias hero/zonas válidas y registros originales conservados. Las doce fichas responden correctamente y cada foto figura en el HTML de su fuente. Las veintiséis fotos y el logo responden como imagen y se decodifican en Edge sin errores. Se recorrieron 20 rutas, se probaron favoritos locales y anchos de 1440 y 390 píxeles sin desbordes ni errores de JavaScript. Contraste del primario sobre blanco: 8,59:1. Las imágenes diferidas también se verificaron de forma independiente.
 
 Integración final: la tarjeta de Almirante Brown omite la superficie cuando cubierta y terreno son `null`. El motor compartido fue corregido y probado sin sustituir datos inciertos por cero ni elegir una cifra contradictoria. La descripción conserva la salvedad de la fuente.

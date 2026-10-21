@@ -29,7 +29,8 @@ const clients = sites.map(site => {
   assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(site.slug), 'Unsafe client slug');
   return { ...site, config: readJSONWrapper(`${site.slug}/config.js`, 'SITE_CONFIG') };
 });
-assert.equal(clients.reduce((sum, site) => sum + site.config.properties.length, 0), 51, 'Expected all 51 published properties');
+const propertyCount = clients.reduce((sum, site) => sum + site.config.properties.length, 0);
+for (const site of clients) assert(site.config.properties.length > 5, `${site.slug}: expected more than five properties`);
 const assetURL = value => new URL(value, base).href;
 const imageURLs = new Set(clients.flatMap(({ config }) => [config.brand.logo, ...config.properties.flatMap(p => p.images)].filter(Boolean)).map(assetURL));
 const clientURL = slug => new URL(`${slug}/index.html`, base).href;
@@ -209,7 +210,7 @@ const storageKey = (slug, field) => `${slug === 'cristian-moos' ? 'cm-demo' : `i
       await page.setViewportSize({ width: 1440, height: 1000 });
       await section(`${slug}: home and original assets`, async () => {
         await go(site);
-        const featured = config.properties.filter(p => p.featured).slice(0, 6);
+        const featured = config.properties.filter(p => p.featured).slice(0, 12);
         equal(await cardIDs(), featured.map(p => p.id), `${slug}: expected featured count and identities`);
         for (const property of featured.filter(p => p.price === null)) equal(await page.locator('#featured-grid .property-card').filter({ has: page.locator(`[data-id="${property.id}"]`) }).locator('.card-price').innerText(), 'Consultar precio', `${slug}/${property.id}: home card unknown price`);
         check((await page.locator('#header .brand').innerText()).includes(config.brand.shortName), `${slug}: configured brand name`);
@@ -344,7 +345,7 @@ const storageKey = (slug, field) => `${slug === 'cristian-moos' ? 'cm-demo' : `i
       }
     });
     await collect();
-    equal(details, 51, 'All 51 desktop property detail/gallery journeys completed');
+    equal(details, propertyCount, `All ${propertyCount} desktop property detail/gallery journeys completed`);
     equal(results.jsErrors, [], 'No uncaught browser JavaScript errors');
     equal(results.requestFailures, [], 'No failed local/base-prefix requests');
     equal(results.httpFailures, [], 'No local/base-prefix HTTP 4xx/5xx');

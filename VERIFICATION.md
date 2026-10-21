@@ -11,7 +11,7 @@ Pruebas ejecutadas el **21/10/2026** en Windows, con Node **v24.18.0** y Microso
 | `node --test tests/data.test.cjs` | 9 pruebas aprobadas |
 | `tests/browser.cjs` | 126 comprobaciones de navegador aprobadas |
 | `tests/multi-site.cjs` | 255 comprobaciones HTTP multicliente aprobadas |
-| `tests/clients-browser.cjs` con axe | 1.793 comprobaciones locales aprobadas en las 11 demos |
+| `tests/clients-browser.cjs` con axe | 2.855 comprobaciones locales aprobadas en las 11 demos |
 | `tests/accessibility.cjs` | 0 infracciones axe en las 16 combinaciones de vista y ancho auditadas |
 
 Las pruebas del navegador recorren inicio, catálogo, detalle, contacto, nosotros, favoritos, resumen del panel, propiedades del panel, mensajes y configuración a **360, 390, 768, 1024, 1440 y 1920 px**. No detectaron desbordamiento horizontal de página. Las tablas y la navegación del panel permiten desplazamiento interno en pantallas pequeñas.
@@ -59,7 +59,7 @@ Se inspeccionaron visualmente las capturas de inicio, detalle y dashboard en esc
 
 ## Once Demos
 
-La integración de las diez inmobiliarias adicionales se verificó con 51 fichas, 130 URLs de imágenes y logos decodificadas, 110 recorridos de ancho sin desbordes y 44 auditorías axe de inicio y contacto a 390 y 1440 px. No se detectaron infracciones automáticas; las comprobaciones de contraste sobre fotografías y degradados que axe no puede resolver requieren revisión manual y no constituyen una certificación. Se revisaron capturas de Nazareth, Pallotta y Puricelli. La prueba de todos los clientes también verificó importación, recarga, canales vacíos ocultos, superficies desconocidas omitidas y tratamiento de precios a consultar en las vistas, filtros y ordenación.
+La ampliación incorpora 79 publicaciones respecto de la selección inicial: hay 130 fichas en total, con 12 por cada una de las diez inmobiliarias nuevas y 10 de Cristian Moos. La portada admite hasta 12 destacadas, sin recortar la nueva selección a seis. Las pruebas verificaron las 130 fichas, 269 URLs de imágenes y logos decodificadas, 110 recorridos de ancho sin desbordes y 44 auditorías axe de inicio y contacto a 390 y 1440 px. No se detectaron infracciones automáticas; las comprobaciones de contraste sobre fotografías y degradados que axe no puede resolver requieren revisión manual y no constituyen una certificación. Se revisaron las nuevas capturas de Natalia Alvarez en escritorio y Oliva en móvil, además de las capturas anteriores de Nazareth, Pallotta y Puricelli. La prueba de todos los clientes también verificó importación, recarga, canales vacíos ocultos, superficies desconocidas omitidas y tratamiento de precios a consultar en las vistas, filtros y ordenación.
 
 ## Fuera de Alcance
 

@@ -51,7 +51,7 @@ window.SITE_CONFIG = {
     "eyebrow": "TU INMOBILIARIA EN TORTUGUITAS Y ALREDEDORES",
     "title": "Un lugar para vivir.",
     "titleAccent": "Un proyecto para vos.",
-    "subtitle": "Casas, terrenos y departamentos publicados por Oliva Propiedades. Explora oportunidades en Tortuguitas, Los Polvorines y San Miguel.",
+    "subtitle": "12 propiedades publicadas por Oliva: casas, quintas, duplex, departamentos y terrenos en Tortuguitas, Los Polvorines, Jose C. Paz y San Miguel.",
     "heroIds": [
       "oliva-210249",
       "oliva-234783",
@@ -60,7 +60,7 @@ window.SITE_CONFIG = {
     "heroLocation": "Tortuguitas | Malvinas Argentinas | San Miguel",
     "featuredEyebrow": "SELECCION OLIVA PROPIEDADES",
     "featuredTitle": "Distintas maneras de dar el proximo paso",
-    "featuredSubtitle": "Cuatro publicaciones del sitio oficial, con sus precios y fotografias originales.",
+    "featuredSubtitle": "12 inmuebles distintos en venta, con precios y fotografias de sus fichas oficiales. El catalogo oficial de alquileres no presenta resultados al consultar.",
     "zonesEyebrow": "EXPLORA NUESTRAS ZONAS",
     "zonesTitle": "Tu busqueda, cerca de lo que importa",
     "zonesSubtitle": "Conoce los entornos de las propiedades incluidas en esta seleccion.",
@@ -122,7 +122,9 @@ window.SITE_CONFIG = {
   "types": [
     "Casa",
     "Terreno",
-    "Departamento"
+    "Departamento",
+    "Quinta",
+    "Duplex"
   ],
   "operations": [
     "Venta",
@@ -194,7 +196,7 @@ window.SITE_CONFIG = {
     "officialSite": "Sitio oficial",
     "backSite": "Volver al sitio",
     "catalogTitle": "Encontr\u00e1 ese lugar que busc\u00e1s",
-    "catalogSubtitle": "Propiedades reales. Nuevas posibilidades.",
+    "catalogSubtitle": "12 publicaciones distintas de Oliva: casas, quintas, duplex, departamentos y terrenos en venta.",
     "results": "propiedades encontradas",
     "result": "propiedad encontrada",
     "sort": "Ordenar por",
@@ -480,6 +482,70 @@ window.SITE_CONFIG = {
         "https://storage.googleapis.com/portales-prod-images/5140/property-images/2026/5/7a29c017-db74-47ff-8b91-749b3d0de588.jpeg"
       ],
       "source": "https://www.olivaprop.com.ar/propiedad/214426_dpto-en-pozo-en-san-miguel/"
+    },
+    {
+      "id": "oliva-203969", "reference": "OLI-203969", "title": "Quinta con pileta sobre 900 m2", "address": "Trinidad 3700", "location": "Jose C. Paz, Buenos Aires", "type": "Quinta", "operation": "Venta", "currency": "USD", "price": 57000,
+      "bedrooms": 2, "bathrooms": 1, "area": 40, "landArea": 900, "credit": false, "featured": true,
+      "description": "Casa quinta en Trinidad 3700, Jose C. Paz, con dos dormitorios, un bano y pileta. La ficha informa 40 m2 cubiertos sobre un terreno de 900 m2, orientacion norte y entorno arbolado. Cuenta con gas natural y alarma segun la publicacion. Se usa el precio de USD 57.000 del encabezado y la tabla, actualizados el 20/10/2026; el texto conserva otro importe anterior que debe confirmarse con Oliva.",
+      "features": ["Pileta", "Entorno arbolado", "Gas natural", "Alarma", "Orientacion norte"],
+      "images": ["https://storage.googleapis.com/portales-prod-images/5140/property-images/2026/2/6c3091d5-7da6-4e35-a7a9-fe7a9c262841.jpeg", "https://storage.googleapis.com/portales-prod-images/5140/property-images/2026/2/f4050a86-0f6c-4267-869d-00fc8260e6a5.jpeg"],
+      "source": "https://www.olivaprop.com.ar/propiedad/203969_casa-quinta-de-900m2-con-pileta/"
+    },
+    {
+      "id": "oliva-214412", "reference": "OLI-214412", "title": "Departamento de tres ambientes en San Miguel", "address": "Sarmiento 1125, piso 8, departamento A", "location": "San Miguel, Buenos Aires", "type": "Departamento", "operation": "Venta", "currency": "USD", "price": 77000,
+      "bedrooms": 2, "bathrooms": 1, "area": 53, "landArea": null, "credit": true, "featured": true,
+      "description": "Departamento en venta en Sarmiento 1125, San Miguel, con dos dormitorios, living comedor, cocina y un bano. La ficha informa 53 m2 cubiertos y 5 m2 descubiertos, sin cochera. Publicado como apto credito hipotecario y apto profesional, condiciones a verificar con la inmobiliaria y el banco. El texto indica que actualmente esta alquilado: no se ofrece como alquiler disponible ni se garantiza entrega desocupada. Publica expensas de ARS 230.000, adicionales al precio de venta.",
+      "features": ["Tres ambientes", "Balcon", "Aire acondicionado", "Gas natural", "Publicado apto credito", "Publicado actualmente alquilado"],
+      "images": ["https://storage.googleapis.com/portales-prod-images/5140/property-images/2026/5/f4e6712b-e0d8-4d5c-bebb-70482f754a83.jpeg", "https://storage.googleapis.com/portales-prod-images/5140/property-images/2026/5/e645c428-3fca-48e4-bcee-8c8b3e6b8031.jpeg"],
+      "source": "https://www.olivaprop.com.ar/propiedad/214412_depto-3-ambientes-en-san-miguel/"
+    },
+    {
+      "id": "oliva-168410", "reference": "OLI-168410", "title": "Departamento en Complejo Colon", "address": "Cristobal Colon 3260", "location": "Jose C. Paz, Buenos Aires", "type": "Departamento", "operation": "Venta", "currency": "USD", "price": 42000,
+      "bedrooms": 1, "bathrooms": 1, "area": 40, "landArea": null, "credit": false, "featured": true,
+      "description": "Departamento de dos ambientes a estrenar en el Complejo Colon, Jose C. Paz. La ficha identifica un dormitorio, un bano, 40 m2 cubiertos y 6 m2 descubiertos. Incluye cocina a gas, termotanque electrico, bajo mesada y alacena. Se publica con disposicion interna y posibilidad de financiacion directa. Se mantiene el precio de USD 42.000 del encabezado y la tabla, aunque el texto menciona USD 40.000; confirmar el importe y las condiciones aplicables a esta unidad.",
+      "features": ["A estrenar", "Dos ambientes", "Disposicion interna", "Financiacion publicada"],
+      "images": ["https://storage.googleapis.com/portales-prod-images/5140/property-images/2025/6/78573ea4-c757-4c49-bbac-0fc17300210b.jpeg", "https://storage.googleapis.com/portales-prod-images/5140/property-images/2025/6/67913306-3321-4f07-8bfc-eeec9fabd985.jpeg"],
+      "source": "https://www.olivaprop.com.ar/propiedad/168410_departamento-en-venta-de-1-dormitorio-en-jose-c-paz/"
+    },
+    {
+      "id": "oliva-174451", "reference": "OLI-174451", "title": "Quinta con pileta en Laprida y Tobago", "address": "Laprida y Tobago", "location": "Jose C. Paz, Buenos Aires", "type": "Quinta", "operation": "Venta", "currency": "USD", "price": 130000,
+      "bedrooms": 2, "bathrooms": 2, "area": 90, "landArea": 880, "credit": false, "featured": true,
+      "description": "Casa quinta publicada en Laprida y Tobago, Jose C. Paz. La tabla informa dos dormitorios, dos banos, 90 m2 cubiertos y un terreno de 880 m2. Cuenta con cochera cubierta, pileta, parrilla y entorno arbolado. La publicacion menciona aire acondicionado, calefaccion y gas natural. Consultar distribucion, documentacion y disponibilidad con Oliva.",
+      "features": ["Pileta", "Parrilla", "Cochera cubierta", "Aire acondicionado", "Gas natural"],
+      "images": ["https://storage.googleapis.com/portales-prod-images/5140/property-images/2025/8/bdd7d70c-8c5b-4990-bb68-3f2786400ff9.jpeg", "https://storage.googleapis.com/portales-prod-images/5140/property-images/2025/8/0ab70c8a-534e-4b3e-8871-a2d4a2175b68.jpeg"],
+      "source": "https://www.olivaprop.com.ar/propiedad/174451_casa-quina-ubicado/"
+    },
+    {
+      "id": "oliva-232632", "reference": "OLI-232632", "title": "Terreno de 700 m2 en Tortuguitas", "address": "Buenos Aires 1000", "location": "Tortuguitas, Malvinas Argentinas", "type": "Terreno", "operation": "Venta", "currency": "USD", "price": 75000,
+      "bedrooms": null, "bathrooms": 0, "area": null, "landArea": 700, "credit": false, "featured": true,
+      "description": "Terreno de 700 m2 en Buenos Aires 1000, Tortuguitas, segun la superficie total publicada. El texto informa cierre perimetral con alambrado, un lateral con paredon, entrada vehicular con porton y pilar de luz instalado. Ubicado a una cuadra de Arturo Illia, ex Ruta 8, segun la ficha. No se recalcula la superficie a partir de los frentes y fondos informados; confirmar medidas y servicios disponibles.",
+      "features": ["Cierre perimetral", "Entrada vehicular", "Pilar de luz", "Cerca de ex Ruta 8"],
+      "images": ["https://storage.googleapis.com/portales-prod-images/5140/property-images/2026/9/1e199c45-b96d-416f-93ae-7cc7245b7b84.jpeg", "https://storage.googleapis.com/portales-prod-images/5140/property-images/2026/9/c371c51e-783b-49e4-8824-d48af765495e.jpeg"],
+      "source": "https://www.olivaprop.com.ar/propiedad/232632_terreno-700m2-tortuguitas/"
+    },
+    {
+      "id": "oliva-160766", "reference": "OLI-160766", "title": "Duplex en complejo privado de Jose C. Paz", "address": "Capitan Martinez 1232", "location": "Jose C. Paz, Buenos Aires", "type": "Duplex", "operation": "Venta", "currency": "USD", "price": 63000,
+      "bedrooms": 2, "bathrooms": null, "area": 64, "landArea": null, "credit": false, "featured": true,
+      "description": "Duplex de dos plantas publicado por Oliva en Capitan Martinez 1232, Jose C. Paz. Cuenta con dos dormitorios, living comedor, cocina, patio posterior y espacio para guardacoche. La tabla informa 64 m2 cubiertos. El texto menciona un bano de servicio y otro completo, pero la tabla cuenta uno: se deja la cantidad sin informar hasta confirmacion. Tampoco se infiere una superficie de terreno de los metros descubiertos del complejo. Confirmar expensas, ya que el texto y el campo de gastos no coinciden.",
+      "features": ["Dos plantas", "Patio", "Guardacoche", "Aire acondicionado", "Gas natural"],
+      "images": ["https://storage.googleapis.com/portales-prod-images/5140/property-images/2025/4/52cf103c-c56b-4b9a-afa6-39d548289c87.jpeg", "https://storage.googleapis.com/portales-prod-images/5140/property-images/2025/4/0882a650-4832-4353-8c2b-d8627f54e289.jpeg"],
+      "source": "https://www.olivaprop.com.ar/propiedad/160766_duplex-en-complejo/"
+    },
+    {
+      "id": "oliva-234504", "reference": "OLI-234504", "title": "Terreno de 440 m2 en Yei Pora", "address": "Humboldt 2250", "location": "Yei Pora, Jose C. Paz", "type": "Terreno", "operation": "Venta", "currency": "USD", "price": 45000,
+      "bedrooms": null, "bathrooms": 0, "area": null, "landArea": 440, "credit": false, "featured": true,
+      "description": "Lote de 440 m2 en Humboldt 2250, barrio Yei Pora, Jose C. Paz. La publicacion lo situa a cinco cuadras de Ruta 8 e informa cierre perimetral, entrada vehicular y pilar de luz. Ofrece financiacion y menciona posesion y escritura inmediata, condiciones que deben verificarse con la inmobiliaria y la documentacion. No se afirma aptitud crediticia por ofrecer financiacion.",
+      "features": ["Cierre perimetral", "Entrada vehicular", "Pilar de luz", "Financiacion publicada"],
+      "images": ["https://storage.googleapis.com/portales-prod-images/5140/property-images/2026/9/3e1a8167-ecd4-47e6-94bb-8a3a7b3834c8.jpeg", "https://storage.googleapis.com/portales-prod-images/5140/property-images/2026/9/0a1babd2-4e47-4061-9c4a-e2d507b682fa.jpeg"],
+      "source": "https://www.olivaprop.com.ar/propiedad/234504_terreno-de-440m2/"
+    },
+    {
+      "id": "oliva-235772", "reference": "OLI-235772", "title": "Terreno con pileta y quincho en Tortuguitas", "address": "Canning 4050", "location": "Tortuguitas, Malvinas Argentinas", "type": "Terreno", "operation": "Venta", "currency": "USD", "price": 65000,
+      "bedrooms": null, "bathrooms": null, "area": null, "landArea": 300, "credit": false, "featured": true,
+      "description": "Terreno de 300 m2 en Canning 4050, Tortuguitas, publicado con pileta y quincho con sala de bombas. La ficha ofrece financiacion y lo ubica a diez cuadras de la estacion. El encabezado y la tabla publican USD 65.000, aunque el texto menciona USD 62.000. La descripcion habla de un bano en el quincho mientras la tabla indica cero, y no se informa la superficie del quincho: ambos datos quedan sin cuantificar en la demo.",
+      "features": ["Pileta", "Quincho", "Barrio abierto", "Pavimento", "Financiacion publicada"],
+      "images": ["https://storage.googleapis.com/portales-prod-images/5140/property-images/2026/10/cd786e24-9eb3-48b4-a45f-92704f005257.jpeg", "https://storage.googleapis.com/portales-prod-images/5140/property-images/2026/10/535519d1-0e13-4851-8201-62ae99500542.jpeg"],
+      "source": "https://www.olivaprop.com.ar/propiedad/235772_pileta-y-quincho-en-tortuguitas/"
     }
   ]
 };

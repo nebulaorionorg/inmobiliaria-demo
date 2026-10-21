@@ -59,8 +59,8 @@ window.SITE_CONFIG = {
     ],
     "heroLocation": "Gar\u00edn - Partido de Escobar",
     "featuredEyebrow": "SELECCI\u00d3N DE PUBLICACIONES",
-    "featuredTitle": "Tres formas de dar el pr\u00f3ximo paso",
-    "featuredSubtitle": "Una selecci\u00f3n del sitio oficial, con precios en su moneda original y enlaces a cada ficha.",
+    "featuredTitle": "M\u00e1s opciones para tu pr\u00f3ximo paso",
+    "featuredSubtitle": "Doce inmuebles diferentes del sitio oficial: casas, terrenos, departamentos y un local, en venta y alquiler. Precios en su moneda original; disponibilidad a confirmar.",
     "zonesEyebrow": "EXPLOR\u00c1 GAR\u00cdN",
     "zonesTitle": "Un entorno para tu proyecto",
     "zonesSubtitle": "Conoc\u00e9 las publicaciones de esta selecci\u00f3n en Gar\u00edn.",
@@ -71,14 +71,14 @@ window.SITE_CONFIG = {
       {
         "icon": "home",
         "title": "Quiero comprar",
-        "text": "Compar\u00e1 la casa y el terreno de esta selecci\u00f3n. Consult\u00e1 documentaci\u00f3n, condiciones y disponibilidad.",
+        "text": "Compar\u00e1 casas y terrenos de esta selecci\u00f3n. Consult\u00e1 documentaci\u00f3n, condiciones y disponibilidad.",
         "action": "Ver ventas",
         "href": "#/propiedades?operation=Venta"
       },
       {
         "icon": "key",
         "title": "Quiero alquilar",
-        "text": "Conoc\u00e9 el departamento publicado en Gar\u00edn. Confirm\u00e1 requisitos, actualizaciones y condiciones del contrato.",
+        "text": "Conoc\u00e9 las casas, departamentos y el local publicados en alquiler. Confirm\u00e1 requisitos, actualizaciones y condiciones del contrato.",
         "action": "Ver alquileres",
         "href": "#/propiedades?operation=Alquiler"
       },
@@ -112,7 +112,8 @@ window.SITE_CONFIG = {
   "types": [
     "Casa",
     "Terreno",
-    "Departamento"
+    "Departamento",
+    "Local"
   ],
   "operations": [
     "Venta",
@@ -184,7 +185,7 @@ window.SITE_CONFIG = {
     "officialSite": "Sitio oficial",
     "backSite": "Volver al sitio",
     "catalogTitle": "Encontr\u00e1 ese lugar que busc\u00e1s",
-    "catalogSubtitle": "Casa, terreno y departamento del sitio oficial. Disponibilidad a confirmar.",
+    "catalogSubtitle": "Casas, terrenos, departamentos y un local del sitio oficial. Disponibilidad a confirmar.",
     "results": "propiedades encontradas",
     "result": "propiedad encontrada",
     "sort": "Ordenar por",
@@ -438,6 +439,280 @@ window.SITE_CONFIG = {
         "https://static.tokkobroker.com/w_pics/11685865_42360236937783664622339254545732584339212015321574727552695248734453137074117.jpg"
       ],
       "source": "https://www.inmobiliariaalvarez.com.ar/p/11685865-Departamento-en-Alquiler-en-Garin-Jose-Hernandez-al-1000"
+    },
+    {
+      "id": "na-11928040",
+      "reference": "IHO11928040",
+      "title": "Casa con jard\u00edn en Gar\u00edn Norte",
+      "address": "Isla Lennox al 500",
+      "location": "Barrio Gar\u00edn Norte, Escobar",
+      "type": "Casa",
+      "operation": "Alquiler",
+      "currency": "ARS",
+      "price": 650000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Casa de una planta en barrio Gar\u00edn Norte. La ficha publica cuatro ambientes, dos dormitorios, un ba\u00f1o y una cochera, con cocina, patio y jard\u00edn. Menciona gas natural y aptitud para mascotas; no informa superficies. Confirm\u00e1 requisitos y disponibilidad.",
+      "features": [
+        "Una planta",
+        "Cochera",
+        "Patio",
+        "Jard\u00edn",
+        "Gas natural",
+        "Publicado apto mascotas"
+      ],
+      "images": [
+        "https://static.tokkobroker.com/w_pics/11928040_110798963183613957483817842505998357446673154587839093447517378639238436337245.jpg",
+        "https://static.tokkobroker.com/w_pics/11928040_85796755253463166244511870354263850043046068311049812128499109498883274531670.jpg"
+      ],
+      "source": "https://www.inmobiliariaalvarez.com.ar/p/11928040-Casa-en-Alquiler-en-Barrio-Garin-Norte-ISLA-LENNOX-al-500"
+    },
+    {
+      "id": "na-7952069",
+      "reference": "IHO7952069",
+      "title": "Casa amoblada en esquina en Gar\u00edn",
+      "address": "Juan Manuel de Rosas al 400",
+      "location": "Gar\u00edn, Escobar",
+      "type": "Casa",
+      "operation": "Alquiler",
+      "currency": "ARS",
+      "price": 900000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": 107.25,
+      "landArea": 228,
+      "credit": false,
+      "featured": true,
+      "description": "Casa amoblada de cuatro ambientes en esquina, con dos dormitorios, ba\u00f1o completo y garaje cubierto para un veh\u00edculo. La ficha informa 82,5 m2 cubiertos y 107,25 m2 de total construido sobre 228 m2 de terreno. Living y comedor, cocina integrada al comedor diario y lavadero independiente. Consult\u00e1 condiciones del alquiler.",
+      "features": [
+        "Amoblada seg\u00fan publicaci\u00f3n",
+        "Esquina",
+        "Garaje cubierto",
+        "Lavadero",
+        "Gas natural",
+        "Aire acondicionado"
+      ],
+      "images": [
+        "https://static.tokkobroker.com/w_pics/7952069_18412719429148289182952928054322801936782929457384157781751759756708460241328.jpg",
+        "https://static.tokkobroker.com/w_pics/7952069_86363629508196243903947239538047676863460806222366461846452081985636122059914.jpg"
+      ],
+      "source": "https://www.inmobiliariaalvarez.com.ar/p/7952069-Casa-en-Alquiler-en-Garin-Juan-Manuel-de-Rosas-al-400"
+    },
+    {
+      "id": "na-11686147",
+      "reference": "IHO11686147",
+      "title": "Casa de dos plantas en Cayetano Bourdet",
+      "address": "Cayetano Bourdet al 1600",
+      "location": "Gar\u00edn, Escobar",
+      "type": "Casa",
+      "operation": "Alquiler",
+      "currency": "ARS",
+      "price": 900000,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": 214,
+      "credit": false,
+      "featured": true,
+      "description": "Casa con cocina, living comedor y patio en planta baja, y tres habitaciones, balc\u00f3n y sala de estar en planta alta. Publica un ba\u00f1o, 164,35 m2 cubiertos y terreno de 214 m2, sin total construido informado. El aviso menciona aumento trimestral del 6%; confirm\u00e1 las condiciones vigentes.",
+      "features": [
+        "Dos plantas",
+        "Tres habitaciones",
+        "Balc\u00f3n",
+        "Patio",
+        "Sala de estar",
+        "164,35 m2 cubiertos"
+      ],
+      "images": [
+        "https://static.tokkobroker.com/w_pics/11686147_112816390897784457415693062549441460877822656027641215453117217098852378875893.jpg",
+        "https://static.tokkobroker.com/pictures/11686147_88282328248986138796406717996057803150999574671042348815735980718856688542824.jpg"
+      ],
+      "source": "https://www.inmobiliariaalvarez.com.ar/p/11686147-Casa-en-Alquiler-en-Garin-Cayetano-Bourdet-al-1600"
+    },
+    {
+      "id": "na-11685793",
+      "reference": "IAP11685793",
+      "title": "Departamento de tres ambientes en Gar\u00edn",
+      "address": "Cayetano Bourdet al 2500",
+      "location": "Gar\u00edn, Escobar",
+      "type": "Departamento",
+      "operation": "Alquiler",
+      "currency": "ARS",
+      "price": 700000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Departamento anunciado a estrenar, con dos habitaciones, living con cocina comedor y lavadero, a metros de una zona comercial. Informa un ba\u00f1o y 60 m2 cubiertos, sin total construido. La ficha menciona aumento trimestral por ICL; consult\u00e1 requisitos, contrato y disponibilidad.",
+      "features": [
+        "Tres ambientes",
+        "60 m2 cubiertos",
+        "Lavadero",
+        "Cercano a zona comercial",
+        "Anunciado a estrenar"
+      ],
+      "images": [
+        "https://static.tokkobroker.com/w_pics/11685793_112965996941241602226551106678776987236759417859057079214563834217981701509529.jpg",
+        "https://static.tokkobroker.com/w_pics/11685793_114294710990610405176252415722885991021809296973719361864414285154744006013152.jpg"
+      ],
+      "source": "https://www.inmobiliariaalvarez.com.ar/p/11685793-Departamento-en-Alquiler-en-Garin-Cayetano-Bourdet--al-2500"
+    },
+    {
+      "id": "na-8559555",
+      "reference": "ILO8559555",
+      "title": "Local en Gar\u00edn centro",
+      "address": "2 de Abril 87",
+      "location": "Gar\u00edn Centro, Gar\u00edn",
+      "type": "Local",
+      "operation": "Alquiler",
+      "currency": "ARS",
+      "price": 550000,
+      "bedrooms": null,
+      "bathrooms": 1,
+      "area": 33.12,
+      "landArea": null,
+      "credit": false,
+      "featured": true,
+      "description": "Local con ba\u00f1o en 2 de Abril 87, Gar\u00edn centro. La ficha informa electricidad y 33,12 m2 de total construido. Sus campos de cubierta y semicubierta repiten 33,12 m2: no se suman y deben cotejarse con la documentaci\u00f3n. Confirm\u00e1 habilitaci\u00f3n y condiciones del alquiler.",
+      "features": [
+        "Ubicaci\u00f3n c\u00e9ntrica",
+        "Ba\u00f1o",
+        "Electricidad",
+        "Superficies a cotejar"
+      ],
+      "images": [
+        "https://static.tokkobroker.com/w_pics/8559555_38206742552102309615691629084153851380629709581148259749697380351572194884777.jpg",
+        "https://static.tokkobroker.com/w_pics/8559555_31439269440169964020338495510571551676238176526004633237605307728622418318935.jpg"
+      ],
+      "source": "https://www.inmobiliariaalvarez.com.ar/p/8559555-Local-en-Alquiler-en-Garin-Centro-2-DE-ABRIL--87"
+    },
+    {
+      "id": "na-7462559",
+      "reference": "ILA7462559",
+      "title": "Lote en esquina en El Cazador",
+      "address": "John F. Kennedy al 1300",
+      "location": "Barrio El Cazador, Escobar",
+      "type": "Terreno",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 119000,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area": null,
+      "landArea": 1000,
+      "credit": false,
+      "featured": true,
+      "description": "Terreno de 1.000 m2 en esquina con salida a dos calles, en barrio El Cazador. La descripci\u00f3n incluye una casa existente a refaccionar o demoler, pileta y parrilla; se mantiene como una sola oferta. No se afirman usos o desarrollos permitidos sin verificaci\u00f3n municipal.",
+      "features": [
+        "Esquina",
+        "Salida a dos calles",
+        "Casa existente a refaccionar o demoler",
+        "Pileta",
+        "Parrilla"
+      ],
+      "images": [
+        "https://static.tokkobroker.com/w_pics/7462559_51740962406001410999189027389719748190921696986870505228539522244094155632108.jpg",
+        "https://static.tokkobroker.com/w_pics/7462559_47411916576276171646748415906125608597823308690672196380939593585287018668761.jpg"
+      ],
+      "source": "https://www.inmobiliariaalvarez.com.ar/p/7462559-Terreno-en-Venta-en-Barrio-El-Cazador-John-F.-Kennedy-al-1300"
+    },
+    {
+      "id": "na-10505804",
+      "reference": "IHO10505804",
+      "title": "Casa con piscina cerca de Palmas de Pilar",
+      "address": "Los Almendros al 1300",
+      "location": "Pilar, Buenos Aires",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 180000,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": 576,
+      "credit": false,
+      "featured": true,
+      "description": "Casa con tres habitaciones, cocina integrada al living comedor, ba\u00f1o completo, lavadero, piscina, galer\u00eda y dos cocheras semicubiertas. El aviso la ubica a 200 metros de Palmas de Pilar e informa terreno de 576 m2, 83 m2 cubiertos y 65 m2 semicubiertos, sin total construido explicitado.",
+      "features": [
+        "Piscina",
+        "Galer\u00eda semicubierta",
+        "Dos cocheras semicubiertas",
+        "Lavadero",
+        "83 m2 cubiertos"
+      ],
+      "images": [
+        "https://static.tokkobroker.com/w_pics/10505804_90889606412203379405135416361524481312366543871016079026772700130955478728085.jpg",
+        "https://static.tokkobroker.com/w_pics/10505804_65220064076652461770131665770619360586371891765663293946582626963686292063620.jpg"
+      ],
+      "source": "https://www.inmobiliariaalvarez.com.ar/p/10505804-Casa-en-Venta-en-Pilar-Los-Almendros--al-1300"
+    },
+    {
+      "id": "na-6409162",
+      "reference": "IHO6409162",
+      "title": "Casa con pileta en El Ensue\u00f1o",
+      "address": "La Pista al 1200",
+      "location": "Barrio Privado El Ensue\u00f1o, Ingeniero Maschwitz, Escobar",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 174900,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "area": null,
+      "landArea": 741,
+      "credit": false,
+      "featured": true,
+      "description": "Casa de una planta sobre lote interno de 741 m2, con 152 m2 cubiertos publicados, sin total construido informado. Tres habitaciones, una en suite, dos ba\u00f1os completos y un toilette separado. Cocina comedor, galer\u00eda con parrilla, pileta y lavadero. El sitio menciona permutas; confirm\u00e1 condiciones.",
+      "features": [
+        "Una planta",
+        "Suite",
+        "Toilette adicional",
+        "Galer\u00eda con parrilla",
+        "Pileta",
+        "Lote interno"
+      ],
+      "images": [
+        "https://static.tokkobroker.com/w_pics/6409162_93923891522975610811637273840905115104003362073139816071052533265354608326825.jpg",
+        "https://static.tokkobroker.com/w_pics/6409162_110228336251703980127422058059642969516815817940395484940587417293240158540347.jpg"
+      ],
+      "source": "https://www.inmobiliariaalvarez.com.ar/p/6409162-Casa-en-Venta-en-Barrio-Privado-El-Ensue%C3%B1o-La-pista--al-1200"
+    },
+    {
+      "id": "na-7365549",
+      "reference": "IHO7365549",
+      "title": "Casa con parque en Mart\u00edn Coronado",
+      "address": "Mart\u00edn Coronado 1237",
+      "location": "Ingeniero Maschwitz, Escobar",
+      "type": "Casa",
+      "operation": "Venta",
+      "currency": "USD",
+      "price": 69000,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "area": null,
+      "landArea": 355,
+      "credit": true,
+      "featured": true,
+      "description": "Casa de una planta y seis ambientes con tres dormitorios, un ba\u00f1o, living comedor y cochera cubierta. La ficha informa terreno de 355 m2 y 128,79 m2 cubiertos, sin total construido. La descripci\u00f3n la anuncia apta cr\u00e9dito hipotecario aunque el campo estructurado no lo especifica; verific\u00e1 documentaci\u00f3n y aceptaci\u00f3n bancaria.",
+      "features": [
+        "Una planta",
+        "Seis ambientes",
+        "Cochera cubierta",
+        "Jard\u00edn",
+        "128,79 m2 cubiertos",
+        "Apto cr\u00e9dito seg\u00fan descripci\u00f3n"
+      ],
+      "images": [
+        "https://static.tokkobroker.com/w_pics/7365549_29646742249415090122900702933855388786981076357677756947791072190895647839663.jpg",
+        "https://static.tokkobroker.com/w_pics/7365549_3685452445211387196867402725742800656865393684448819369655817252694010265920.jpg"
+      ],
+      "source": "https://www.inmobiliariaalvarez.com.ar/p/7365549-Casa-en-Venta-en-Ingeniero-Maschwitz-Martin-Coronado-al-1200"
     }
   ]
 };
