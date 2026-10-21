@@ -6,9 +6,9 @@ const { pathToFileURL } = require('node:url');
 const { chromium } = require(process.argv[2] || 'playwright');
 
 const root = path.resolve(__dirname, '..');
-const base = pathToFileURL(path.join(root, 'index.html')).href;
+const base = pathToFileURL(path.join(root, 'cristian-moos/index.html')).href;
 const output = process.argv[3];
-const config = JSON.parse(fs.readFileSync(path.join(root, 'config.js'), 'utf8').replace(/^window\.SITE_CONFIG\s*=\s*/, '').replace(/;\s*$/, ''));
+const config = JSON.parse(fs.readFileSync(path.join(root, 'cristian-moos/config.js'), 'utf8').replace(/^window\.SITE_CONFIG\s*=\s*/, '').replace(/;\s*$/, ''));
 let checks = 0;
 function check(condition, message) { assert(condition, message); checks++; console.log(`PASS ${message}`); }
 
@@ -46,6 +46,15 @@ function check(condition, message) { assert(condition, message); checks++; conso
       });
       await page.screenshot({ path: path.join(output, name), fullPage: true });
     }
+    const directory = pathToFileURL(path.join(root, 'index.html')).href;
+    await page.goto(directory);
+    check(await page.locator('.directory-card').count() > 0, 'local root opens the client directory without a server');
+    await page.locator('.directory-card[href="cristian-moos/index.html"]').click();
+    await page.waitForSelector('.property-card');
+    check(page.url() === base, 'local directory link opens the client index.html');
+    await page.goto(directory + '#/propiedad/5543991');
+    await page.waitForSelector('.detail-heading');
+    check(page.url() === base + '#/propiedad/5543991', 'old local deep links retain their property after the client redirect');
     await go('#/');
     await page.evaluate(() => localStorage.clear());
     await page.reload();

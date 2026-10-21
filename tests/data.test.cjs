@@ -5,9 +5,29 @@ const path = require('node:path');
 const vm = require('node:vm');
 
 const root = path.resolve(__dirname, '..');
-const source = fs.readFileSync(path.join(root, 'config.js'), 'utf8');
+const source = fs.readFileSync(path.join(root, 'cristian-moos/config.js'), 'utf8');
 const config = JSON.parse(source.replace(/^window\.SITE_CONFIG\s*=\s*/, '').replace(/;\s*$/, ''));
 const app = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
+
+test('every registered client has its own static entry and JSON configuration', () => {
+  const context = { window: {} };
+  vm.runInNewContext(fs.readFileSync(path.join(root, 'sites.js'), 'utf8'), context);
+  const sites = context.window.DEMO_SITES;
+  assert(sites.length > 0);
+  assert.equal(new Set(sites.map(site => site.slug)).size, sites.length);
+  for (const site of sites) {
+    assert.match(site.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+    const html = fs.readFileSync(path.join(root, site.slug, 'index.html'), 'utf8');
+    assert.match(html, /src="config.js" defer/);
+    assert.match(html, /src="\.\.\/app.js" defer/);
+    assert.match(html, /href="\.\.\/styles.css"/);
+    assert.doesNotMatch(html, /<base\b/);
+    const content = fs.readFileSync(path.join(root, site.slug, 'config.js'), 'utf8');
+    const client = JSON.parse(content.replace(/^window\.SITE_CONFIG\s*=\s*/, '').replace(/;\s*$/, ''));
+    assert(client.brand.name);
+    assert(client.properties.length);
+  }
+});
 
 test('config.js contains a JSON object, without executable configuration logic', () => {
   const context = { window: {} };
@@ -45,11 +65,11 @@ test('all literal UI label references exist in configuration', () => {
 
 test('the application has no local fetch, modules, backend or runtime dependencies', () => {
   assert.doesNotMatch(app, /\bfetch\s*\(|XMLHttpRequest|\bimport\s*\(/);
-  const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+  const html = fs.readFileSync(path.join(root, 'cristian-moos/index.html'), 'utf8');
   assert.match(html, /src="config.js" defer/);
-  assert.match(html, /src="app.js" defer/);
+  assert.match(html, /src="\.\.\/app.js" defer/);
   assert.doesNotMatch(html, /type="module"/);
-  for (const asset of ['assets/favicon.svg', 'assets/placeholder.svg', 'styles.css', 'app.js', 'config.js']) assert(fs.existsSync(path.join(root, asset)));
+  for (const asset of ['assets/favicon.svg', 'assets/placeholder.svg', 'styles.css', 'app.js', 'cristian-moos/config.js']) assert(fs.existsSync(path.join(root, asset)));
 });
 
 test('verified contact channels are configured without invented contact details', () => {
@@ -64,7 +84,7 @@ test('the default brand palette matches the dominant official logo colors', () =
   assert.equal(config.brand.primary, '#a92c18');
   assert.equal(config.brand.secondary, '#c55f08');
   assert.equal(config.brand.ink, '#211915');
-  const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+  const html = fs.readFileSync(path.join(root, 'cristian-moos/index.html'), 'utf8');
   assert(html.includes(`name="theme-color" content="${config.brand.primary}"`));
   assert.doesNotMatch(fs.readFileSync(path.join(root, 'styles.css'), 'utf8'), /#1563df/i);
 });

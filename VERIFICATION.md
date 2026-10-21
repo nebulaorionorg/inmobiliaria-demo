@@ -7,10 +7,11 @@ Pruebas ejecutadas el **21/10/2026** en Windows, con Node **v24.18.0** y Microso
 | Comprobación | Resultado |
 | --- | --- |
 | `node --check app.js` | Sintaxis válida |
-| `node --check config.js` | Sintaxis válida |
-| `node --test tests/data.test.cjs` | 7 pruebas aprobadas |
-| `tests/browser.cjs` | 123 comprobaciones de navegador aprobadas |
-| `tests/accessibility.cjs` | 0 infracciones axe en las 14 combinaciones de vista y ancho auditadas |
+| `node --check cristian-moos/config.js` | Sintaxis válida |
+| `node --test tests/data.test.cjs` | 8 pruebas aprobadas |
+| `tests/browser.cjs` | 126 comprobaciones de navegador aprobadas |
+| `tests/multi-site.cjs` | 225 comprobaciones HTTP multicliente aprobadas |
+| `tests/accessibility.cjs` | 0 infracciones axe en las 16 combinaciones de vista y ancho auditadas |
 
 Las pruebas del navegador recorren inicio, catálogo, detalle, contacto, nosotros, favoritos, resumen del panel, propiedades del panel, mensajes y configuración a **360, 390, 768, 1024, 1440 y 1920 px**. No detectaron desbordamiento horizontal de página. Las tablas y la navegación del panel permiten desplazamiento interno en pantallas pequeñas.
 
@@ -20,17 +21,26 @@ También se simuló el bloqueo de imágenes remotas y de `localStorage`: el resp
 
 Se extrajeron los colores dominantes de los píxeles del logo oficial: `#A92C18`, `#C55F08` y `#211915`. Después de aplicarlos se repitieron las pruebas de navegador y axe, y se revisaron las nuevas capturas de inicio móvil y panel de escritorio. Se verificaron los colores efectivos de botones, detalles y pie, la importación de la paleta, el rechazo de colores inválidos y la compatibilidad con JSON anteriores sin los dos colores nuevos.
 
-La auditoría axe cubre inicio, catálogo, detalle, contacto, panel, mensajes y configuración a **390 y 1440 px**, con las reglas etiquetadas `wcag2a`, `wcag2aa`, `wcag21a` y `wcag21aa`. Se corrigieron contrastes y nombres accesibles detectados durante la primera ejecución. No equivale a una certificación WCAG completa ni sustituye una prueba con lectores de pantalla.
+La auditoría axe cubre el directorio y las vistas de inicio, catálogo, detalle, contacto, panel, mensajes y configuración a **390 y 1440 px**, con las reglas etiquetadas `wcag2a`, `wcag2aa`, `wcag21a` y `wcag21aa`. Se corrigieron contrastes y nombres accesibles detectados durante las ejecuciones, incluido el número de tarjeta del directorio. No equivale a una certificación WCAG completa ni sustituye una prueba con lectores de pantalla.
+
+## Rutas Multicliente
+
+El directorio abre tanto con `file://` como por HTTP. La entrada de Cristian Moos ahora está en `cristian-moos/index.html`, con su configuración en la misma carpeta. Se probaron enlaces locales y la redirección de fichas compartidas con la URL anterior.
+
+El harness multicliente sirve los archivos bajo `/demo-repo/`, emulando el prefijo de GitHub Pages. Un segundo cliente existe solo en memoria; no se añadió una inmobiliaria ficticia al sitio. Se bloqueó la red externa. Las pruebas verifican recargas de catálogo y fichas con HTTP 200, enlaces dentro de su carpeta, recursos compartidos, fallback de imágenes, importación/exportación y aislamiento de favoritos, estados, mensajes y configuración incluso con el mismo JSON importado en ambas rutas. También verifican que restaurar el segundo cliente no altere el primero y que rutas inexistentes devuelvan 404.
+
+Estos resultados corresponden a pruebas locales de la nueva estructura; no implican que esta revisión ya se haya subido o desplegado en GitHub Pages.
 
 ## Repetir
 
-No se requieren dependencias para abrir el sitio ni para las siete pruebas de datos. Las pruebas de navegador necesitan Playwright y Edge; la auditoría adicional necesita axe-core. Las herramientas se instalaron fuera del workspace, en la carpeta temporal aprobada.
+No se requieren dependencias para abrir el sitio ni para las ocho pruebas de datos. Las pruebas de navegador necesitan Playwright y Edge; la auditoría adicional necesita axe-core. Las herramientas se instalaron fuera del workspace, en la carpeta temporal aprobada. El servidor HTTP de `multi-site.cjs` se abre únicamente durante la prueba y se cierra al terminar; no forma parte de la aplicación.
 
 Comandos de navegador ejecutados:
 
 ```powershell
 node tests/browser.cjs "C:\Users\matia\AppData\Local\Temp\opencode\node_modules\playwright" "C:\Users\matia\AppData\Local\Temp\opencode"
 node tests/accessibility.cjs "C:\Users\matia\AppData\Local\Temp\opencode\node_modules\playwright" "C:\Users\matia\AppData\Local\Temp\opencode\node_modules\axe-core\axe.min.js"
+node tests/multi-site.cjs "C:\Users\matia\AppData\Local\Temp\opencode\node_modules\playwright"
 ```
 
 Las rutas a las herramientas pueden sustituirse por las de una instalación existente. El último argumento de `browser.cjs` es opcional y permite generar capturas en una carpeta que ya exista. `BROWSER_CHANNEL` permite cambiar el canal de Chromium instalado.

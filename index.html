@@ -3,24 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Demo comercial de Cristian Mooswalder Propiedades. Casas, departamentos y terrenos en Zona Norte.">
+  <meta name="description" content="Propuestas web para inmobiliarias. Cada marca, su propia demo.">
   <meta name="theme-color" content="#a92c18">
-  <title>Cristian Mooswalder Propiedades</title>
+  <title>Demos inmobiliarias | Nebula</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="config.js" defer></script>
-  <script src="app.js" defer></script>
+  <script src="sites.js" defer></script>
+  <script src="directory.js" defer></script>
 </head>
-<body>
+<body class="directory-page">
   <a class="skip-link" href="#main">Ir al contenido</a>
-  <header id="header" class="site-header"></header>
-  <main id="main" tabindex="-1"></main>
-  <footer id="footer"></footer>
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <dialog id="gallery" aria-label="Galería de fotografías"></dialog>
-  <noscript>Esta demo necesita JavaScript para mostrar el catálogo. Activá JavaScript y volvé a abrir la página.</noscript>
+  <header class="container directory-header"><a class="brand" href="./"><strong>Nebula<span class="directory-dot">.</span></strong></a><span>PROPUESTAS INMOBILIARIAS</span></header>
+  <main id="main" class="container directory-main" tabindex="-1">
+    <span class="eyebrow">UNA PROPUESTA PARA CADA MARCA</span>
+    <h1>Tu próxima web<br>empieza acá.</h1>
+    <p class="directory-intro">Explorá las demos. Cada inmobiliaria tiene su propio espacio, su identidad y sus propiedades.</p>
+    <section class="directory-grid" id="sites" aria-label="Demos disponibles"></section>
+    <noscript><p>Activá JavaScript para ver todas las demos o <a class="text-link" href="cristian-moos/index.html">abrí la propuesta de Cristian Mooswalder</a>.</p></noscript>
+  </main>
+  <footer class="container directory-footer">Maquetaciones comerciales de demostración. Sin backend ni autenticación.</footer>
 </body>
 </html>

@@ -2,7 +2,11 @@
   'use strict';
 
   const original = window.SITE_CONFIG;
-  const keys = { config: 'cm-demo-config-v1', favorites: 'cm-demo-favorites-v1', statuses: 'cm-demo-statuses-v1', read: 'cm-demo-read-v1' };
+  const assetBase = new URL('.', document.currentScript.src);
+  const site = new URL('.', location.href).pathname.split('/').filter(Boolean).pop();
+  // Keep the published client's existing state; all other routes get their own namespace.
+  const prefix = site === 'cristian-moos' ? 'cm-demo' : `inmobiliaria-demo:${site}`;
+  const keys = Object.fromEntries(['config', 'favorites', 'statuses', 'read'].map(key => [key, `${prefix}-${key}-v1`]));
   let storageAvailable = true;
   function load(key, fallback) {
     try { return JSON.parse(localStorage.getItem(key)) ?? fallback; }
@@ -35,7 +39,7 @@
   const number = value => new Intl.NumberFormat('es-AR', { maximumFractionDigits: 2 }).format(value);
   const property = id => config.properties.find(item => item.id === id);
   const price = p => `${p.currency === 'ARS' ? 'ARS $' : 'USD'} ${number(p.price)}`;
-  const url = value => /^(https?:\/\/|mailto:|tel:|#\/|assets\/)/i.test(String(value)) ? esc(value) : '#/';
+  const url = value => /^assets\//i.test(String(value)) ? esc(new URL(value, assetBase).href) : /^(https?:\/\/|mailto:|tel:|#\/)/i.test(String(value)) ? esc(value) : '#/';
   const external = 'target="_blank" rel="noopener noreferrer"';
   const paths = {
     home: '<path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-8h6v8"/>',
@@ -276,7 +280,7 @@
         return;
       }
       event.target.dataset.fallback = 'true';
-      event.target.src = 'assets/placeholder.svg';
+      event.target.src = new URL('assets/placeholder.svg', assetBase).href;
       event.target.alt = config.labels.photoUnavailable;
     }
   }, true);

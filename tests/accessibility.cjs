@@ -8,15 +8,16 @@ const axePath = process.argv[3] || require.resolve('axe-core/axe.min.js');
   let violations = 0;
   try {
     const page = await browser.newPage();
-    const base = pathToFileURL(path.resolve(__dirname, '../index.html')).href;
+    const base = pathToFileURL(path.resolve(__dirname, '../cristian-moos/index.html')).href;
     for (const width of [390, 1440]) {
       await page.setViewportSize({ width, height: 1000 });
-      for (const route of ['#/', '#/propiedades', '#/propiedad/5543991', '#/contacto', '#/panel', '#/panel/mensajes', '#/panel/configuracion']) {
-        await page.goto(base + route);
-        await page.waitForFunction(expected => document.querySelector('#main')?.dataset.route === expected, route.slice(1));
+      for (const route of ['', '#/', '#/propiedades', '#/propiedad/5543991', '#/contacto', '#/panel', '#/panel/mensajes', '#/panel/configuracion']) {
+        await page.goto(route ? base + route : pathToFileURL(path.resolve(__dirname, '../index.html')).href);
+        if (route) await page.waitForFunction(expected => document.querySelector('#main')?.dataset.route === expected, route.slice(1));
+        else await page.waitForSelector('.directory-card');
         await page.addScriptTag({ path: axePath });
         const result = await page.evaluate(() => axe.run(document, { runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] } }));
-        console.log(`${width}px ${route}: ${result.violations.length} axe violations`);
+        console.log(`${width}px ${route || 'directory'}: ${result.violations.length} axe violations`);
         for (const issue of result.violations) {
           violations++;
           console.log(JSON.stringify({ id: issue.id, impact: issue.impact, nodes: issue.nodes.map(node => ({ target: node.target, summary: node.failureSummary })) }, null, 2));

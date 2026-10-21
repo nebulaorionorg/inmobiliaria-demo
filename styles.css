@@ -448,6 +448,21 @@ dialog::backdrop { background: #211915ee; }
 .gallery-stage .icon-btn:hover { background: var(--primary); }
 .gallery-prev { left: 15px; }
 .gallery-next { right: 15px; }
+.directory-page { background: var(--soft); min-height: 100dvh; display: flex; flex-direction: column; }
+.directory-header { padding-block: 32px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); }
+.directory-header .brand strong { font-size: 30px; }
+.directory-header > span { font-size: 9px; font-weight: 800; letter-spacing: 1.5px; color: var(--muted); }
+.directory-dot { color: var(--primary); }
+.directory-main { padding-block: clamp(50px, 8vw, 110px); flex: 1; }
+.directory-main h1 { font-size: clamp(42px, 6vw, 78px); line-height: 1.08; letter-spacing: -2px; margin-block: 14px 24px; }
+.directory-intro { max-width: 570px; color: var(--muted); font-size: 16px; }
+.directory-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: 24px; margin-top: 52px; }
+.directory-card { padding: clamp(24px, 4vw, 40px); background: white; border: 1px solid var(--line); border-radius: var(--radius); transition: border-color .2s, transform .2s; }
+.directory-card:hover { border-color: var(--primary); transform: translateY(-3px); }
+.directory-number { display: block; color: var(--primary); font-size: 13px; font-weight: 800; letter-spacing: 2px; margin-bottom: 30px; }
+.directory-card h2 { font-size: 27px; overflow-wrap: anywhere; }
+.directory-card p { margin-block: 16px 30px; color: var(--muted); max-width: 600px; }
+.directory-footer { border-top: 1px solid var(--line); padding-block: 24px; color: var(--muted); font-size: 11px; }
 @media (min-width: 1700px) {
   .hero { min-height: 850px; }
   .hero-body { padding-top: 150px; }
