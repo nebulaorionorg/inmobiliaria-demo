@@ -82,8 +82,13 @@
     }
     // Previously exported JSON only required the primary brand color.
     const brandSchema = Object.fromEntries(Object.entries(original.brand).filter(([key]) => !['secondary', 'ink'].includes(key)));
-    const schema = { ...original, brand: brandSchema, properties: [{ ...original.properties[0], price: null, bedrooms: null, bathrooms: null, area: null, landArea: null }] };
-    if (!candidate || !matches(schema, candidate) || candidate.version !== 1 || !candidate.properties.length) return false;
+    const propertySchema = {
+      id: '', reference: '', title: '', address: '', location: '', type: '', operation: '', currency: '',
+      price: null, bedrooms: null, bathrooms: null, area: null, landArea: null,
+      credit: false, featured: false, description: '', features: [''], images: [''], source: ''
+    };
+    const schema = { ...original, brand: brandSchema, properties: [propertySchema] };
+    if (!candidate || !matches(schema, candidate) || candidate.version !== 1) return false;
     if (!/^#[\da-f]{6}$/i.test(candidate.brand.primary) || !/^\d*$/.test(candidate.brand.whatsapp)) return false;
     if (['secondary', 'ink'].some(key => candidate.brand[key] !== undefined && !/^#[\da-f]{6}$/i.test(candidate.brand[key]))) return false;
     const ids = new Set();
@@ -94,7 +99,7 @@
       if (![p.bedrooms, p.bathrooms, p.area, p.landArea].every(value => value === null || Number.isFinite(value) && value >= 0)) return false;
       ids.add(p.id);
     }
-    return candidate.home.heroIds.length > 0 && candidate.home.heroIds.every(id => ids.has(id)) && candidate.zones.every(zone => ids.has(zone.propertyId)) && candidate.dashboard.activity.length === candidate.dashboard.days.length && candidate.dashboard.activity.every(value => Number.isFinite(value) && value >= 0);
+    return candidate.home.heroIds.every(id => ids.has(id)) && candidate.zones.every(zone => ids.has(zone.propertyId)) && candidate.dashboard.activity.length === candidate.dashboard.days.length && candidate.dashboard.activity.every(value => Number.isFinite(value) && value >= 0);
   }
   function notify(message) {
     const toast = $('#toast');
@@ -145,6 +150,7 @@
   }
   function heroMarkup() {
     const p = property(config.home.heroIds[heroIndex % config.home.heroIds.length]);
+    if (!p) return `<div class="hero-body container"><span class="hero-eyebrow">${esc(config.home.eyebrow)}</span><h1>${esc(config.home.title)}<br> <span>${esc(config.home.titleAccent)}</span></h1><p>${esc(config.home.subtitle)}</p><a class="btn btn-white" href="#/nosotros">${text('moreAbout')}${icon('arrow')}</a></div>`;
     return `${photo(p, 0, 'hero-image', true)}<div class="hero-overlay"></div><div class="hero-body container"><span class="hero-eyebrow">${esc(config.home.eyebrow)}</span><h1>${esc(config.home.title)}<br> <span>${esc(config.home.titleAccent)}</span></h1><p>${esc(config.home.subtitle)}</p>${searchForm(new URLSearchParams(), true)}<span class="hero-area">${icon('pin')}${esc(config.home.heroLocation)}</span></div><div class="hero-bottom container"><div class="hero-controls"><button class="icon-btn" data-action="hero-prev" aria-label="${text('previous')}">${icon('arrow', 'reverse')}</button><span>${String(heroIndex + 1).padStart(2, '0')}<i>/ ${String(config.home.heroIds.length).padStart(2, '0')}</i></span><button class="icon-btn" data-action="hero-next" aria-label="${text('next')}">${icon('arrow')}</button></div><a href="#/propiedad/${esc(p.id)}" class="hero-caption"><span><small>${text('heroProperty')}</small><strong>${esc(p.address)}</strong><span>${esc(price(p))}</span></span>${icon('arrow')}</a></div>`;
   }
   function renderHome() {
@@ -157,7 +163,7 @@
   function aboutBlock() {
     const h = config.home;
     const p = property(config.home.heroIds[0]);
-    return `<section class="about-section"><div class="container about-grid"><div class="about-image">${photo(p, 1)}<a class="about-image-label" href="#/propiedad/${esc(p.id)}">${icon('image')}<span>${text('imageOfProperty')} ${esc(p.address)}</span></a></div><div class="about-copy"><span class="eyebrow">${esc(h.aboutEyebrow)}</span><h2>${esc(h.aboutTitle)}</h2><p>${esc(h.aboutText)}</p><ul class="check-list">${h.aboutPoints.map(point => `<li>${icon('check')}${esc(point)}</li>`).join('')}</ul><a class="btn btn-primary" href="#/contacto">${text('contact')}${icon('arrow')}</a></div></div></section>`;
+    return `<section class="about-section"><div class="container about-grid ${p ? '' : 'about-institutional'}">${p ? `<div class="about-image">${photo(p, 1)}<a class="about-image-label" href="#/propiedad/${esc(p.id)}">${icon('image')}<span>${text('imageOfProperty')} ${esc(p.address)}</span></a></div>` : ''}<div class="about-copy"><span class="eyebrow">${esc(h.aboutEyebrow)}</span><h2>${esc(h.aboutTitle)}</h2><p>${esc(h.aboutText)}</p><ul class="check-list">${h.aboutPoints.map(point => `<li>${icon('check')}${esc(point)}</li>`).join('')}</ul><a class="btn btn-primary" href="#/contacto">${text('contact')}${icon('arrow')}</a></div></div></section>`;
   }
   function cta() {
     return `<section class="cta-section"><div class="container cta-inner"><div><h2>${esc(config.home.ctaTitle)}</h2><p>${esc(config.home.ctaText)}</p></div><a href="#/contacto" class="btn btn-white">${esc(config.home.ctaButton)}${icon('arrow')}</a></div></section>`;
@@ -263,8 +269,26 @@
     else if (path === '/nosotros') renderAbout();
     else if (path === '/panel' || path.startsWith('/panel/')) renderDashboard(path.slice(6), params);
     else renderNotFound();
+    const proposalNotice = $('#proposal-notice');
+    if (proposalNotice) {
+      const message = original.meta.proposalNotice;
+      proposalNotice.textContent = message;
+      const panelNotice = $('.demo-notice p');
+      proposalNotice.hidden = Boolean(panelNotice);
+      if (panelNotice) panelNotice.prepend(message + ' ');
+    }
+    $('#hero')?.classList.toggle('hero-institutional', !config.home.heroIds.length);
+    if (!config.properties.length) {
+      $('#featured .property-tabs')?.remove();
+      $('#featured .section-action')?.remove();
+    }
     document.querySelectorAll('a[href="tel:"], a[href="mailto:"], .socials a[href="#/"]').forEach(link => (link.closest('.contact-method') || link).remove());
     if (!config.brand.whatsapp) document.querySelectorAll('a[href^="https://wa.me/"]').forEach(link => (link.closest('.contact-method') || link).remove());
+    if (!config.brand.email && $('[data-form="contact"]')) {
+      const note = document.createElement('p');
+      note.textContent = `${config.labels.email}: ${config.labels.notPublished}`;
+      $('[data-form="contact"]').replaceWith(note);
+    }
     if (!config.zones.length) document.querySelector('.zones-section')?.remove();
     $('#main').dataset.route = path;
     $('#main').dataset.hash = location.hash || '#/';

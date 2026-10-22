@@ -1,6 +1,8 @@
 # Demos publicadas por inmobiliaria
 
-El repositorio contiene **11 demos y 130 publicaciones seleccionadas**: Cristian Moos con 10 inmuebles y las diez inmobiliarias del relevamiento de Garín, Benavídez y Tortuguitas con **12 publicaciones cada una**. Las portadas muestran hasta 12 destacadas para dar más contenido desde el inicio. Se consultaron los sitios públicos de cada negocio el **21/10/2026**, sin enviar mensajes, consultas ni formularios.
+La primera tanda publicada contiene **11 demos y 130 publicaciones seleccionadas**: Cristian Moos con 10 inmuebles y las diez inmobiliarias del relevamiento de Garín, Benavídez y Tortuguitas con **12 publicaciones cada una**. Las portadas muestran hasta 12 destacadas para dar más contenido desde el inicio. Se consultaron los sitios públicos de cada negocio el **21/10/2026**, sin enviar mensajes, consultas ni formularios.
+
+La [segunda tanda](SEGUNDA_TANDA.md), consultada el 22/10/2026, agrega diez propuestas breves: ocho con tres inmuebles cada una y dos institucionales sin catálogo confirmado. El directorio reúne **21 demos y 154 publicaciones**, con rutas independientes y aviso visible para las nuevas propuestas. La publicación fue autorizada; no se contactó a estos prospectos ni se enviaron emails.
 
 Directorio: <https://nebulaorionorg.github.io/inmobiliaria-demo/>.
 

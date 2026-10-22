@@ -23,9 +23,9 @@ function readJSONWrapper(file, globalName) {
   return JSON.parse(match[1]);
 }
 const sites = readJSONWrapper('sites.js', 'DEMO_SITES');
-assert.equal(sites.length, 11, 'Expected the eleven registered clients');
-assert.equal(new Set(sites.map(site => site.slug)).size, 11, 'Client slugs must be unique');
-const clients = sites.map(site => {
+assert(sites.length >= 11, 'Expected the original eleven registered clients');
+assert.equal(new Set(sites.map(site => site.slug)).size, sites.length, 'Client slugs must be unique');
+const clients = sites.filter(site => site.batch !== 2).map(site => {
   assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(site.slug), 'Unsafe client slug');
   return { ...site, config: readJSONWrapper(`${site.slug}/config.js`, 'SITE_CONFIG') };
 });
@@ -195,7 +195,7 @@ const storageKey = (slug, field) => `${slug === 'cristian-moos' ? 'cm-demo' : `i
     await section('Root registry', async () => {
       await page.goto(new URL('index.html', base).href, { waitUntil: 'domcontentloaded' });
       await page.waitForSelector('.directory-card');
-      equal(await page.locator('.directory-card').count(), 11, 'Root registry renders exactly eleven clients');
+      equal(await page.locator('.directory-card').count(), sites.length, 'Root registry renders all registered clients');
       const cards = await page.locator('.directory-card').evaluateAll(cards => cards.map(card => ({ href: card.href, text: card.textContent })));
       for (const site of clients) {
         const expected = new URL(`${site.slug}/${local ? 'index.html' : ''}`, base).href;
@@ -206,7 +206,7 @@ const storageKey = (slug, field) => `${slug === 'cristian-moos' ? 'cm-demo' : `i
     for (const [index, site] of clients.entries()) {
       const { slug, config } = site;
       const start = results.checks.length;
-      console.log(`CLIENT ${index + 1}/11 ${slug} (${config.properties.length} properties)`);
+      console.log(`CLIENT ${index + 1}/${clients.length} ${slug} (${config.properties.length} properties)`);
       await page.setViewportSize({ width: 1440, height: 1000 });
       await section(`${slug}: home and original assets`, async () => {
         await go(site);

@@ -25,7 +25,7 @@ test('every registered client has its own static entry and JSON configuration', 
     const content = fs.readFileSync(path.join(root, site.slug, 'config.js'), 'utf8');
     const client = JSON.parse(content.replace(/^window\.SITE_CONFIG\s*=\s*/, '').replace(/;\s*$/, ''));
     assert(client.brand.name);
-    assert(client.properties.length);
+    if (site.batch !== 2) assert(client.properties.length);
   }
 });
 
@@ -44,13 +44,27 @@ test('all clients have complete independent catalogs, valid contacts and existin
     const source = fs.readFileSync(path.join(root, site.slug, 'config.js'), 'utf8');
     const client = JSON.parse(source.replace(/^window\.SITE_CONFIG\s*=\s*/, '').replace(/;\s*$/, ''));
     assert.equal(client.brand.name, site.name, `${site.slug}: registry identity`);
-    assert(client.properties.length > 5, `${site.slug}: catalog must contain more than five properties`);
-    if (site.slug !== 'cristian-moos') assert(client.properties.filter(p => p.featured).length >= 12, `${site.slug}: twelve featured properties`);
+    if (site.batch === 2) {
+      assert(client.properties.length <= 3, `${site.slug}: brief proposal`);
+      if (!['capasso-inmobiliaria', 'saracini-propiedades'].includes(site.slug)) assert(client.properties.length >= 2, `${site.slug}: representative verified selection`);
+      assert.equal(client.meta.verifiedAt, '2026-10-22');
+      assert.equal(client.meta.proposalNotice, 'Propuesta independiente de Nebula. Sin vínculo comercial ni autorización de esta inmobiliaria.');
+      if (!client.properties.length) {
+        assert.deepEqual(client.home.heroIds, []);
+        assert.deepEqual(client.zones, []);
+      }
+      const html = fs.readFileSync(path.join(root, site.slug, 'index.html'), 'utf8');
+      assert(html.includes('id="proposal-notice"'));
+      assert(html.indexOf('id="proposal-notice"') < html.indexOf('id="header"'), `${site.slug}: independent notice precedes header`);
+    } else {
+      assert(client.properties.length > 5, `${site.slug}: catalog must contain more than five properties`);
+      if (site.slug !== 'cristian-moos') assert(client.properties.filter(p => p.featured).length >= 12, `${site.slug}: twelve featured properties`);
+    }
     for (const section of Object.keys(config)) assert(Object.hasOwn(client, section), `${site.slug}: missing ${section}`);
     for (const key of Object.keys(config.labels)) assert(Object.hasOwn(client.labels, key), `${site.slug}: missing label ${key}`);
     assert.match(client.brand.whatsapp, /^\d*$/);
-    assert.match(client.brand.email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/);
-    assert.deepEqual(client.operations, ['Venta', 'Alquiler']);
+    if (client.brand.email) assert.match(client.brand.email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+    assert.deepEqual(client.operations, ['Venta', 'Alquiler'], `${site.slug}: shared operation vocabulary`);
     const ids = new Set(client.properties.map(p => p.id));
     assert.equal(ids.size, client.properties.length);
     for (const id of client.home.heroIds) assert(ids.has(id), `${site.slug}: hero ${id}`);

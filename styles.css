@@ -448,6 +448,12 @@ dialog::backdrop { background: #211915ee; }
 .gallery-stage .icon-btn:hover { background: var(--primary); }
 .gallery-prev { left: 15px; }
 .gallery-next { right: 15px; }
+.proposal-notice { padding: 10px 24px; color: #fff; background: var(--ink); text-align: center; font-size: 12px; font-weight: 600; line-height: 1.6; }
+.hero.hero-institutional { min-height: 540px; background: linear-gradient(125deg, var(--ink), color-mix(in srgb, var(--primary) 70%, var(--ink))); }
+.hero-institutional .hero-body { padding-block: 100px; }
+.hero-institutional .hero-body > p { margin-bottom: 32px; }
+.about-grid.about-institutional { grid-template-columns: 1fr; }
+.about-institutional .about-copy { max-width: 760px; }
 .directory-page { background: var(--soft); min-height: 100dvh; display: flex; flex-direction: column; }
 .directory-header { padding-block: 32px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); }
 .directory-header .brand strong { font-size: 30px; }
